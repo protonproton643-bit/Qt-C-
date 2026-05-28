@@ -19,92 +19,41 @@
 [PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=vesna_kulidzan&pas"
 [PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=vesna_kulidzan&pas"
 [PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=g_skype2&password="
-= "http://v2pro.online:8080" active_slots= 2 time= "12:05:59.881"= "http://v2pro.online:8080" active_slots= 2 time= "12:05:59.881"
-
+= "http://v2pro.online:8080" active_slots= 2 time= "22:27:10.845"
 [CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=vesna_kulidzan&pas"
-t.php?username=vesna_kulidzan&pas"
+[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=vesna_kulidzan&pas"
 [CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=g_skype2&password="
-="
-="
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=vesna_kulidzan&password=obZEtdICSe&typ"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=vesna_kulidzan&password=obZEtdICSe&typ"
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=g_skype2&password=o7wyMRHoas5ty"
-YABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=g_skype2&password=o7wyMRHoas5ty"
+typ"
+[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=g_skype2&password=o7wyMRHoas5tyg&type="
 [PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=vesna_kulidzan&password=obZEtdI"
-minDelay= 200 ms episodes= 0
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 0 minDelay= 200 inDM= false
-"[XUI_ANAL] #1 T+175ms gap=-1ms type=api slots=0 eps=0 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=g_skype2&pa"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 200 ms episodes= 0
-"[XUI_ANAL_RESP] #1 status=200 debug=no bytes=507"
-[PLAYABLE API] "http://v2pro.online:8080/player_api.php?username=g_skype2&password=o7wyMRHoas5ty" status: 200 body[:150]: "{\"user_info\":{\"username\":\"g_skype2\",\"password\":\"o7wyMRHoas5tyg\",\"message\":\"Welcome to XUI.one\",\"auth\":1,\"status\":\"Active\",\"exp_date\":null,\"is_trial\":\""
-
-���������������������������������������������������
-[RESP] API | ? JSON_OK | 12:06:00.244
-  URL    : http://v2pro.online:8080/player_api.php?username=g_skype2&password=o7wyMRHoas5ty
-  Base   : http://v2pro.online:8080
-  Status : 200 | elapsed=189ms | bytes=507
-  Server : nginx
-  CT     : application/json
-  Body   : {"user_info":{"username":"g_skype2","password":"o7wyMRHoas5tyg","message":"Welcome to XUI.one","auth":1,"status":"Active","exp_date":null,"is_trial":"0","active_cons":"0","created_at":"1496598787","max_connections":"30","allowed_output_formats":["m3u8","ts"]},"server_info":{"xui":true,"version":"1.5
-  ★ VERDICT: ✅ API OK — pretplata aktivna
-���������������������������������������������������
-
-"[XUI_ANAL] #2 T+366ms gap=191ms type=m3u slots=0 eps=0 tid=6b8a url=http://v2pro.online:8080/get.php?username=g_skype2&password="
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 0 minDelay= 200 inDM= false
-"[XUI_ANAL] #3 T+420ms gap=54ms type=api slots=0 eps=0 tid=f703 url=http://v2pro.online:8080/player_api.php?username=vesna_kulid"
-╔══════════════════════════════════════════════════════════════╗
-║  🔴 XUI DEBUG MODE TRIGGER AUTOPSY                          ║
-╠══════════════════════════════════════════════════════════════╣
-"║  Server     : http://v2pro.online:8080"
-"║  Trigger req: #3 od 3 ukupno"
-"║  Vreme      : T+420ms od starta skeniranja"
-"║  Tip req    : api"
-"║  Gap        : 54ms od prethodnog zahteva"
-"║  ActiveSlots: 2 (max bio: 0)"
-"║  Episode#   : 0"
-╠══════════════════════════════════════════════════════════════╣
-║  KOMPLETAN REQUEST TIMELINE:
-"║     [  1] T+   175ms gap=   -1ms type=   api status=200 debug= no bytes=  507 slots=2"
-"║     [  2] T+   366ms gap=  191ms type=   m3u status=  0 debug= no bytes=    0 slots=2"
-"║  👉 [  3] T+   420ms gap=   54ms type=   api status=200 debug=YES bytes= 1679 slots=2"
-╠══════════════════════════════════════════════════════════════╣
-║  GAP STATISTIKE:
-"║  Min gap: 54ms | Max gap: 191ms | Avg gap: 122ms"
-"║  Requests/min (est.): 491"
-╠══════════════════════════════════════════════════════════════╣
-║  ANALIZA:
-║  ⚠️  PREKRATKI GAPOVI! Server ne može da podnese ovaj ritam.
-"║  🔧 PREPORUČENI MIN GAP: 162ms"
-╠══════════════════════════════════════════════════════════════╣
-║  SEKVENCA ZAHTEVA PRE TRIGERISANJA:
-"║   [1]    api → status=200 debug=no gap=-1ms"
-"║   [2]    m3u → status=0 debug=no gap=191ms"
-"║   [3]    api → status=200 debug=YES gap=54ms"
-╚══════════════════════════════════════════════════════════════╝
-"[XUI_ANAL_RESP] #3 status=200 debug=YES bytes=1679"
-[PLAYABLE API] "http://v2pro.online:8080/player_api.php?username=vesna_kulidzan&password=obZEtdI" status: 200 body[:150]: "<html><head><title>XUI.one - Debug Mode</title><link href=\"https://fonts.googleapis.com/css?family=Montserrat:200,400,700\" rel=\"stylesheet\"><style>*{-"
+typ"
+[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=g_skype2&password=o7wyMRHoas5tyg&type="
+ro.online:8080/player_api.php?username=g_skype2&password=o7wyMRHoas5ty"
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "g_sk" pass: "o7wy"
+"[XUI_ANAL] #1 T+113ms gap=-1ms type=api slots=0 eps=0 tid=f703 url=http://v2pro.online:8080/player_api.php?username=vesna_kulid"
+"[XUI_ANAL] #2 T+113ms gap=0ms type=api slots=0 eps=0 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=g_skype2&pa"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=vesna_kulidzan&password=obZEtdI" status: 200 body[:150]: "<html><head><title>XUI.one - Debug Mode</title><link href=\"https://fonts.googleapis.com/css?family=Montserrat:200,400,700\" rel=\"stylesheet\"><style>*{-"
 
  ╔══════════════════════════════════════════════════════════╗
 ║ [SERVER ANALYZER] "http://v2pro.online:8080"
 ╠══════════════════════════════════════════════════════════╣
-║ Ukupno zahteva  : 2   (API: 2  M3U: 0  STREAM: 0 )
-║ Odgovori        : JSON_OK= 1  DEBUG_MODE= 1  STREAM_OK= 0  TIMEOUT= 0  HTTP_ERR= 0
-║ Debug Mode %    : "50.0" %
-║ Rate (zadnjih60s): 2 zahteva/min
-║ Prosečan gap    : "227" ms
-║ Ovaj zahtev     : "API" status= 200 elapsed= 170 ms bytes= 1679 class= "DEBUG_MODE"
-║ Zadnja 2 zahteva:
-║   [ "API" ] status= 200 elapsed= 189 ms bytes= 507 → "JSON_OK"
-║   [ "API" ] status= 200 elapsed= 170 ms bytes= 1679 → "DEBUG_MODE"
-║ ⚠️ UPOZORENJE: Debug Mode ratio je "50.0" % → server je preopterećen!
+║ Ukupno zahteva  : 1   (API: 1  M3U: 0  STREAM: 0 )
+║ Odgovori        : JSON_OK= 0  DEBUG_MODE= 1  STREAM_OK= 0  TIMEOUT= 0  HTTP_ERR= 0
+║ Debug Mode %    : "100.0" %
+║ Rate (zadnjih60s): 1 zahteva/min
+║ Prosečan gap    : "0" ms
+║ Ovaj zahtev     : "API" status= 200 elapsed= 209 ms bytes= 1679 class= "DEBUG_MODE"
+║ Zadnja 1 zahteva:
+║   [ "API" ] status= 200 elapsed= 209 ms bytes= 1679 → "DEBUG_MODE"
+║ ⚠️ UPOZORENJE: Debug Mode ratio je "100.0" % → server je preopterećen!
 ║    Preporučeni gap između zahteva: >= 8000ms
 ╚══════════════════════════════════════════════════════════╝
 
 ���������������������������������������������������
-[RESP] API | ?? DEBUG_MODE | 12:06:00.471
+[RESP] API | ?? DEBUG_MODE | 22:27:11.169
   URL    : http://v2pro.online:8080/player_api.php?username=vesna_kulidzan&password=obZEtdI
   Base   : http://v2pro.online:8080
-  Status : 200 | elapsed=170ms | bytes=1679
+  Status : 200 | elapsed=209ms | bytes=1679
   Server : nginx
   CT     : text/html; charset=UTF-8
   Body   : <html><head><title>XUI.one - Debug Mode</title><link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet"><style>*{-webkit-box-sizing:border-box;box-sizing:border-box}body{padding:0;margin:0}#notfound{position:relative;height:100vh}#notfound .notfound{position:absol
@@ -115,326 +64,614 @@ minDelay= 200 ms episodes= 0
 
 [XUI DEBUG GLOBAL] Server "http://v2pro.online:8080" Debug Mode epizoda 1 , pauza 30 s
 [XUI DEBUG GLOBAL] Server "http://v2pro.online:8080" Debug Mode epizoda 1 , pauza 30s
-[API XUI DEBUG] DM na API → return 3 (preskoči retry, idi na stream fallback)
-[API DM SKIP] DM → skip svih retryja, idemo na stream fallback
-[DM SKIP WAIT] Čekam 2500 ms pre sledeće liste (anti-ban)
-[PLAYABLE M3U] "http://v2pro.online:8080/get.php?username=g_skype2&password=o7wyMRHoas5tyg&type=" status: 200 m3u_size: 66609
-[M3U TIMING] "http://v2pro.online:8080" elapsed= 1035 ms size= 66609 bytes = "65.0" KB
+[API] XUI Debug Mode → return 3 (stream fallback)
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 325 ms
+[API TEST] "http://v2pro.online:8080/player_api.php?username=g_skype2&password=o7wyMRHoas5ty" status: 200 body[:150]: "{\"user_info\":{\"username\":\"g_skype2\",\"password\":\"o7wyMRHoas5tyg\",\"message\":\"Welcome to XUI.one\",\"auth\":1,\"status\":\"Active\",\"exp_date\":null,\"is_trial\":\""
 
 ���������������������������������������������������
-[RESP] M3U | ? M3U_OK | 12:06:01.279
-  URL    : http://v2pro.online:8080/get.php?username=g_skype2&password=o7wyMRHoas5tyg&type=
+[RESP] API | ? JSON_OK | 22:27:11.220
+  URL    : http://v2pro.online:8080/player_api.php?username=g_skype2&password=o7wyMRHoas5ty
   Base   : http://v2pro.online:8080
-  Status : 200 | elapsed=1035ms | bytes=66609
+  Status : 200 | elapsed=260ms | bytes=507
   Server : nginx
-  CT     : application/octet-stream
-  Body   : #EXTM3U
-#EXT-X-SESSION-DATA:DATA-ID="com.xui.1_5_13"
-#EXTINF:-1 timeshift="17" tvg-id="RTS2.rs" tvg-name="RTS 2" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/serbia/rts2-rs.png?raw=true" group-title="SRBIJA",RTS 2
-http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/4
-
-#EXTINF:-1 tv
+  CT     : application/json
+  Body   : {"user_info":{"username":"g_skype2","password":"o7wyMRHoas5tyg","message":"Welcome to XUI.one","auth":1,"status":"Active","exp_date":null,"is_trial":"0","active_cons":"0","created_at":"1496598787","max_connections":"30","allowed_output_formats":["m3u8","ts"]},"server_info":{"xui":true,"version":"1.5
+  ★ VERDICT: ✅ API OK — pretplata aktivna
 ���������������������������������������������������
 
+[API] ✅ OK — exp= "Unlimited" max_conn= 30
+[THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms
+"[XUI_ANAL] #3 T+374ms gap=261ms type=m3u slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/get.php?username=g_skype2&password="
 "[XUI_ANAL_RESP] #3 status=200 debug=no bytes=66609"
-[M3U PARSE] raw_size= 66609 s0= 0 first_bytes= "#EXTM3U\n#EXT-X-SESSION-DATA:DATA-ID=\"com.xui.1_5_13\"\n#EXTINF:-1 timeshift=\"17\" tvg-id=\"RTS2.rs\" tvg-name=\"RTS 2\" tvg-logo=\"https://github.com/tv-logo/tv-logos/blob/main/countries/serbia/rts2-rs.png?raw=true\" group-title=\"SRBIJA\",RTS 2\nhttp://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/4\r\n#EXTINF:-1 tv"
-[M3U PARSE] EXTM3U detected, all_streams count= 522
-  [STREAM URL 0 ] "http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/4"
-  [STREAM URL 1 ] "http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/4"
-  [STREAM URL 2 ] "http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/5"
-  [STREAM URL 3 ] "http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/5"
-  [STREAM URL 4 ] "http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/1"
-[M3U PARSE] smartSelect chose 4 channels:
-  [TEST CHANNEL] type= "unknown" url= "http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/4"
-  [TEST CHANNEL] type= "unknown" url= "http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/259"
-  [TEST CHANNEL] type= "unknown" url= "http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/813"
-  [TEST CHANNEL] type= "unknown" url= "http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/75507"
-[STREAM THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms episodes= 1 inDM= true
-[STREAM TEST ATTEMPT] url= "http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/4" | xuiEpisode= 1 | inDebugMode= true | throttleDelay= 150 | isAggressive= false
-"[XUI_ANAL] #4 T+1425ms gap=1005ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/4"
-[STREAM RESULT] "http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/4" status= 200 bytes= 1669 CT= "text/html; charset=UTF-8" body[:50]= "<html><head><title>XUI.one - Debug Mode</title><li"
-
- ╔══════════════════════════════════════════════════════════╗
-║ [SERVER ANALYZER] "http://v2pro.online:8080"
-╠══════════════════════════════════════════════════════════╣
-║ Ukupno zahteva  : 4   (API: 2  M3U: 1  STREAM: 1 )
-║ Odgovori        : JSON_OK= 1  DEBUG_MODE= 2  STREAM_OK= 1  TIMEOUT= 0  HTTP_ERR= 0
-║ Debug Mode %    : "50.0" %
-║ Rate (zadnjih60s): 4 zahteva/min
-║ Prosečan gap    : "570" ms
-║ Ovaj zahtev     : "STREAM" status= 200 elapsed= -1 ms bytes= 1669 class= "DEBUG_MODE"
-║ Zadnja 3 zahteva:
-║   [ "API" ] status= 200 elapsed= 170 ms bytes= 1679 → "DEBUG_MODE"
-║   [ "M3U" ] status= 200 elapsed= 1035 ms bytes= 66609 → "STREAM_OK"
-║   [ "STREAM" ] status= 200 elapsed= -1 ms bytes= 1669 → "DEBUG_MODE"
-║ ⚠️ UPOZORENJE: Debug Mode ratio je "50.0" % → server je preopterećen!
-║    Preporučeni gap između zahteva: >= 8000ms
-╚══════════════════════════════════════════════════════════╝
-
-���������������������������������������������������
-[RESP] STREAM | ?? DEBUG_MODE | 12:06:01.956
-  URL    : http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/4
-  Base   : http://v2pro.online:8080
-  Status : 200 | elapsed=-1ms | bytes=1669
-  Server : nginx
-  CT     : text/html; charset=UTF-8
-  Body   : <html><head><title>XUI.one - Debug Mode</title><link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet"><style>*{-webkit-box-sizing:border-box;box-sizing:border-box}body{padding:0;margin:0}#notfound{position:relative;height:100vh}#notfound .notfound{position:absol
-  ★ VERDICT: Server PREOPTEREĆEN (XUI.one Debug Mode)
-             NIJE geo-blok. Lista bi radila kad server odmori.
-             → Retry je opravdan.
-���������������������������������������������������
-
-[XUI DEBUG MODE] DM detektovan → jedan brzi retry (0ms): "http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/4"
-[DM QUICK RETRY] status= 200 bytes= 1669
-[DM QUICK RETRY] i dalje DM → next kanal
-[STREAM THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms episodes= 1 inDM= true
-[CP] DM aktivan → skip stream fallback, direktno u DM retry
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 3333 ms
-[STREAM TEST ATTEMPT] url= "http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/259" | xuiEpisode= 1 | inDebugMode= true | throttleDelay= 150 | isAggressive= false
-"[XUI_ANAL] #5 T+4654ms gap=3229ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/259"
-[STREAM RESULT] "http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/259" status= 200 bytes= 1669 CT= "text/html; charset=UTF-8" body[:50]= "<html><head><title>XUI.one - Debug Mode</title><li"
-
- ╔══════════════════════════════════════════════════════════╗
-║ [SERVER ANALYZER] "http://v2pro.online:8080"
-╠══════════════════════════════════════════════════════════╣
-║ Ukupno zahteva  : 5   (API: 2  M3U: 1  STREAM: 2 )
-║ Odgovori        : JSON_OK= 1  DEBUG_MODE= 3  STREAM_OK= 1  TIMEOUT= 0  HTTP_ERR= 0
-║ Debug Mode %    : "60.0" %
-║ Rate (zadnjih60s): 5 zahteva/min
-║ Prosečan gap    : "1115" ms
-║ Ovaj zahtev     : "STREAM" status= 200 elapsed= -1 ms bytes= 1669 class= "DEBUG_MODE"
-║ Zadnja 3 zahteva:
-║   [ "M3U" ] status= 200 elapsed= 1035 ms bytes= 66609 → "STREAM_OK"
-║   [ "STREAM" ] status= 200 elapsed= -1 ms bytes= 1669 → "DEBUG_MODE"
-║   [ "STREAM" ] status= 200 elapsed= -1 ms bytes= 1669 → "DEBUG_MODE"
-║ ⚠️ UPOZORENJE: Debug Mode ratio je "60.0" % → server je preopterećen!
-║    Preporučeni gap između zahteva: >= 8000ms
-╚══════════════════════════════════════════════════════════╝
-
-���������������������������������������������������
-[RESP] STREAM | ?? DEBUG_MODE | 12:06:04.703
-  URL    : http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/259
-  Base   : http://v2pro.online:8080
-  Status : 200 | elapsed=-1ms | bytes=1669
-  Server : nginx
-  CT     : text/html; charset=UTF-8
-  Body   : <html><head><title>XUI.one - Debug Mode</title><link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet"><style>*{-webkit-box-sizing:border-box;box-sizing:border-box}body{padding:0;margin:0}#notfound{position:relative;height:100vh}#notfound .notfound{position:absol
-  ★ VERDICT: Server PREOPTEREĆEN (XUI.one Debug Mode)
-             NIJE geo-blok. Lista bi radila kad server odmori.
-             → Retry je opravdan.
-���������������������������������������������������
-
-[XUI DEBUG MODE] DM detektovan → jedan brzi retry (0ms): "http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/259"
-[DM QUICK RETRY] status= 200 bytes= 1669
-[DM QUICK RETRY] i dalje DM → next kanal
-[STREAM THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms episodes= 1 inDM= true
-[STREAM TEST ATTEMPT] url= "http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/813" | xuiEpisode= 1 | inDebugMode= true | throttleDelay= 150 | isAggressive= false
-"[XUI_ANAL] #6 T+7721ms gap=3067ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/813"
-[STREAM RESULT] "http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/813" status= 200 bytes= 1669 CT= "text/html; charset=UTF-8" body[:50]= "<html><head><title>XUI.one - Debug Mode</title><li"
-
- ╔══════════════════════════════════════════════════════════╗
-║ [SERVER ANALYZER] "http://v2pro.online:8080"
-╠══════════════════════════════════════════════════════════╣
-║ Ukupno zahteva  : 6   (API: 2  M3U: 1  STREAM: 3 )
-║ Odgovori        : JSON_OK= 1  DEBUG_MODE= 4  STREAM_OK= 1  TIMEOUT= 0  HTTP_ERR= 0
-║ Debug Mode %    : "66.7" %
-║ Rate (zadnjih60s): 6 zahteva/min
-║ Prosečan gap    : "1505" ms
-║ Ovaj zahtev     : "STREAM" status= 200 elapsed= -1 ms bytes= 1669 class= "DEBUG_MODE"
-║ Zadnja 3 zahteva:
-║   [ "STREAM" ] status= 200 elapsed= -1 ms bytes= 1669 → "DEBUG_MODE"
-║   [ "STREAM" ] status= 200 elapsed= -1 ms bytes= 1669 → "DEBUG_MODE"
-║   [ "STREAM" ] status= 200 elapsed= -1 ms bytes= 1669 → "DEBUG_MODE"
-║ ⚠️ UPOZORENJE: Debug Mode ratio je "66.7" % → server je preopterećen!
-║    Preporučeni gap između zahteva: >= 8000ms
-╚══════════════════════════════════════════════════════════╝
-
-���������������������������������������������������
-[RESP] STREAM | ?? DEBUG_MODE | 12:06:07.769
-  URL    : http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/813
-  Base   : http://v2pro.online:8080
-  Status : 200 | elapsed=-1ms | bytes=1669
-  Server : nginx
-  CT     : text/html; charset=UTF-8
-  Body   : <html><head><title>XUI.one - Debug Mode</title><link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet"><style>*{-webkit-box-sizing:border-box;box-sizing:border-box}body{padding:0;margin:0}#notfound{position:relative;height:100vh}#notfound .notfound{position:absol
-  ★ VERDICT: Server PREOPTEREĆEN (XUI.one Debug Mode)
-             NIJE geo-blok. Lista bi radila kad server odmori.
-             → Retry je opravdan.
-���������������������������������������������������
-
-[XUI DEBUG MODE] DM detektovan → jedan brzi retry (0ms): "http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/813"
-[DM QUICK RETRY] status= 200 bytes= 1669
-[DM QUICK RETRY] i dalje DM → next kanal
-[STREAM THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms episodes= 1 inDM= true
-[STREAM TEST ATTEMPT] url= "http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/75507" | xuiEpisode= 1 | inDebugMode= true | throttleDelay= 150 | isAggressive= false
-"[XUI_ANAL] #7 T+10693ms gap=2972ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/75507"
-[STREAM RESULT] "http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/75507" status= 200 bytes= 1669 CT= "text/html; charset=UTF-8" body[:50]= "<html><head><title>XUI.one - Debug Mode</title><li"
-
- ╔══════════════════════════════════════════════════════════╗
-║ [SERVER ANALYZER] "http://v2pro.online:8080"
-╠══════════════════════════════════════════════════════════╣
-║ Ukupno zahteva  : 7   (API: 2  M3U: 1  STREAM: 4 )
-║ Odgovori        : JSON_OK= 1  DEBUG_MODE= 5  STREAM_OK= 1  TIMEOUT= 0  HTTP_ERR= 0
-║ Debug Mode %    : "71.4" %
-║ Rate (zadnjih60s): 7 zahteva/min
-║ Prosečan gap    : "1750" ms
-║ Ovaj zahtev     : "STREAM" status= 200 elapsed= -1 ms bytes= 1669 class= "DEBUG_MODE"
-║ Zadnja 3 zahteva:
-║   [ "STREAM" ] status= 200 elapsed= -1 ms bytes= 1669 → "DEBUG_MODE"
-║   [ "STREAM" ] status= 200 elapsed= -1 ms bytes= 1669 → "DEBUG_MODE"
-║   [ "STREAM" ] status= 200 elapsed= -1 ms bytes= 1669 → "DEBUG_MODE"
-║ ⚠️ UPOZORENJE: Debug Mode ratio je "71.4" % → server je preopterećen!
-║    Preporučeni gap između zahteva: >= 8000ms
-╚══════════════════════════════════════════════════════════╝
-
-���������������������������������������������������
-[RESP] STREAM | ?? DEBUG_MODE | 12:06:10.740
-  URL    : http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/75507
-  Base   : http://v2pro.online:8080
-  Status : 200 | elapsed=-1ms | bytes=1669
-  Server : nginx
-  CT     : text/html; charset=UTF-8
-  Body   : <html><head><title>XUI.one - Debug Mode</title><link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet"><style>*{-webkit-box-sizing:border-box;box-sizing:border-box}body{padding:0;margin:0}#notfound{position:relative;height:100vh}#notfound .notfound{position:absol
-  ★ VERDICT: Server PREOPTEREĆEN (XUI.one Debug Mode)
-             NIJE geo-blok. Lista bi radila kad server odmori.
-             → Retry je opravdan.
-���������������������������������������������������
-
-[XUI DEBUG MODE] DM detektovan → jedan brzi retry (0ms): "http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/75507"
-[DM QUICK RETRY] status= 200 bytes= 1669
-[DM QUICK RETRY] i dalje DM → next kanal
-[XUI DEBUG STREAMS] Svi kanali DM → dodajem u DM retry listu za kasniji pokušaj
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 11030 ms
+[M3U DOWNLOAD] "http://v2pro.online:8080/get.php?username=g_skype2&password=o7wyMRHoas5tyg&type=" status: 200 size: 66609
+[M3U PARSE] smartSelect chose 4 channels
+[STREAM TEST] Pauza 3s pre kanala 1 / 3
+"[XUI_ANAL] #4 T+4093ms gap=3719ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/4"
+[STREAM TEST] "http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/4" status= 200 bytes= 1669
+"[XUI_ANAL_RESP] #4 status=200 debug=no bytes=1669"
+[STREAM] Nije pravi media → next
+[STREAM TEST] Pauza 3s pre kanala 2 / 3
+"[XUI_ANAL] #5 T+7567ms gap=3474ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/259"
+[STREAM TEST] "http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/259" status= 200 bytes= 1669
+"[XUI_ANAL_RESP] #5 status=200 debug=no bytes=1669"
+[STREAM] Nije pravi media → next
+[STREAM TEST] Pauza 3s pre kanala 3 / 3
+"[XUI_ANAL] #6 T+11044ms gap=3477ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/813"
+[STREAM TEST] "http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/813" status= 200 bytes= 1669
+"[XUI_ANAL_RESP] #6 status=200 debug=no bytes=1669"
+[STREAM] Nije pravi media → next
+[CP] Stream testovi neuspešni → return false
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 11235 ms
 [PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Goran_Simonovic&pa"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:06:10.912"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:27:22.080"
 [CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Goran_Simonovic&pa"
 [PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Goran_Simonovic&password=ApFanr1GHT&ty"
 [PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Goran_Simonovic&password=ApFanr"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Goran_Simonovic" pass: "ApFa"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms episodes= 1
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 1 minDelay= 3000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 2639 ms
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Gora" pass: "ApFa"
+"[XUI_ANAL] #7 T+11234ms gap=190ms type=api slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=Goran_Simon"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=Goran_Simonovic&password=ApFanr" status: 200 body[:150]: "{\"user_info\":{\"username\":\"Goran_Simonovic\",\"password\":\"ApFanr1GHT\",\"message\":\"Welcome to XUI.one\",\"auth\":1,\"status\":\"Active\",\"exp_date\":\"1792685220\",\""
+
+���������������������������������������������������
+[RESP] API | ? JSON_OK | 22:27:22.265
+  URL    : http://v2pro.online:8080/player_api.php?username=Goran_Simonovic&password=ApFanr
+  Base   : http://v2pro.online:8080
+  Status : 200 | elapsed=185ms | bytes=524
+  Server : nginx
+  CT     : application/json
+  Body   : {"user_info":{"username":"Goran_Simonovic","password":"ApFanr1GHT","message":"Welcome to XUI.one","auth":1,"status":"Active","exp_date":"1792685220","is_trial":"0","active_cons":"1","created_at":"1581706562","max_connections":"1","allowed_output_formats":["m3u8","ts","rtmp"]},"server_info":{"xui":tr
+  ★ VERDICT: ✅ API OK — pretplata aktivna
+���������������������������������������������������
+
+[API] ✅ OK — exp= "22.10.2026" max_conn= 1
+[THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms
+"[XUI_ANAL] #8 T+11420ms gap=186ms type=m3u slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/get.php?username=Goran_Simonovic&pa"
+"[XUI_ANAL_RESP] #8 status=200 debug=no bytes=501486"
+[M3U DOWNLOAD] "http://v2pro.online:8080/get.php?username=Goran_Simonovic&password=ApFanr1GHT&ty" status: 200 size: 501486
+[M3U PARSE] smartSelect chose 2 channels
+[STREAM TEST] Pauza 3s pre kanala 1 / 2
+"[XUI_ANAL] #9 T+15679ms gap=4259ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/live/A47BD2855F9F7C3D70DB1348D7C1E8"
+[STREAM TEST] "http://v2pro.online:8080/live/A47BD2855F9F7C3D70DB1348D7C1E8FD/436505" status= 200 bytes= 1688
+"[XUI_ANAL_RESP] #9 status=200 debug=no bytes=1688"
+[STREAM] Nije pravi media → next
+[STREAM TEST] Pauza 3s pre kanala 2 / 2
+"[XUI_ANAL] #10 T+19170ms gap=3491ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/movie/A47BD2855F9F7C3D70DB1348D7C1E"
+[STREAM TEST] "http://v2pro.online:8080/movie/A47BD2855F9F7C3D70DB1348D7C1E8FD/95937.mkv" status= 200 bytes= 1688
+"[XUI_ANAL_RESP] #10 status=200 debug=no bytes=1688"
+[STREAM] Nije pravi media → next
+[CP] Stream testovi neuspešni → return false
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 8121 ms
 [PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Ivan_Markic&passwo"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:06:13.551"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:27:30.201"
 [CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Ivan_Markic&passwo"
 [PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Ivan_Markic&password=Markic_Ivan&type="
 [PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Ivan_Markic&password=Markic_Iva"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Ivan_Markic" pass: "Mark"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms episodes= 1
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 1 minDelay= 3000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 3069 ms
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Ivan" pass: "Mark"
+"[XUI_ANAL] #11 T+19355ms gap=185ms type=api slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=Ivan_Markic"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=Ivan_Markic&password=Markic_Iva" status: 200 body[:150]: "{\"user_info\":{\"username\":\"Ivan_Markic\",\"password\":\"Markic_Ivan\",\"message\":\"Welcome to XUI.one\",\"auth\":1,\"status\":\"Active\",\"exp_date\":\"1783755060\",\"is_"
+
+���������������������������������������������������
+[RESP] API | ? JSON_OK | 22:27:30.393
+  URL    : http://v2pro.online:8080/player_api.php?username=Ivan_Markic&password=Markic_Iva
+  Base   : http://v2pro.online:8080
+  Status : 200 | elapsed=191ms | bytes=521
+  Server : nginx
+  CT     : application/json
+  Body   : {"user_info":{"username":"Ivan_Markic","password":"Markic_Ivan","message":"Welcome to XUI.one","auth":1,"status":"Active","exp_date":"1783755060","is_trial":"0","active_cons":"1","created_at":"1546458407","max_connections":"1","allowed_output_formats":["m3u8","ts","rtmp"]},"server_info":{"xui":true,
+  ★ VERDICT: ✅ API OK — pretplata aktivna
+���������������������������������������������������
+
+[API] ✅ OK — exp= "11.07.2026" max_conn= 1
+[THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms
+"[XUI_ANAL] #12 T+19547ms gap=192ms type=m3u slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/get.php?username=Ivan_Markic&passwo"
+"[XUI_ANAL_RESP] #12 status=200 debug=no bytes=501619"
+[M3U DOWNLOAD] "http://v2pro.online:8080/get.php?username=Ivan_Markic&password=Markic_Ivan&type=" status: 200 size: 501619
+[M3U PARSE] smartSelect chose 2 channels
+[STREAM TEST] Pauza 3s pre kanala 1 / 2
+"[XUI_ANAL] #13 T+23684ms gap=4137ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/movie/Ivan_Markic/Markic_Ivan/95937"
+[STREAM TEST] "http://v2pro.online:8080/movie/Ivan_Markic/Markic_Ivan/95937.mkv" status= 200 bytes= 1677
+"[XUI_ANAL_RESP] #13 status=200 debug=no bytes=1677"
+[STREAM] Nije pravi media → next
+[STREAM TEST] Pauza 3s pre kanala 2 / 2
+"[XUI_ANAL] #14 T+27143ms gap=3459ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/Ivan_Markic/Markic_Ivan/436505"
+[STREAM TEST] "http://v2pro.online:8080/Ivan_Markic/Markic_Ivan/436505" status= 200 bytes= 1677
+"[XUI_ANAL_RESP] #14 status=200 debug=no bytes=1677"
+[STREAM] Nije pravi media → next
+[CP] Stream testovi neuspešni → return false
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 7981 ms
 [PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Jure_Marusic&passw"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:06:16.620"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:27:38.182"
 [CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Jure_Marusic&passw"
 [PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Jure_Marusic&password=Marusic_Jure&typ"
 [PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Jure_Marusic&password=Marusic_J"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Jure_Marusic" pass: "Maru"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms episodes= 1
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 1 minDelay= 3000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 2980 ms
-[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Miki_Bodilovic&pas"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:06:19.600"
-[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Miki_Bodilovic&pas"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Miki_Bodilovic&password=RYrBak8gZj7r&t"
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Miki_Bodilovic&password=RYrBak8"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Miki_Bodilovic" pass: "RYrB"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms episodes= 1
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 1 minDelay= 3000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 3073 ms
-[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Pero_Oroz&password"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:06:22.673"
-[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Pero_Oroz&password"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Pero_Oroz&password=Oroz_Pero&type=m3u"
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Pero_Oroz&password=Oroz_Pero"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Pero_Oroz" pass: "Oroz"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms episodes= 1
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 1 minDelay= 3000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 2968 ms
-[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Stana_Cvetkovic&pa"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:06:25.641"
-[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Stana_Cvetkovic&pa"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Stana_Cvetkovic&password=7HNsS5xKqR&ty"
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Stana_Cvetkovic&password=7HNsS5"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Stana_Cvetkovic" pass: "7HNs"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms episodes= 1
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 1 minDelay= 3000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 2962 ms
-[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=vesna_kulidzan&pas"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:06:28.603"
-[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=vesna_kulidzan&pas"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=vesna_kulidzan&password=obZEtdICSe&typ"
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=vesna_kulidzan&password=obZEtdI"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "vesna_kulidzan" pass: "obZE"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms episodes= 1
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 1 minDelay= 3000 inDM= false
-"[XUI_ANAL] #8 T+31835ms gap=21142ms type=api slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=vesna_kulid"
-╔══════════════════════════════════════════════════════════════╗
-║  🔴 XUI DEBUG MODE TRIGGER AUTOPSY                          ║
-╠══════════════════════════════════════════════════════════════╣
-"║  Server     : http://v2pro.online:8080"
-"║  Trigger req: #8 od 8 ukupno"
-"║  Vreme      : T+31835ms od starta skeniranja"
-"║  Tip req    : api"
-"║  Gap        : 21142ms od prethodnog zahteva"
-"║  ActiveSlots: 1 (max bio: 0)"
-"║  Episode#   : 1"
-╠══════════════════════════════════════════════════════════════╣
-║  KOMPLETAN REQUEST TIMELINE:
-"║     [  1] T+   175ms gap=   -1ms type=   api status=200 debug= no bytes=  507 slots=2"
-"║     [  2] T+   366ms gap=  191ms type=   m3u status=  0 debug= no bytes=    0 slots=2"
-"║     [  3] T+   420ms gap=   54ms type=   api status=200 debug= no bytes=66609 slots=2"
-"║     [  4] T+  1425ms gap= 1005ms type=stream status=  0 debug= no bytes=    0 slots=2"
-"║     [  5] T+  4654ms gap= 3229ms type=stream status=  0 debug= no bytes=    0 slots=1"
-"║     [  6] T+  7721ms gap= 3067ms type=stream status=  0 debug= no bytes=    0 slots=1"
-"║     [  7] T+ 10693ms gap= 2972ms type=stream status=  0 debug= no bytes=    0 slots=1"
-"║  👉 [  8] T+ 31835ms gap=21142ms type=   api status=200 debug=YES bytes= 1679 slots=1"
-╠══════════════════════════════════════════════════════════════╣
-║  GAP STATISTIKE:
-"║  Min gap: 54ms | Max gap: 21142ms | Avg gap: 4522ms"
-"║  Requests/min (est.): 13"
-╠══════════════════════════════════════════════════════════════╣
-║  ANALIZA:
-"║  🔧 PREPORUČENI MIN GAP: 162ms"
-╠══════════════════════════════════════════════════════════════╣
-║  SEKVENCA ZAHTEVA PRE TRIGERISANJA:
-"║   [3]    api → status=200 debug=no gap=54ms"
-"║   [4] stream → status=0 debug=no gap=1005ms"
-"║   [5] stream → status=0 debug=no gap=3229ms"
-"║   [6] stream → status=0 debug=no gap=3067ms"
-"║   [7] stream → status=0 debug=no gap=2972ms"
-"║   [8]    api → status=200 debug=YES gap=21142ms"
-╚══════════════════════════════════════════════════════════════╝
-"[XUI_ANAL_RESP] #8 status=200 debug=YES bytes=1679"
-[PLAYABLE API] "http://v2pro.online:8080/player_api.php?username=vesna_kulidzan&password=obZEtdI" status: 200 body[:150]: "<html><head><title>XUI.one - Debug Mode</title><link href=\"https://fonts.googleapis.com/css?family=Montserrat:200,400,700\" rel=\"stylesheet\"><style>*{-"
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Jure" pass: "Maru"
+"[XUI_ANAL] #15 T+27336ms gap=193ms type=api slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=Jure_Marusi"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=Jure_Marusic&password=Marusic_J" status: 200 body[:150]: "{\"user_info\":{\"username\":\"Jure_Marusic\",\"password\":\"Marusic_Jure\",\"message\":\"Welcome to XUI.one\",\"auth\":1,\"status\":\"Active\",\"exp_date\":\"1807982340\",\"i"
 
  ╔══════════════════════════════════════════════════════════╗
 ║ [SERVER ANALYZER] "http://v2pro.online:8080"
 ╠══════════════════════════════════════════════════════════╣
-║ Ukupno zahteva  : 8   (API: 3  M3U: 1  STREAM: 4 )
-║ Odgovori        : JSON_OK= 1  DEBUG_MODE= 6  STREAM_OK= 1  TIMEOUT= 0  HTTP_ERR= 0
-║ Debug Mode %    : "75.0" %
-║ Rate (zadnjih60s): 8 zahteva/min
-║ Prosečan gap    : "4520" ms
-║ Ovaj zahtev     : "API" status= 200 elapsed= 173 ms bytes= 1679 class= "DEBUG_MODE"
+║ Ukupno zahteva  : 5   (API: 5  M3U: 0  STREAM: 0 )
+║ Odgovori        : JSON_OK= 4  DEBUG_MODE= 1  STREAM_OK= 0  TIMEOUT= 0  HTTP_ERR= 0
+║ Debug Mode %    : "20.0" %
+║ Rate (zadnjih60s): 5 zahteva/min
+║ Prosečan gap    : "6802" ms
+║ Ovaj zahtev     : "API" status= 200 elapsed= 196 ms bytes= 523 class= "JSON_OK"
 ║ Zadnja 3 zahteva:
-║   [ "STREAM" ] status= 200 elapsed= -1 ms bytes= 1669 → "DEBUG_MODE"
-║   [ "STREAM" ] status= 200 elapsed= -1 ms bytes= 1669 → "DEBUG_MODE"
-║   [ "API" ] status= 200 elapsed= 173 ms bytes= 1679 → "DEBUG_MODE"
-║ ⚠️ UPOZORENJE: Debug Mode ratio je "75.0" % → server je preopterećen!
-║    Preporučeni gap između zahteva: >= 8000ms
+║   [ "API" ] status= 200 elapsed= 185 ms bytes= 524 → "JSON_OK"
+║   [ "API" ] status= 200 elapsed= 191 ms bytes= 521 → "JSON_OK"
+║   [ "API" ] status= 200 elapsed= 196 ms bytes= 523 → "JSON_OK"
 ╚══════════════════════════════════════════════════════════╝
 
 ���������������������������������������������������
-[RESP] API | ?? DEBUG_MODE | 12:06:31.887
+[RESP] API | ? JSON_OK | 22:27:38.379
+  URL    : http://v2pro.online:8080/player_api.php?username=Jure_Marusic&password=Marusic_J
+  Base   : http://v2pro.online:8080
+  Status : 200 | elapsed=196ms | bytes=523
+  Server : nginx
+  CT     : application/json
+  Body   : {"user_info":{"username":"Jure_Marusic","password":"Marusic_Jure","message":"Welcome to XUI.one","auth":1,"status":"Active","exp_date":"1807982340","is_trial":"0","active_cons":"0","created_at":"1650215992","max_connections":"1","allowed_output_formats":["m3u8","ts","rtmp"]},"server_info":{"xui":tru
+  ★ VERDICT: ✅ API OK — pretplata aktivna
+���������������������������������������������������
+
+[API] ✅ OK — exp= "17.04.2027" max_conn= 1
+[THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms
+"[XUI_ANAL] #16 T+27532ms gap=196ms type=m3u slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/get.php?username=Jure_Marusic&passw"
+"[XUI_ANAL_RESP] #16 status=200 debug=no bytes=502866"
+[M3U DOWNLOAD] "http://v2pro.online:8080/get.php?username=Jure_Marusic&password=Marusic_Jure&typ" status: 200 size: 502866
+[M3U PARSE] smartSelect chose 2 channels
+[STREAM TEST] Pauza 3s pre kanala 1 / 2
+"[XUI_ANAL] #17 T+31636ms gap=4104ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/movie/Jure_Marusic/Marusic_Jure/959"
+[STREAM TEST] "http://v2pro.online:8080/movie/Jure_Marusic/Marusic_Jure/95937.mkv" status= 200 bytes= 1677
+"[XUI_ANAL_RESP] #17 status=200 debug=no bytes=1677"
+[STREAM] Nije pravi media → next
+[STREAM TEST] Pauza 3s pre kanala 2 / 2
+"[XUI_ANAL] #18 T+35094ms gap=3458ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/Jure_Marusic/Marusic_Jure/436505"
+[STREAM TEST] "http://v2pro.online:8080/Jure_Marusic/Marusic_Jure/436505" status= 200 bytes= 1677
+"[XUI_ANAL_RESP] #18 status=200 debug=no bytes=1677"
+[STREAM] Nije pravi media → next
+[CP] Stream testovi neuspešni → return false
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 7938 ms
+[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Miki_Bodilovic&pas"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:27:46.120"
+[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Miki_Bodilovic&pas"
+[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Miki_Bodilovic&password=RYrBak8gZj7r&t"
+[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Miki_Bodilovic&password=RYrBak8"
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Miki" pass: "RYrB"
+"[XUI_ANAL] #19 T+35274ms gap=180ms type=api slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=Miki_Bodilo"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=Miki_Bodilovic&password=RYrBak8" status: 200 body[:150]: "{\"user_info\":{\"username\":\"Miki_Bodilovic\",\"password\":\"RYrBak8gZj7r\",\"message\":\"Welcome to XUI.one\",\"auth\":1,\"status\":\"Active\",\"exp_date\":\"1780061040\","
+
+���������������������������������������������������
+[RESP] API | ? JSON_OK | 22:27:46.307
+  URL    : http://v2pro.online:8080/player_api.php?username=Miki_Bodilovic&password=RYrBak8
+  Base   : http://v2pro.online:8080
+  Status : 200 | elapsed=187ms | bytes=525
+  Server : nginx
+  CT     : application/json
+  Body   : {"user_info":{"username":"Miki_Bodilovic","password":"RYrBak8gZj7r","message":"Welcome to XUI.one","auth":1,"status":"Active","exp_date":"1780061040","is_trial":"0","active_cons":"1","created_at":"1653240817","max_connections":"1","allowed_output_formats":["m3u8","ts","rtmp"]},"server_info":{"xui":t
+  ★ VERDICT: ✅ API OK — pretplata aktivna
+���������������������������������������������������
+
+[API] ✅ OK — exp= "29.05.2026" max_conn= 1
+[THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms
+"[XUI_ANAL] #20 T+35461ms gap=187ms type=m3u slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/get.php?username=Miki_Bodilovic&pas"
+"[XUI_ANAL_RESP] #20 status=200 debug=no bytes=501504"
+[M3U DOWNLOAD] "http://v2pro.online:8080/get.php?username=Miki_Bodilovic&password=RYrBak8gZj7r&t" status: 200 size: 501504
+[M3U PARSE] smartSelect chose 2 channels
+[STREAM TEST] Pauza 3s pre kanala 1 / 2
+"[XUI_ANAL] #21 T+39552ms gap=4091ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/movie/Miki_Bodilovic/RYrBak8gZj7r/9"
+[STREAM TEST] "http://v2pro.online:8080/movie/Miki_Bodilovic/RYrBak8gZj7r/95937.mkv" status= 200 bytes= 1688
+"[XUI_ANAL_RESP] #21 status=200 debug=no bytes=1688"
+[STREAM] Nije pravi media → next
+[STREAM TEST] Pauza 3s pre kanala 2 / 2
+"[XUI_ANAL] #22 T+43024ms gap=3472ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/Miki_Bodilovic/RYrBak8gZj7r/436505"
+[STREAM TEST] "http://v2pro.online:8080/Miki_Bodilovic/RYrBak8gZj7r/436505" status= 200 bytes= 1688
+"[XUI_ANAL_RESP] #22 status=200 debug=no bytes=1688"
+[STREAM] Nije pravi media → next
+[CP] Stream testovi neuspešni → return false
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 7946 ms
+[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Pero_Oroz&password"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:27:54.066"
+[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Pero_Oroz&password"
+[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Pero_Oroz&password=Oroz_Pero&type=m3u"
+[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Pero_Oroz&password=Oroz_Pero"
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Pero" pass: "Oroz"
+"[XUI_ANAL] #23 T+43220ms gap=196ms type=api slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=Pero_Oroz&p"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=Pero_Oroz&password=Oroz_Pero" status: 200 body[:150]: "{\"user_info\":{\"username\":\"Pero_Oroz\",\"password\":\"Oroz_Pero\",\"message\":\"Welcome to XUI.one\",\"auth\":1,\"status\":\"Active\",\"exp_date\":\"1804687894\",\"is_tria"
+
+���������������������������������������������������
+[RESP] API | ? JSON_OK | 22:27:54.256
+  URL    : http://v2pro.online:8080/player_api.php?username=Pero_Oroz&password=Oroz_Pero
+  Base   : http://v2pro.online:8080
+  Status : 200 | elapsed=189ms | bytes=517
+  Server : nginx
+  CT     : application/json
+  Body   : {"user_info":{"username":"Pero_Oroz","password":"Oroz_Pero","message":"Welcome to XUI.one","auth":1,"status":"Active","exp_date":"1804687894","is_trial":"0","active_cons":"1","created_at":"1591720212","max_connections":"1","allowed_output_formats":["m3u8","ts","rtmp"]},"server_info":{"xui":true,"ver
+  ★ VERDICT: ✅ API OK — pretplata aktivna
+���������������������������������������������������
+
+[API] ✅ OK — exp= "10.03.2027" max_conn= 1
+[THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms
+"[XUI_ANAL] #24 T+43409ms gap=189ms type=m3u slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/get.php?username=Pero_Oroz&password"
+"[XUI_ANAL_RESP] #24 status=200 debug=no bytes=509845"
+[M3U DOWNLOAD] "http://v2pro.online:8080/get.php?username=Pero_Oroz&password=Oroz_Pero&type=m3u_" status: 200 size: 509845
+[M3U PARSE] smartSelect chose 2 channels
+[STREAM TEST] Pauza 3s pre kanala 1 / 2
+"[XUI_ANAL] #25 T+47727ms gap=4318ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/movie/Pero_Oroz/Oroz_Pero/95937.mkv"
+[STREAM TEST] "http://v2pro.online:8080/movie/Pero_Oroz/Oroz_Pero/95937.mkv" status= 200 bytes= 1677
+"[XUI_ANAL_RESP] #25 status=200 debug=no bytes=1677"
+[STREAM] Nije pravi media → next
+[STREAM TEST] Pauza 3s pre kanala 2 / 2
+"[XUI_ANAL] #26 T+51195ms gap=3468ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/Pero_Oroz/Oroz_Pero/436505"
+[STREAM TEST] "http://v2pro.online:8080/Pero_Oroz/Oroz_Pero/436505" status= 200 bytes= 1677
+"[XUI_ANAL_RESP] #26 status=200 debug=no bytes=1677"
+[STREAM] Nije pravi media → next
+[CP] Stream testovi neuspešni → return false
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 8173 ms
+[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Stana_Cvetkovic&pa"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:28:02.239"
+[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Stana_Cvetkovic&pa"
+[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Stana_Cvetkovic&password=7HNsS5xKqR&ty"
+[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Stana_Cvetkovic&password=7HNsS5"
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Stan" pass: "7HNs"
+"[XUI_ANAL] #27 T+51392ms gap=197ms type=api slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=Stana_Cvetk"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=Stana_Cvetkovic&password=7HNsS5" status: 200 body[:150]: "{\"user_info\":{\"username\":\"Stana_Cvetkovic\",\"password\":\"7HNsS5xKqR\",\"message\":\"Welcome to XUI.one\",\"auth\":1,\"status\":\"Active\",\"exp_date\":\"1795865040\",\""
+
+���������������������������������������������������
+[RESP] API | ? JSON_OK | 22:28:02.430
+  URL    : http://v2pro.online:8080/player_api.php?username=Stana_Cvetkovic&password=7HNsS5
+  Base   : http://v2pro.online:8080
+  Status : 200 | elapsed=191ms | bytes=524
+  Server : nginx
+  CT     : application/json
+  Body   : {"user_info":{"username":"Stana_Cvetkovic","password":"7HNsS5xKqR","message":"Welcome to XUI.one","auth":1,"status":"Active","exp_date":"1795865040","is_trial":"0","active_cons":"0","created_at":"1722517108","max_connections":"2","allowed_output_formats":["m3u8","ts","rtmp"]},"server_info":{"xui":tr
+  ★ VERDICT: ✅ API OK — pretplata aktivna
+���������������������������������������������������
+
+[API] ✅ OK — exp= "28.11.2026" max_conn= 2
+[THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms
+"[XUI_ANAL] #28 T+51584ms gap=192ms type=m3u slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/get.php?username=Stana_Cvetkovic&pa"
+"[XUI_ANAL_RESP] #28 status=200 debug=no bytes=500143"
+[M3U DOWNLOAD] "http://v2pro.online:8080/get.php?username=Stana_Cvetkovic&password=7HNsS5xKqR&ty" status: 200 size: 500143
+[M3U PARSE] smartSelect chose 2 channels
+[STREAM TEST] Pauza 3s pre kanala 1 / 2
+"[XUI_ANAL] #29 T+55827ms gap=4243ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/movie/Stana_Cvetkovic/7HNsS5xKqR/95"
+[STREAM TEST] "http://v2pro.online:8080/movie/Stana_Cvetkovic/7HNsS5xKqR/95937.mkv" status= 200 bytes= 1688
+"[XUI_ANAL_RESP] #29 status=200 debug=no bytes=1688"
+[STREAM] Nije pravi media → next
+[STREAM TEST] Pauza 3s pre kanala 2 / 2
+"[XUI_ANAL] #30 T+59370ms gap=3543ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/Stana_Cvetkovic/7HNsS5xKqR/436505"
+[STREAM TEST] "http://v2pro.online:8080/Stana_Cvetkovic/7HNsS5xKqR/436505" status= 200 bytes= 1688
+"[XUI_ANAL_RESP] #30 status=200 debug=no bytes=1688"
+[STREAM] Nije pravi media → next
+[CP] Stream testovi neuspešni → return false
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 8161 ms
+[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=vesna_kulidzan&pas"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:28:10.400"
+[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=vesna_kulidzan&pas"
+[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=vesna_kulidzan&password=obZEtdICSe&typ"
+[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=vesna_kulidzan&password=obZEtdI"
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "vesn" pass: "obZE"
+"[XUI_ANAL] #31 T+59554ms gap=184ms type=api slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=vesna_kulid"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=vesna_kulidzan&password=obZEtdI" status: 200 body[:150]: "<html><head><title>XUI.one - Debug Mode</title><link href=\"https://fonts.googleapis.com/css?family=Montserrat:200,400,700\" rel=\"stylesheet\"><style>*{-"
+
+ ╔══════════════════════════════════════════════════════════╗
+║ [SERVER ANALYZER] "http://v2pro.online:8080"
+╠══════════════════════════════════════════════════════════╣
+║ Ukupno zahteva  : 9   (API: 9  M3U: 0  STREAM: 0 )
+║ Odgovori        : JSON_OK= 7  DEBUG_MODE= 2  STREAM_OK= 0  TIMEOUT= 0  HTTP_ERR= 0
+║ Debug Mode %    : "22.2" %
+║ Rate (zadnjih60s): 9 zahteva/min
+║ Prosečan gap    : "7427" ms
+║ Ovaj zahtev     : "API" status= 200 elapsed= 187 ms bytes= 1679 class= "DEBUG_MODE"
+║ Zadnja 3 zahteva:
+║   [ "API" ] status= 200 elapsed= 189 ms bytes= 517 → "JSON_OK"
+║   [ "API" ] status= 200 elapsed= 191 ms bytes= 524 → "JSON_OK"
+║   [ "API" ] status= 200 elapsed= 187 ms bytes= 1679 → "DEBUG_MODE"
+╚══════════════════════════════════════════════════════════╝
+
+���������������������������������������������������
+[RESP] API | ?? DEBUG_MODE | 22:28:10.588
   URL    : http://v2pro.online:8080/player_api.php?username=vesna_kulidzan&password=obZEtdI
   Base   : http://v2pro.online:8080
-  Status : 200 | elapsed=173ms | bytes=1679
+  Status : 200 | elapsed=187ms | bytes=1679
+  Server : nginx
+  CT     : text/html; charset=UTF-8
+  Body   : <html><head><title>XUI.one - Debug Mode</title><link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet"><style>*{-webkit-box-sizing:border-box;box-sizing:border-box}body{padding:0;margin:0}#notfound{position:relative;height:100vh}#notfound .notfound{position:absol
+  ★ VERDICT: Server PREOPTEREĆEN (XUI.one Debug Mode)
+             NIJE geo-blok. Lista bi radila kad server odmori.
+             → Retry je opravdan.
+���������������������������������������������������
+
+[API] XUI Debug Mode → return 3 (stream fallback)
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 188 ms
+[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=sherin_one&passwor"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:28:10.589"
+[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=sherin_one&passwor"
+[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=sherin_one&password=IoBHtkP7wqsxg&type"
+[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=sherin_one&password=IoBHtkP7wqs"
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "sher" pass: "IoBH"
+"[XUI_ANAL] #32 T+59742ms gap=188ms type=api slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=sherin_one&"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=sherin_one&password=IoBHtkP7wqs" status: 200 body[:150]: "{\"user_info\":{\"username\":\"sherin_one\",\"password\":\"IoBHtkP7wqsxg\",\"message\":\"Welcome to XUI.one\",\"auth\":1,\"status\":\"Active\",\"exp_date\":null,\"is_trial\":"
+
+ ╔══════════════════════════════════════════════════════════╗
+║ [SERVER ANALYZER] "http://v2pro.online:8080"
+╠══════════════════════════════════════════════════════════╣
+║ Ukupno zahteva  : 10   (API: 10  M3U: 0  STREAM: 0 )
+║ Odgovori        : JSON_OK= 8  DEBUG_MODE= 2  STREAM_OK= 0  TIMEOUT= 0  HTTP_ERR= 0
+║ Debug Mode %    : "20.0" %
+║ Rate (zadnjih60s): 10 zahteva/min
+║ Prosečan gap    : "6623" ms
+║ Ovaj zahtev     : "API" status= 200 elapsed= 190 ms bytes= 508 class= "JSON_OK"
+║ Zadnja 3 zahteva:
+║   [ "API" ] status= 200 elapsed= 191 ms bytes= 524 → "JSON_OK"
+║   [ "API" ] status= 200 elapsed= 187 ms bytes= 1679 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 190 ms bytes= 508 → "JSON_OK"
+╚══════════════════════════════════════════════════════════╝
+
+���������������������������������������������������
+[RESP] API | ? JSON_OK | 22:28:10.779
+  URL    : http://v2pro.online:8080/player_api.php?username=sherin_one&password=IoBHtkP7wqs
+  Base   : http://v2pro.online:8080
+  Status : 200 | elapsed=190ms | bytes=508
+  Server : nginx
+  CT     : application/json
+  Body   : {"user_info":{"username":"sherin_one","password":"IoBHtkP7wqsxg","message":"Welcome to XUI.one","auth":1,"status":"Active","exp_date":null,"is_trial":"0","active_cons":"7","created_at":"1492430163","max_connections":"40","allowed_output_formats":["m3u8","ts"]},"server_info":{"xui":true,"version":"1.
+  ★ VERDICT: ✅ API OK — pretplata aktivna
+���������������������������������������������������
+
+[API] ✅ OK — exp= "Unlimited" max_conn= 40
+[THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms
+"[XUI_ANAL] #33 T+59932ms gap=190ms type=m3u slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/get.php?username=sherin_one&passwor"
+"[XUI_ANAL_RESP] #33 status=200 debug=no bytes=68905"
+[M3U DOWNLOAD] "http://v2pro.online:8080/get.php?username=sherin_one&password=IoBHtkP7wqsxg&type" status: 200 size: 68905
+[M3U PARSE] smartSelect chose 4 channels
+[STREAM TEST] Pauza 3s pre kanala 1 / 3
+"[XUI_ANAL] #34 T+63682ms gap=3750ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/sherin_one/IoBHtkP7wqsxg/3564"
+[STREAM TEST] "http://v2pro.online:8080/sherin_one/IoBHtkP7wqsxg/3564" status= 200 bytes= 1669
+"[XUI_ANAL_RESP] #34 status=200 debug=no bytes=1669"
+[STREAM] Nije pravi media → next
+[STREAM TEST] Pauza 3s pre kanala 2 / 3
+"[XUI_ANAL] #35 T+67182ms gap=3500ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/sherin_one/IoBHtkP7wqsxg/1391"
+[STREAM TEST] "http://v2pro.online:8080/sherin_one/IoBHtkP7wqsxg/1391" status= 200 bytes= 1669
+"[XUI_ANAL_RESP] #35 status=200 debug=no bytes=1669"
+[STREAM] Nije pravi media → next
+[STREAM TEST] Pauza 3s pre kanala 3 / 3
+"[XUI_ANAL] #36 T+70661ms gap=3479ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/sherin_one/IoBHtkP7wqsxg/28"
+[STREAM TEST] "http://v2pro.online:8080/sherin_one/IoBHtkP7wqsxg/28" status= 200 bytes= 1669
+"[XUI_ANAL_RESP] #36 status=200 debug=no bytes=1669"
+[STREAM] Nije pravi media → next
+[CP] Stream testovi neuspešni → return false
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 11108 ms
+[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=ZxP2RyV3sK&passwor"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:28:21.698"
+[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=ZxP2RyV3sK&passwor"
+[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=ZxP2RyV3sK&password=3j2tf8bJbL&type=m3"
+[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=ZxP2RyV3sK&password=3j2tf8bJbL"
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "ZxP2" pass: "3j2t"
+"[XUI_ANAL] #37 T+70851ms gap=190ms type=api slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=ZxP2RyV3sK&"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=ZxP2RyV3sK&password=3j2tf8bJbL" status: 200 body[:150]: "{\"user_info\":{\"username\":\"ZxP2RyV3sK\",\"password\":\"3j2tf8bJbL\",\"message\":\"Welcome to XUI.one\",\"auth\":1,\"status\":\"Active\",\"exp_date\":\"1800722461\",\"is_tr"
+
+���������������������������������������������������
+[RESP] API | ? JSON_OK | 22:28:21.885
+  URL    : http://v2pro.online:8080/player_api.php?username=ZxP2RyV3sK&password=3j2tf8bJbL
+  Base   : http://v2pro.online:8080
+  Status : 200 | elapsed=187ms | bytes=519
+  Server : nginx
+  CT     : application/json
+  Body   : {"user_info":{"username":"ZxP2RyV3sK","password":"3j2tf8bJbL","message":"Welcome to XUI.one","auth":1,"status":"Active","exp_date":"1800722461","is_trial":"0","active_cons":"0","created_at":"1642175017","max_connections":"1","allowed_output_formats":["m3u8","ts","rtmp"]},"server_info":{"xui":true,"v
+  ★ VERDICT: ✅ API OK — pretplata aktivna
+���������������������������������������������������
+
+[API] ✅ OK — exp= "23.01.2027" max_conn= 1
+[THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms
+"[XUI_ANAL] #38 T+71039ms gap=188ms type=m3u slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/get.php?username=ZxP2RyV3sK&passwor"
+"[XUI_ANAL_RESP] #38 status=200 debug=no bytes=501620"
+[M3U DOWNLOAD] "http://v2pro.online:8080/get.php?username=ZxP2RyV3sK&password=3j2tf8bJbL&type=m3" status: 200 size: 501620
+[M3U PARSE] smartSelect chose 2 channels
+[STREAM TEST] Pauza 3s pre kanala 1 / 2
+"[XUI_ANAL] #39 T+75177ms gap=4138ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/movie/ZxP2RyV3sK/3j2tf8bJbL/95937.m"
+[STREAM TEST] "http://v2pro.online:8080/movie/ZxP2RyV3sK/3j2tf8bJbL/95937.mkv" status= 200 bytes= 1677
+"[XUI_ANAL_RESP] #39 status=200 debug=no bytes=1677"
+[STREAM] Nije pravi media → next
+[STREAM TEST] Pauza 3s pre kanala 2 / 2
+"[XUI_ANAL] #40 T+78647ms gap=3470ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/ZxP2RyV3sK/3j2tf8bJbL/436505"
+[STREAM TEST] "http://v2pro.online:8080/ZxP2RyV3sK/3j2tf8bJbL/436505" status= 200 bytes= 1677
+"[XUI_ANAL_RESP] #40 status=200 debug=no bytes=1677"
+[STREAM] Nije pravi media → next
+[CP] Stream testovi neuspešni → return false
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 7982 ms
+[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=nikola_sesic&passw"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:28:29.680"
+[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=nikola_sesic&passw"
+[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=nikola_sesic&password=ATtyM72kag&type="
+[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=nikola_sesic&password=ATtyM72ka"
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "niko" pass: "ATty"
+"[XUI_ANAL] #41 T+78833ms gap=186ms type=api slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=nikola_sesi"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=nikola_sesic&password=ATtyM72ka" status: 200 body[:150]: "<html><head><title>XUI.one - Debug Mode</title><link href=\"https://fonts.googleapis.com/css?family=Montserrat:200,400,700\" rel=\"stylesheet\"><style>*{-"
+
+ ╔══════════════════════════════════════════════════════════╗
+║ [SERVER ANALYZER] "http://v2pro.online:8080"
+╠══════════════════════════════════════════════════════════╣
+║ Ukupno zahteva  : 12   (API: 12  M3U: 0  STREAM: 0 )
+║ Odgovori        : JSON_OK= 9  DEBUG_MODE= 3  STREAM_OK= 0  TIMEOUT= 0  HTTP_ERR= 0
+║ Debug Mode %    : "25.0" %
+║ Rate (zadnjih60s): 9 zahteva/min
+║ Prosečan gap    : "7154" ms
+║ Ovaj zahtev     : "API" status= 200 elapsed= 186 ms bytes= 1679 class= "DEBUG_MODE"
+║ Zadnja 3 zahteva:
+║   [ "API" ] status= 200 elapsed= 190 ms bytes= 508 → "JSON_OK"
+║   [ "API" ] status= 200 elapsed= 187 ms bytes= 519 → "JSON_OK"
+║   [ "API" ] status= 200 elapsed= 186 ms bytes= 1679 → "DEBUG_MODE"
+╚══════════════════════════════════════════════════════════╝
+
+���������������������������������������������������
+[RESP] API | ?? DEBUG_MODE | 22:28:29.866
+  URL    : http://v2pro.online:8080/player_api.php?username=nikola_sesic&password=ATtyM72ka
+  Base   : http://v2pro.online:8080
+  Status : 200 | elapsed=186ms | bytes=1679
+  Server : nginx
+  CT     : text/html; charset=UTF-8
+  Body   : <html><head><title>XUI.one - Debug Mode</title><link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet"><style>*{-webkit-box-sizing:border-box;box-sizing:border-box}body{padding:0;margin:0}#notfound{position:relative;height:100vh}#notfound .notfound{position:absol
+  ★ VERDICT: Server PREOPTEREĆEN (XUI.one Debug Mode)
+             NIJE geo-blok. Lista bi radila kad server odmori.
+             → Retry je opravdan.
+���������������������������������������������������
+
+[API] XUI Debug Mode → return 3 (stream fallback)
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 186 ms
+[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Mijo_Ivandic&passw"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:28:29.866"
+[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Mijo_Ivandic&passw"
+[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Mijo_Ivandic&password=Ivandic_Mijo&typ"
+[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Mijo_Ivandic&password=Ivandic_M"
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Mijo" pass: "Ivan"
+"[XUI_ANAL] #42 T+79020ms gap=187ms type=api slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=Mijo_Ivandi"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=Mijo_Ivandic&password=Ivandic_M" status: 200 body[:150]: "{\"user_info\":{\"username\":\"Mijo_Ivandic\",\"password\":\"Ivandic_Mijo\",\"message\":\"Welcome to XUI.one\",\"auth\":1,\"status\":\"Active\",\"exp_date\":\"1804190210\",\"i"
+
+���������������������������������������������������
+[RESP] API | ? JSON_OK | 22:28:30.061
+  URL    : http://v2pro.online:8080/player_api.php?username=Mijo_Ivandic&password=Ivandic_M
+  Base   : http://v2pro.online:8080
+  Status : 200 | elapsed=194ms | bytes=523
+  Server : nginx
+  CT     : application/json
+  Body   : {"user_info":{"username":"Mijo_Ivandic","password":"Ivandic_Mijo","message":"Welcome to XUI.one","auth":1,"status":"Active","exp_date":"1804190210","is_trial":"0","active_cons":"0","created_at":"1612454417","max_connections":"1","allowed_output_formats":["m3u8","ts","rtmp"]},"server_info":{"xui":tru
+  ★ VERDICT: ✅ API OK — pretplata aktivna
+���������������������������������������������������
+
+[API] ✅ OK — exp= "04.03.2027" max_conn= 1
+[THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms
+"[XUI_ANAL] #43 T+79215ms gap=195ms type=m3u slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/get.php?username=Mijo_Ivandic&passw"
+"[XUI_ANAL_RESP] #43 status=200 debug=no bytes=500146"
+[M3U DOWNLOAD] "http://v2pro.online:8080/get.php?username=Mijo_Ivandic&password=Ivandic_Mijo&typ" status: 200 size: 500146
+[M3U PARSE] smartSelect chose 2 channels
+[STREAM TEST] Pauza 3s pre kanala 1 / 2
+"[XUI_ANAL] #44 T+83330ms gap=4115ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/movie/Mijo_Ivandic/Ivandic_Mijo/959"
+[STREAM TEST] "http://v2pro.online:8080/movie/Mijo_Ivandic/Ivandic_Mijo/95937.mkv" status= 200 bytes= 1677
+"[XUI_ANAL_RESP] #44 status=200 debug=no bytes=1677"
+[STREAM] Nije pravi media → next
+[STREAM TEST] Pauza 3s pre kanala 2 / 2
+"[XUI_ANAL] #45 T+86788ms gap=3458ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/Mijo_Ivandic/Ivandic_Mijo/436505"
+[STREAM TEST] "http://v2pro.online:8080/Mijo_Ivandic/Ivandic_Mijo/436505" status= 200 bytes= 1677
+"[XUI_ANAL_RESP] #45 status=200 debug=no bytes=1677"
+[STREAM] Nije pravi media → next
+[CP] Stream testovi neuspešni → return false
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 7948 ms
+[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Josip_Blazevic&pas"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:28:37.814"
+[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Josip_Blazevic&pas"
+[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Josip_Blazevic&password=bDryTHFGRL&typ"
+[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Josip_Blazevic&password=bDryTHF"
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Josi" pass: "bDry"
+"[XUI_ANAL] #46 T+86968ms gap=180ms type=api slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=Josip_Blaze"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=Josip_Blazevic&password=bDryTHF" status: 200 body[:150]: "{\"user_info\":{\"username\":\"Josip_Blazevic\",\"password\":\"bDryTHFGRL\",\"message\":\"Welcome to XUI.one\",\"auth\":1,\"status\":\"Active\",\"exp_date\":\"1801841320\",\"i"
+
+���������������������������������������������������
+[RESP] API | ? JSON_OK | 22:28:37.999
+  URL    : http://v2pro.online:8080/player_api.php?username=Josip_Blazevic&password=bDryTHF
+  Base   : http://v2pro.online:8080
+  Status : 200 | elapsed=184ms | bytes=523
+  Server : nginx
+  CT     : application/json
+  Body   : {"user_info":{"username":"Josip_Blazevic","password":"bDryTHFGRL","message":"Welcome to XUI.one","auth":1,"status":"Active","exp_date":"1801841320","is_trial":"0","active_cons":"0","created_at":"1606323992","max_connections":"1","allowed_output_formats":["m3u8","ts","rtmp"]},"server_info":{"xui":tru
+  ★ VERDICT: ✅ API OK — pretplata aktivna
+���������������������������������������������������
+
+[API] ✅ OK — exp= "05.02.2027" max_conn= 1
+[THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms
+"[XUI_ANAL] #47 T+87153ms gap=185ms type=m3u slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/get.php?username=Josip_Blazevic&pas"
+"[XUI_ANAL_RESP] #47 status=200 debug=no bytes=502864"
+[M3U DOWNLOAD] "http://v2pro.online:8080/get.php?username=Josip_Blazevic&password=bDryTHFGRL&typ" status: 200 size: 502864
+[M3U PARSE] smartSelect chose 2 channels
+[STREAM TEST] Pauza 3s pre kanala 1 / 2
+"[XUI_ANAL] #48 T+91273ms gap=4120ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/movie/Josip_Blazevic/bDryTHFGRL/959"
+[STREAM TEST] "http://v2pro.online:8080/movie/Josip_Blazevic/bDryTHFGRL/95937.mkv" status= 200 bytes= 10618
+"[XUI_ANAL_RESP] #48 status=200 debug=no bytes=10618"
+[STREAM] ✅ PRAVI MEDIA DETEKTOVAN → PLAYABLE!
+"[XUI_ANAL_RESP] #48 status=200 debug=no bytes=10618"
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= true trajanje= 4807 ms
+[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Damir_Damjanovic2&"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:28:42.622"
+[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Damir_Damjanovic2&"
+[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Damir_Damjanovic2&password=Damjanovic_"
+[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Damir_Damjanovic2&password=Damj"
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Dami" pass: "Damj"
+"[XUI_ANAL] #49 T+91775ms gap=502ms type=api slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=Damir_Damja"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=Damir_Damjanovic2&password=Damj" status: 200 body[:150]: "{\"user_info\":{\"username\":\"Damir_Damjanovic2\",\"password\":\"Damjanovic_Damir2\",\"message\":\"Welcome to XUI.one\",\"auth\":1,\"status\":\"Active\",\"exp_date\":\"1791"
+
+ ╔══════════════════════════════════════════════════════════╗
+║ [SERVER ANALYZER] "http://v2pro.online:8080"
+╠══════════════════════════════════════════════════════════╣
+║ Ukupno zahteva  : 15   (API: 15  M3U: 0  STREAM: 0 )
+║ Odgovori        : JSON_OK= 12  DEBUG_MODE= 3  STREAM_OK= 0  TIMEOUT= 0  HTTP_ERR= 0
+║ Debug Mode %    : "20.0" %
+║ Rate (zadnjih60s): 10 zahteva/min
+║ Prosečan gap    : "6546" ms
+║ Ovaj zahtev     : "API" status= 200 elapsed= 187 ms bytes= 533 class= "JSON_OK"
+║ Zadnja 3 zahteva:
+║   [ "API" ] status= 200 elapsed= 194 ms bytes= 523 → "JSON_OK"
+║   [ "API" ] status= 200 elapsed= 184 ms bytes= 523 → "JSON_OK"
+║   [ "API" ] status= 200 elapsed= 187 ms bytes= 533 → "JSON_OK"
+╚══════════════════════════════════════════════════════════╝
+
+���������������������������������������������������
+[RESP] API | ? JSON_OK | 22:28:42.809
+  URL    : http://v2pro.online:8080/player_api.php?username=Damir_Damjanovic2&password=Damj
+  Base   : http://v2pro.online:8080
+  Status : 200 | elapsed=187ms | bytes=533
+  Server : nginx
+  CT     : application/json
+  Body   : {"user_info":{"username":"Damir_Damjanovic2","password":"Damjanovic_Damir2","message":"Welcome to XUI.one","auth":1,"status":"Active","exp_date":"1791572390","is_trial":"0","active_cons":"0","created_at":"1602062772","max_connections":"1","allowed_output_formats":["m3u8","ts","rtmp"]},"server_info":
+  ★ VERDICT: ✅ API OK — pretplata aktivna
+���������������������������������������������������
+
+[API] ✅ OK — exp= "09.10.2026" max_conn= 1
+[THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms
+"[XUI_ANAL] #50 T+91963ms gap=188ms type=m3u slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/get.php?username=Damir_Damjanovic2&"
+"[XUI_ANAL_RESP] #50 status=200 debug=no bytes=500141"
+[M3U DOWNLOAD] "http://v2pro.online:8080/get.php?username=Damir_Damjanovic2&password=Damjanovic_" status: 200 size: 500141
+[M3U PARSE] smartSelect chose 2 channels
+[STREAM TEST] Pauza 3s pre kanala 1 / 2
+"[XUI_ANAL] #51 T+96074ms gap=4111ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/movie/Damir_Damjanovic2/Damjanovic_"
+[STREAM TEST] "http://v2pro.online:8080/movie/Damir_Damjanovic2/Damjanovic_Damir2/95937.mkv" status= 200 bytes= 1677
+"[XUI_ANAL_RESP] #51 status=200 debug=no bytes=1677"
+[STREAM] Nije pravi media → next
+[STREAM TEST] Pauza 3s pre kanala 2 / 2
+"[XUI_ANAL] #52 T+99545ms gap=3471ms type=stream slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/Damir_Damjanovic2/Damjanovic_Damir2"
+[STREAM TEST] "http://v2pro.online:8080/Damir_Damjanovic2/Damjanovic_Damir2/436505" status= 200 bytes= 1677
+"[XUI_ANAL_RESP] #52 status=200 debug=no bytes=1677"
+[STREAM] Nije pravi media → next
+[CP] Stream testovi neuspešni → return false
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 7960 ms
+[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=2gEfwyLTzm&passwor"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:28:50.582"
+[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=2gEfwyLTzm&passwor"
+[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=2gEfwyLTzm&password=OdV5YMj4ZK&type=m3"
+[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=2gEfwyLTzm&password=OdV5YMj4ZK"
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "2gEf" pass: "OdV5"
+"[XUI_ANAL] #53 T+99735ms gap=190ms type=api slots=0 eps=1 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=2gEfwyLTzm&"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=2gEfwyLTzm&password=OdV5YMj4ZK" status: 200 body[:150]: "<html><head><title>XUI.one - Debug Mode</title><link href=\"https://fonts.googleapis.com/css?family=Montserrat:200,400,700\" rel=\"stylesheet\"><style>*{-"
+
+ ╔══════════════════════════════════════════════════════════╗
+║ [SERVER ANALYZER] "http://v2pro.online:8080"
+╠══════════════════════════════════════════════════════════╣
+║ Ukupno zahteva  : 16   (API: 16  M3U: 0  STREAM: 0 )
+║ Odgovori        : JSON_OK= 12  DEBUG_MODE= 4  STREAM_OK= 0  TIMEOUT= 0  HTTP_ERR= 0
+║ Debug Mode %    : "25.0" %
+║ Rate (zadnjih60s): 10 zahteva/min
+║ Prosečan gap    : "6640" ms
+║ Ovaj zahtev     : "API" status= 200 elapsed= 190 ms bytes= 1679 class= "DEBUG_MODE"
+║ Zadnja 3 zahteva:
+║   [ "API" ] status= 200 elapsed= 184 ms bytes= 523 → "JSON_OK"
+║   [ "API" ] status= 200 elapsed= 187 ms bytes= 533 → "JSON_OK"
+║   [ "API" ] status= 200 elapsed= 190 ms bytes= 1679 → "DEBUG_MODE"
+╚══════════════════════════════════════════════════════════╝
+
+���������������������������������������������������
+[RESP] API | ?? DEBUG_MODE | 22:28:50.772
+  URL    : http://v2pro.online:8080/player_api.php?username=2gEfwyLTzm&password=OdV5YMj4ZK
+  Base   : http://v2pro.online:8080
+  Status : 200 | elapsed=190ms | bytes=1679
   Server : nginx
   CT     : text/html; charset=UTF-8
   Body   : <html><head><title>XUI.one - Debug Mode</title><link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet"><style>*{-webkit-box-sizing:border-box;box-sizing:border-box}body{padding:0;margin:0}#notfound{position:relative;height:100vh}#notfound .notfound{position:absol
@@ -445,172 +682,122 @@ http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/4
 
 [XUI DEBUG GLOBAL] Server "http://v2pro.online:8080" Debug Mode epizoda 2 , pauza 30 s
 [XUI DEBUG GLOBAL] Server "http://v2pro.online:8080" Debug Mode epizoda 2 , pauza 30s
-[API XUI DEBUG] DM na API → return 3 (preskoči retry, idi na stream fallback)
-[API DM SKIP] DM → skip svih retryja, idemo na stream fallback
-[DM SKIP WAIT] Čekam 2500 ms pre sledeće liste (anti-ban)
-[CP] DM aktivan → skip stream fallback, direktno u DM retry
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 6043 ms
-[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=sherin_one&passwor"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:06:34.646"
-[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=sherin_one&passwor"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=sherin_one&password=IoBHtkP7wqsxg&type"
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=sherin_one&password=IoBHtkP7wqs"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "sherin_one" pass: "IoBH"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms episodes= 2
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 2 minDelay= 3000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 0 ms
-[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=ZxP2RyV3sK&passwor"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:06:34.646"
-[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=ZxP2RyV3sK&passwor"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=ZxP2RyV3sK&password=3j2tf8bJbL&type=m3"
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=ZxP2RyV3sK&password=3j2tf8bJbL"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "ZxP2RyV3sK" pass: "3j2t"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms episodes= 2
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 2 minDelay= 3000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 3303 ms
-[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=nikola_sesic&passw"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:06:37.949"
-[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=nikola_sesic&passw"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=nikola_sesic&password=ATtyM72kag&type="
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=nikola_sesic&password=ATtyM72ka"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "nikola_sesic" pass: "ATty"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms episodes= 2
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 2 minDelay= 3000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 2979 ms
-[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Mijo_Ivandic&passw"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:06:40.928"
-[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Mijo_Ivandic&passw"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Mijo_Ivandic&password=Ivandic_Mijo&typ"
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Mijo_Ivandic&password=Ivandic_M"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Mijo_Ivandic" pass: "Ivan"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms episodes= 2
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 2 minDelay= 3000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 3074 ms
-[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Josip_Blazevic&pas"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:06:44.002"
-[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Josip_Blazevic&pas"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Josip_Blazevic&password=bDryTHFGRL&typ"
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Josip_Blazevic&password=bDryTHF"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Josip_Blazevic" pass: "bDry"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms episodes= 2
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 2 minDelay= 3000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 2955 ms
-[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Damir_Damjanovic2&"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:06:46.957"
-[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Damir_Damjanovic2&"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Damir_Damjanovic2&password=Damjanovic_"
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Damir_Damjanovic2&password=Damj"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Damir_Damjanovic2" pass: "Damj"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms episodes= 2
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 2 minDelay= 3000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 2955 ms
-[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=2gEfwyLTzm&passwor"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:06:49.912"
-[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=2gEfwyLTzm&passwor"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=2gEfwyLTzm&password=OdV5YMj4ZK&type=m3"
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=2gEfwyLTzm&password=OdV5YMj4ZK"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "2gEfwyLTzm" pass: "OdV5"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms episodes= 2
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 2 minDelay= 3000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 3112 ms
+[API] XUI Debug Mode → return 3 (stream fallback)
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 190 ms
 [PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=3v3eHn??URqP&passw"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:06:53.024"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:28:50.772"
 [CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=3v3eHn??URqP&passw"
 [PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=3v3eHn??URqP&password=ogyzTq9iop&type="
 [PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=3v3eHn%3F%3FURqP&password=ogyzT"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "3v3eHn??URqP" pass: "ogyz"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms episodes= 2
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 2 minDelay= 3000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 2961 ms
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "3v3e" pass: "ogyz"
+"[XUI_ANAL] #54 T+99926ms gap=191ms type=api slots=0 eps=2 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=3v3eHn%3F%3"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=3v3eHn%3F%3FURqP&password=ogyzT" status: 200 body[:150]: "<html><head><title>XUI.one - Debug Mode</title><link href=\"https://fonts.googleapis.com/css?family=Montserrat:200,400,700\" rel=\"stylesheet\"><style>*{-"
+
+ ╔══════════════════════════════════════════════════════════╗
+║ [SERVER ANALYZER] "http://v2pro.online:8080"
+╠══════════════════════════════════════════════════════════╣
+║ Ukupno zahteva  : 17   (API: 17  M3U: 0  STREAM: 0 )
+║ Odgovori        : JSON_OK= 12  DEBUG_MODE= 5  STREAM_OK= 0  TIMEOUT= 0  HTTP_ERR= 0
+║ Debug Mode %    : "29.4" %
+║ Rate (zadnjih60s): 11 zahteva/min
+║ Prosečan gap    : "6238" ms
+║ Ovaj zahtev     : "API" status= 200 elapsed= 201 ms bytes= 1679 class= "DEBUG_MODE"
+║ Zadnja 3 zahteva:
+║   [ "API" ] status= 200 elapsed= 187 ms bytes= 533 → "JSON_OK"
+║   [ "API" ] status= 200 elapsed= 190 ms bytes= 1679 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 201 ms bytes= 1679 → "DEBUG_MODE"
+║ ⚠️ UPOZORENJE:  11 zahteva u zadnjih 60s → previše brzo!
+╚══════════════════════════════════════════════════════════╝
+
+���������������������������������������������������
+[RESP] API | ?? DEBUG_MODE | 22:28:50.973
+  URL    : http://v2pro.online:8080/player_api.php?username=3v3eHn%3F%3FURqP&password=ogyzT
+  Base   : http://v2pro.online:8080
+  Status : 200 | elapsed=201ms | bytes=1679
+  Server : nginx
+  CT     : text/html; charset=UTF-8
+  Body   : <html><head><title>XUI.one - Debug Mode</title><link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet"><style>*{-webkit-box-sizing:border-box;box-sizing:border-box}body{padding:0;margin:0}#notfound{position:relative;height:100vh}#notfound .notfound{position:absol
+  ★ VERDICT: Server PREOPTEREĆEN (XUI.one Debug Mode)
+             NIJE geo-blok. Lista bi radila kad server odmori.
+             → Retry je opravdan.
+���������������������������������������������������
+
+[API] XUI Debug Mode → return 3 (stream fallback)
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 201 ms
 [PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=6bflBPbwAw&passwor"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:06:55.985"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:28:50.973"
 [CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=6bflBPbwAw&passwor"
 [PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=6bflBPbwAw&password=wOEqzKhL1v&type=m3"
 [PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=6bflBPbwAw&password=wOEqzKhL1v"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "6bflBPbwAw" pass: "wOEq"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms episodes= 2
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 2 minDelay= 3000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 2956 ms
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "6bfl" pass: "wOEq"
+"[XUI_ANAL] #55 T+100127ms gap=201ms type=api slots=0 eps=2 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=6bflBPbwAw&"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=6bflBPbwAw&password=wOEqzKhL1v" status: 200 body[:150]: "<html><head><title>XUI.one - Debug Mode</title><link href=\"https://fonts.googleapis.com/css?family=Montserrat:200,400,700\" rel=\"stylesheet\"><style>*{-"
+
+ ╔══════════════════════════════════════════════════════════╗
+║ [SERVER ANALYZER] "http://v2pro.online:8080"
+╠══════════════════════════════════════════════════════════╣
+║ Ukupno zahteva  : 18   (API: 18  M3U: 0  STREAM: 0 )
+║ Odgovori        : JSON_OK= 12  DEBUG_MODE= 6  STREAM_OK= 0  TIMEOUT= 0  HTTP_ERR= 0
+║ Debug Mode %    : "33.3" %
+║ Rate (zadnjih60s): 12 zahteva/min
+║ Prosečan gap    : "5882" ms
+║ Ovaj zahtev     : "API" status= 200 elapsed= 194 ms bytes= 1679 class= "DEBUG_MODE"
+║ Zadnja 3 zahteva:
+║   [ "API" ] status= 200 elapsed= 190 ms bytes= 1679 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 201 ms bytes= 1679 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 194 ms bytes= 1679 → "DEBUG_MODE"
+║ ⚠️ UPOZORENJE: Debug Mode ratio je "33.3" % → server je preopterećen!
+║    Preporučeni gap između zahteva: >= 8000ms
+║ ⚠️ UPOZORENJE:  12 zahteva u zadnjih 60s → previše brzo!
+╚══════════════════════════════════════════════════════════╝
+
+���������������������������������������������������
+[RESP] API | ?? DEBUG_MODE | 22:28:51.168
+  URL    : http://v2pro.online:8080/player_api.php?username=6bflBPbwAw&password=wOEqzKhL1v
+  Base   : http://v2pro.online:8080
+  Status : 200 | elapsed=194ms | bytes=1679
+  Server : nginx
+  CT     : text/html; charset=UTF-8
+  Body   : <html><head><title>XUI.one - Debug Mode</title><link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet"><style>*{-webkit-box-sizing:border-box;box-sizing:border-box}body{padding:0;margin:0}#notfound{position:relative;height:100vh}#notfound .notfound{position:absol
+  ★ VERDICT: Server PREOPTEREĆEN (XUI.one Debug Mode)
+             NIJE geo-blok. Lista bi radila kad server odmori.
+             → Retry je opravdan.
+���������������������������������������������������
+
+[API] XUI Debug Mode → return 3 (stream fallback)
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 195 ms
 [PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=8bUYRM??NvhC&passw"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:06:58.941"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:28:51.168"
 [CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=8bUYRM??NvhC&passw"
 [PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=8bUYRM??NvhC&password=4NMLyxX69J&type="
 [PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=8bUYRM%3F%3FNvhC&password=4NMLy"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "8bUYRM??NvhC" pass: "4NML"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 3000 ms episodes= 2
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 2 minDelay= 3000 inDM= false
-"[XUI_ANAL] #9 T+62127ms gap=30292ms type=api slots=0 eps=2 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=8bUYRM%3F%3"
-╔══════════════════════════════════════════════════════════════╗
-║  🔴 XUI DEBUG MODE TRIGGER AUTOPSY                          ║
-╠══════════════════════════════════════════════════════════════╣
-"║  Server     : http://v2pro.online:8080"
-"║  Trigger req: #9 od 9 ukupno"
-"║  Vreme      : T+62127ms od starta skeniranja"
-"║  Tip req    : api"
-"║  Gap        : 30292ms od prethodnog zahteva"
-"║  ActiveSlots: 1 (max bio: 0)"
-"║  Episode#   : 2"
-╠══════════════════════════════════════════════════════════════╣
-║  KOMPLETAN REQUEST TIMELINE:
-"║     [  1] T+   175ms gap=   -1ms type=   api status=200 debug= no bytes=  507 slots=2"
-"║     [  2] T+   366ms gap=  191ms type=   m3u status=  0 debug= no bytes=    0 slots=2"
-"║     [  3] T+   420ms gap=   54ms type=   api status=200 debug= no bytes=66609 slots=2"
-"║     [  4] T+  1425ms gap= 1005ms type=stream status=  0 debug= no bytes=    0 slots=2"
-"║     [  5] T+  4654ms gap= 3229ms type=stream status=  0 debug= no bytes=    0 slots=1"
-"║     [  6] T+  7721ms gap= 3067ms type=stream status=  0 debug= no bytes=    0 slots=1"
-"║     [  7] T+ 10693ms gap= 2972ms type=stream status=  0 debug= no bytes=    0 slots=1"
-"║     [  8] T+ 31835ms gap=21142ms type=   api status=200 debug=YES bytes= 1679 slots=1"
-"║  👉 [  9] T+ 62127ms gap=30292ms type=   api status=200 debug=YES bytes= 1679 slots=1"
-╠══════════════════════════════════════════════════════════════╣
-║  GAP STATISTIKE:
-"║  Min gap: 54ms | Max gap: 30292ms | Avg gap: 7744ms"
-"║  Requests/min (est.): 7"
-╠══════════════════════════════════════════════════════════════╣
-║  ANALIZA:
-"║  🔧 PREPORUČENI MIN GAP: 162ms"
-╠══════════════════════════════════════════════════════════════╣
-║  SEKVENCA ZAHTEVA PRE TRIGERISANJA:
-"║   [4] stream → status=0 debug=no gap=1005ms"
-"║   [5] stream → status=0 debug=no gap=3229ms"
-"║   [6] stream → status=0 debug=no gap=3067ms"
-"║   [7] stream → status=0 debug=no gap=2972ms"
-"║   [8]    api → status=200 debug=YES gap=21142ms"
-"║   [9]    api → status=200 debug=YES gap=30292ms"
-╚══════════════════════════════════════════════════════════════╝
-"[XUI_ANAL_RESP] #9 status=200 debug=YES bytes=1679"
-[PLAYABLE API] "http://v2pro.online:8080/player_api.php?username=8bUYRM%3F%3FNvhC&password=4NMLy" status: 200 body[:150]: "<html><head><title>XUI.one - Debug Mode</title><link href=\"https://fonts.googleapis.com/css?family=Montserrat:200,400,700\" rel=\"stylesheet\"><style>*{-"
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "8bUY" pass: "4NML"
+"[XUI_ANAL] #56 T+100321ms gap=194ms type=api slots=0 eps=2 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=8bUYRM%3F%3"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=8bUYRM%3F%3FNvhC&password=4NMLy" status: 200 body[:150]: "<html><head><title>XUI.one - Debug Mode</title><link href=\"https://fonts.googleapis.com/css?family=Montserrat:200,400,700\" rel=\"stylesheet\"><style>*{-"
 
  ╔══════════════════════════════════════════════════════════╗
 ║ [SERVER ANALYZER] "http://v2pro.online:8080"
 ╠══════════════════════════════════════════════════════════╣
-║ Ukupno zahteva  : 9   (API: 4  M3U: 1  STREAM: 4 )
-║ Odgovori        : JSON_OK= 1  DEBUG_MODE= 7  STREAM_OK= 1  TIMEOUT= 0  HTTP_ERR= 0
-║ Debug Mode %    : "77.8" %
-║ Rate (zadnjih60s): 5 zahteva/min
-║ Prosečan gap    : "7741" ms
-║ Ovaj zahtev     : "API" status= 200 elapsed= 168 ms bytes= 1679 class= "DEBUG_MODE"
+║ Ukupno zahteva  : 19   (API: 19  M3U: 0  STREAM: 0 )
+║ Odgovori        : JSON_OK= 12  DEBUG_MODE= 7  STREAM_OK= 0  TIMEOUT= 0  HTTP_ERR= 0
+║ Debug Mode %    : "36.8" %
+║ Rate (zadnjih60s): 13 zahteva/min
+║ Prosečan gap    : "5574" ms
+║ Ovaj zahtev     : "API" status= 200 elapsed= 323 ms bytes= 1679 class= "DEBUG_MODE"
 ║ Zadnja 3 zahteva:
-║   [ "STREAM" ] status= 200 elapsed= -1 ms bytes= 1669 → "DEBUG_MODE"
-║   [ "API" ] status= 200 elapsed= 173 ms bytes= 1679 → "DEBUG_MODE"
-║   [ "API" ] status= 200 elapsed= 168 ms bytes= 1679 → "DEBUG_MODE"
-║ ⚠️ UPOZORENJE: Debug Mode ratio je "77.8" % → server je preopterećen!
+║   [ "API" ] status= 200 elapsed= 201 ms bytes= 1679 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 194 ms bytes= 1679 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 323 ms bytes= 1679 → "DEBUG_MODE"
+║ ⚠️ UPOZORENJE: Debug Mode ratio je "36.8" % → server je preopterećen!
 ║    Preporučeni gap između zahteva: >= 8000ms
+║ ⚠️ UPOZORENJE:  13 zahteva u zadnjih 60s → previše brzo!
 ╚══════════════════════════════════════════════════════════╝
 
 ���������������������������������������������������
-[RESP] API | ?? DEBUG_MODE | 12:07:02.174
+[RESP] API | ?? DEBUG_MODE | 22:28:51.493
   URL    : http://v2pro.online:8080/player_api.php?username=8bUYRM%3F%3FNvhC&password=4NMLy
   Base   : http://v2pro.online:8080
-  Status : 200 | elapsed=168ms | bytes=1679
+  Status : 200 | elapsed=323ms | bytes=1679
   Server : nginx
   CT     : text/html; charset=UTF-8
   Body   : <html><head><title>XUI.one - Debug Mode</title><link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet"><style>*{-webkit-box-sizing:border-box;box-sizing:border-box}body{padding:0;margin:0}#notfound{position:relative;height:100vh}#notfound .notfound{position:absol
@@ -619,424 +806,467 @@ http://v2pro.online:8080/g_skype2/o7wyMRHoas5tyg/4
              → Retry je opravdan.
 ���������������������������������������������������
 
-[XUI DEBUG GLOBAL] Server "http://v2pro.online:8080" Debug Mode epizoda 3 , pauza 60 s
-[XUI DEBUG GLOBAL] Server "http://v2pro.online:8080" Debug Mode epizoda 3 , pauza 30s
-[API XUI DEBUG] DM na API → return 3 (preskoči retry, idi na stream fallback)
-[API DM SKIP] DM → skip svih retryja, idemo na stream fallback
-[DM SKIP WAIT] Čekam 3500 ms pre sledeće liste (anti-ban)
-[CP] DM aktivan → skip stream fallback, direktno u DM retry
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 7077 ms
+[API] XUI Debug Mode → return 3 (stream fallback)
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 325 ms
 [PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=8JzxhzEEMs&passwor"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:07:06.018"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:28:51.493"
 [CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=8JzxhzEEMs&passwor"
 [PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=8JzxhzEEMs&password=1rcdMzQlJd&type=m3"
 [PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=8JzxhzEEMs&password=1rcdMzQlJd"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "8JzxhzEEMs" pass: "1rcd"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 6000 ms episodes= 3
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 3 minDelay= 6000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 0 ms
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "8Jzx" pass: "1rcd"
+"[XUI_ANAL] #57 T+100646ms gap=325ms type=api slots=0 eps=2 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=8JzxhzEEMs&"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=8JzxhzEEMs&password=1rcdMzQlJd" status: 200 body[:150]: "<html><head><title>XUI.one - Debug Mode</title><link href=\"https://fonts.googleapis.com/css?family=Montserrat:200,400,700\" rel=\"stylesheet\"><style>*{-"
+
+ ╔══════════════════════════════════════════════════════════╗
+║ [SERVER ANALYZER] "http://v2pro.online:8080"
+╠══════════════════════════════════════════════════════════╣
+║ Ukupno zahteva  : 20   (API: 20  M3U: 0  STREAM: 0 )
+║ Odgovori        : JSON_OK= 12  DEBUG_MODE= 8  STREAM_OK= 0  TIMEOUT= 0  HTTP_ERR= 0
+║ Debug Mode %    : "40.0" %
+║ Rate (zadnjih60s): 14 zahteva/min
+║ Prosečan gap    : "5290" ms
+║ Ovaj zahtev     : "API" status= 200 elapsed= 184 ms bytes= 1679 class= "DEBUG_MODE"
+║ Zadnja 3 zahteva:
+║   [ "API" ] status= 200 elapsed= 194 ms bytes= 1679 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 323 ms bytes= 1679 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 184 ms bytes= 1679 → "DEBUG_MODE"
+║ ⚠️ UPOZORENJE: Debug Mode ratio je "40.0" % → server je preopterećen!
+║    Preporučeni gap između zahteva: >= 8000ms
+║ ⚠️ UPOZORENJE:  14 zahteva u zadnjih 60s → previše brzo!
+╚══════════════════════════════════════════════════════════╝
+
+���������������������������������������������������
+[RESP] API | ?? DEBUG_MODE | 22:28:51.677
+  URL    : http://v2pro.online:8080/player_api.php?username=8JzxhzEEMs&password=1rcdMzQlJd
+  Base   : http://v2pro.online:8080
+  Status : 200 | elapsed=184ms | bytes=1679
+  Server : nginx
+  CT     : text/html; charset=UTF-8
+  Body   : <html><head><title>XUI.one - Debug Mode</title><link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet"><style>*{-webkit-box-sizing:border-box;box-sizing:border-box}body{padding:0;margin:0}#notfound{position:relative;height:100vh}#notfound .notfound{position:absol
+  ★ VERDICT: Server PREOPTEREĆEN (XUI.one Debug Mode)
+             NIJE geo-blok. Lista bi radila kad server odmori.
+             → Retry je opravdan.
+���������������������������������������������������
+
+[API] XUI Debug Mode → return 3 (stream fallback)
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 184 ms
 [PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=aCuFarBtSN&passwor"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:07:06.018"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:28:51.678"
 [CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=aCuFarBtSN&passwor"
 [PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=aCuFarBtSN&password=2EOcmMSXmq&type=m3"
 [PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=aCuFarBtSN&password=2EOcmMSXmq"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "aCuFarBtSN" pass: "2EOc"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 6000 ms episodes= 3
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 3 minDelay= 6000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 6615 ms
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "aCuF" pass: "2EOc"
+"[XUI_ANAL] #58 T+100831ms gap=185ms type=api slots=0 eps=2 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=aCuFarBtSN&"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=aCuFarBtSN&password=2EOcmMSXmq" status: 200 body[:150]: "<html><head><title>XUI.one - Debug Mode</title><link href=\"https://fonts.googleapis.com/css?family=Montserrat:200,400,700\" rel=\"stylesheet\"><style>*{-"
+
+ ╔══════════════════════════════════════════════════════════╗
+║ [SERVER ANALYZER] "http://v2pro.online:8080"
+╠══════════════════════════════════════════════════════════╣
+║ Ukupno zahteva  : 21   (API: 21  M3U: 0  STREAM: 0 )
+║ Odgovori        : JSON_OK= 12  DEBUG_MODE= 9  STREAM_OK= 0  TIMEOUT= 0  HTTP_ERR= 0
+║ Debug Mode %    : "42.9" %
+║ Rate (zadnjih60s): 15 zahteva/min
+║ Prosečan gap    : "5035" ms
+║ Ovaj zahtev     : "API" status= 200 elapsed= 200 ms bytes= 1679 class= "DEBUG_MODE"
+║ Zadnja 3 zahteva:
+║   [ "API" ] status= 200 elapsed= 323 ms bytes= 1679 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 184 ms bytes= 1679 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 200 ms bytes= 1679 → "DEBUG_MODE"
+║ ⚠️ UPOZORENJE: Debug Mode ratio je "42.9" % → server je preopterećen!
+║    Preporučeni gap između zahteva: >= 8000ms
+║ ⚠️ UPOZORENJE:  15 zahteva u zadnjih 60s → previše brzo!
+╚══════════════════════════════════════════════════════════╝
+
+���������������������������������������������������
+[RESP] API | ?? DEBUG_MODE | 22:28:51.878
+  URL    : http://v2pro.online:8080/player_api.php?username=aCuFarBtSN&password=2EOcmMSXmq
+  Base   : http://v2pro.online:8080
+  Status : 200 | elapsed=200ms | bytes=1679
+  Server : nginx
+  CT     : text/html; charset=UTF-8
+  Body   : <html><head><title>XUI.one - Debug Mode</title><link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet"><style>*{-webkit-box-sizing:border-box;box-sizing:border-box}body{padding:0;margin:0}#notfound{position:relative;height:100vh}#notfound .notfound{position:absol
+  ★ VERDICT: Server PREOPTEREĆEN (XUI.one Debug Mode)
+             NIJE geo-blok. Lista bi radila kad server odmori.
+             → Retry je opravdan.
+���������������������������������������������������
+
+[API] XUI Debug Mode → return 3 (stream fallback)
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 200 ms
 [PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Adel_Keric&passwor"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:07:12.633"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:28:51.879"
 [CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Adel_Keric&passwor"
 [PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Adel_Keric&password=heaUzFeTYn&type=m3"
 [PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Adel_Keric&password=heaUzFeTYn"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Adel_Keric" pass: "heaU"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 6000 ms episodes= 3
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 3 minDelay= 6000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 5947 ms
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Adel" pass: "heaU"
+"[XUI_ANAL] #59 T+101032ms gap=201ms type=api slots=0 eps=2 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=Adel_Keric&"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=Adel_Keric&password=heaUzFeTYn" status: 200 body[:150]: "<html><head><title>XUI.one - Debug Mode</title><link href=\"https://fonts.googleapis.com/css?family=Montserrat:200,400,700\" rel=\"stylesheet\"><style>*{-"
+
+ ╔══════════════════════════════════════════════════════════╗
+║ [SERVER ANALYZER] "http://v2pro.online:8080"
+╠══════════════════════════════════════════════════════════╣
+║ Ukupno zahteva  : 22   (API: 22  M3U: 0  STREAM: 0 )
+║ Odgovori        : JSON_OK= 12  DEBUG_MODE= 10  STREAM_OK= 0  TIMEOUT= 0  HTTP_ERR= 0
+║ Debug Mode %    : "45.5" %
+║ Rate (zadnjih60s): 16 zahteva/min
+║ Prosečan gap    : "4805" ms
+║ Ovaj zahtev     : "API" status= 200 elapsed= 190 ms bytes= 1679 class= "DEBUG_MODE"
+║ Zadnja 3 zahteva:
+║   [ "API" ] status= 200 elapsed= 184 ms bytes= 1679 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 200 ms bytes= 1679 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 190 ms bytes= 1679 → "DEBUG_MODE"
+║ ⚠️ UPOZORENJE: Debug Mode ratio je "45.5" % → server je preopterećen!
+║    Preporučeni gap između zahteva: >= 8000ms
+║ ⚠️ UPOZORENJE:  16 zahteva u zadnjih 60s → previše brzo!
+╚══════════════════════════════════════════════════════════╝
+
+���������������������������������������������������
+[RESP] API | ?? DEBUG_MODE | 22:28:52.069
+  URL    : http://v2pro.online:8080/player_api.php?username=Adel_Keric&password=heaUzFeTYn
+  Base   : http://v2pro.online:8080
+  Status : 200 | elapsed=190ms | bytes=1679
+  Server : nginx
+  CT     : text/html; charset=UTF-8
+  Body   : <html><head><title>XUI.one - Debug Mode</title><link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet"><style>*{-webkit-box-sizing:border-box;box-sizing:border-box}body{padding:0;margin:0}#notfound{position:relative;height:100vh}#notfound .notfound{position:absol
+  ★ VERDICT: Server PREOPTEREĆEN (XUI.one Debug Mode)
+             NIJE geo-blok. Lista bi radila kad server odmori.
+             → Retry je opravdan.
+���������������������������������������������������
+
+[API] XUI Debug Mode → return 3 (stream fallback)
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 190 ms
 [PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Ado_Pire&password="
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:07:18.580"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:28:52.070"
 [CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Ado_Pire&password="
 [PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Ado_Pire&password=aW9bXfVCiz&type=m3u"
 [PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Ado_Pire&password=aW9bXfVCiz"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Ado_Pire" pass: "aW9b"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 6000 ms episodes= 3
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 3 minDelay= 6000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 6114 ms
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Ado_" pass: "aW9b"
+"[XUI_ANAL] #60 T+101223ms gap=191ms type=api slots=0 eps=2 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=Ado_Pire&pa"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=Ado_Pire&password=aW9bXfVCiz" status: 200 body[:150]: "<html><head><title>XUI.one - Debug Mode</title><link href=\"https://fonts.googleapis.com/css?family=Montserrat:200,400,700\" rel=\"stylesheet\"><style>*{-"
+
+ ╔══════════════════════════════════════════════════════════╗
+║ [SERVER ANALYZER] "http://v2pro.online:8080"
+╠══════════════════════════════════════════════════════════╣
+║ Ukupno zahteva  : 23   (API: 23  M3U: 0  STREAM: 0 )
+║ Odgovori        : JSON_OK= 12  DEBUG_MODE= 11  STREAM_OK= 0  TIMEOUT= 0  HTTP_ERR= 0
+║ Debug Mode %    : "47.8" %
+║ Rate (zadnjih60s): 17 zahteva/min
+║ Prosečan gap    : "4595" ms
+║ Ovaj zahtev     : "API" status= 200 elapsed= 197 ms bytes= 1679 class= "DEBUG_MODE"
+║ Zadnja 3 zahteva:
+║   [ "API" ] status= 200 elapsed= 200 ms bytes= 1679 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 190 ms bytes= 1679 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 197 ms bytes= 1679 → "DEBUG_MODE"
+║ ⚠️ UPOZORENJE: Debug Mode ratio je "47.8" % → server je preopterećen!
+║    Preporučeni gap između zahteva: >= 8000ms
+║ ⚠️ UPOZORENJE:  17 zahteva u zadnjih 60s → previše brzo!
+╚══════════════════════════════════════════════════════════╝
+
+���������������������������������������������������
+[RESP] API | ?? DEBUG_MODE | 22:28:52.267
+  URL    : http://v2pro.online:8080/player_api.php?username=Ado_Pire&password=aW9bXfVCiz
+  Base   : http://v2pro.online:8080
+  Status : 200 | elapsed=197ms | bytes=1679
+  Server : nginx
+  CT     : text/html; charset=UTF-8
+  Body   : <html><head><title>XUI.one - Debug Mode</title><link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet"><style>*{-webkit-box-sizing:border-box;box-sizing:border-box}body{padding:0;margin:0}#notfound{position:relative;height:100vh}#notfound .notfound{position:absol
+  ★ VERDICT: Server PREOPTEREĆEN (XUI.one Debug Mode)
+             NIJE geo-blok. Lista bi radila kad server odmori.
+             → Retry je opravdan.
+���������������������������������������������������
+
+[API] XUI Debug Mode → return 3 (stream fallback)
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 197 ms
 [PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Aldo_Moro&password"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:07:24.694"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:28:52.267"
 [CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Aldo_Moro&password"
 [PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Aldo_Moro&password=1r0buf3ochichlqAcrl"
 [PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Aldo_Moro&password=1r0buf3ochic"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Aldo_Moro" pass: "1r0b"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 6000 ms episodes= 3
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 3 minDelay= 6000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 5942 ms
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Aldo" pass: "1r0b"
+"[XUI_ANAL] #61 T+101421ms gap=198ms type=api slots=0 eps=2 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=Aldo_Moro&p"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=Aldo_Moro&password=1r0buf3ochic" status: 200 body[:150]: "<html><head><title>XUI.one - Debug Mode</title><link href=\"https://fonts.googleapis.com/css?family=Montserrat:200,400,700\" rel=\"stylesheet\"><style>*{-"
+
+ ╔══════════════════════════════════════════════════════════╗
+║ [SERVER ANALYZER] "http://v2pro.online:8080"
+╠══════════════════════════════════════════════════════════╣
+║ Ukupno zahteva  : 24   (API: 24  M3U: 0  STREAM: 0 )
+║ Odgovori        : JSON_OK= 12  DEBUG_MODE= 12  STREAM_OK= 0  TIMEOUT= 0  HTTP_ERR= 0
+║ Debug Mode %    : "50.0" %
+║ Rate (zadnjih60s): 18 zahteva/min
+║ Prosečan gap    : "4406" ms
+║ Ovaj zahtev     : "API" status= 200 elapsed= 240 ms bytes= 1679 class= "DEBUG_MODE"
+║ Zadnja 3 zahteva:
+║   [ "API" ] status= 200 elapsed= 190 ms bytes= 1679 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 197 ms bytes= 1679 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 240 ms bytes= 1679 → "DEBUG_MODE"
+║ ⚠️ UPOZORENJE: Debug Mode ratio je "50.0" % → server je preopterećen!
+║    Preporučeni gap između zahteva: >= 8000ms
+║ ⚠️ UPOZORENJE:  18 zahteva u zadnjih 60s → previše brzo!
+╚══════════════════════════════════════════════════════════╝
+
+���������������������������������������������������
+[RESP] API | ?? DEBUG_MODE | 22:28:52.508
+  URL    : http://v2pro.online:8080/player_api.php?username=Aldo_Moro&password=1r0buf3ochic
+  Base   : http://v2pro.online:8080
+  Status : 200 | elapsed=240ms | bytes=1679
+  Server : nginx
+  CT     : text/html; charset=UTF-8
+  Body   : <html><head><title>XUI.one - Debug Mode</title><link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet"><style>*{-webkit-box-sizing:border-box;box-sizing:border-box}body{padding:0;margin:0}#notfound{position:relative;height:100vh}#notfound .notfound{position:absol
+  ★ VERDICT: Server PREOPTEREĆEN (XUI.one Debug Mode)
+             NIJE geo-blok. Lista bi radila kad server odmori.
+             → Retry je opravdan.
+���������������������������������������������������
+
+[API] XUI Debug Mode → return 3 (stream fallback)
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 241 ms
 [PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Antic_Juric&passwo"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:07:30.636"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:28:52.508"
 [CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Antic_Juric&passwo"
 [PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Antic_Juric&password=7KLDCG4KVS&type=m"
 [PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Antic_Juric&password=7KLDCG4KVS"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Antic_Juric" pass: "7KLD"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 6000 ms episodes= 3
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 3 minDelay= 6000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 5928 ms
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Anti" pass: "7KLD"
+"[XUI_ANAL] #62 T+101662ms gap=241ms type=api slots=0 eps=2 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=Antic_Juric"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=Antic_Juric&password=7KLDCG4KVS" status: 200 body[:150]: "<html><head><title>XUI.one - Debug Mode</title><link href=\"https://fonts.googleapis.com/css?family=Montserrat:200,400,700\" rel=\"stylesheet\"><style>*{-"
+
+ ╔══════════════════════════════════════════════════════════╗
+║ [SERVER ANALYZER] "http://v2pro.online:8080"
+╠══════════════════════════════════════════════════════════╣
+║ Ukupno zahteva  : 25   (API: 25  M3U: 0  STREAM: 0 )
+║ Odgovori        : JSON_OK= 12  DEBUG_MODE= 13  STREAM_OK= 0  TIMEOUT= 0  HTTP_ERR= 0
+║ Debug Mode %    : "52.0" %
+║ Rate (zadnjih60s): 19 zahteva/min
+║ Prosečan gap    : "4230" ms
+║ Ovaj zahtev     : "API" status= 200 elapsed= 189 ms bytes= 1679 class= "DEBUG_MODE"
+║ Zadnja 3 zahteva:
+║   [ "API" ] status= 200 elapsed= 197 ms bytes= 1679 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 240 ms bytes= 1679 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 189 ms bytes= 1679 → "DEBUG_MODE"
+║ ⚠️ UPOZORENJE: Debug Mode ratio je "52.0" % → server je preopterećen!
+║    Preporučeni gap između zahteva: >= 8000ms
+║ ⚠️ UPOZORENJE:  19 zahteva u zadnjih 60s → previše brzo!
+╚══════════════════════════════════════════════════════════╝
+
+���������������������������������������������������
+[RESP] API | ?? DEBUG_MODE | 22:28:52.698
+  URL    : http://v2pro.online:8080/player_api.php?username=Antic_Juric&password=7KLDCG4KVS
+  Base   : http://v2pro.online:8080
+  Status : 200 | elapsed=189ms | bytes=1679
+  Server : nginx
+  CT     : text/html; charset=UTF-8
+  Body   : <html><head><title>XUI.one - Debug Mode</title><link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet"><style>*{-webkit-box-sizing:border-box;box-sizing:border-box}body{padding:0;margin:0}#notfound{position:relative;height:100vh}#notfound .notfound{position:absol
+  ★ VERDICT: Server PREOPTEREĆEN (XUI.one Debug Mode)
+             NIJE geo-blok. Lista bi radila kad server odmori.
+             → Retry je opravdan.
+���������������������������������������������������
+
+[API] XUI Debug Mode → return 3 (stream fallback)
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 191 ms
 [PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=APqKGsPJui&passwor"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:07:36.564"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:28:52.699"
 [CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=APqKGsPJui&passwor"
 [PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=APqKGsPJui&password=IoJPxHO4uj&type=m3"
 [PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=APqKGsPJui&password=IoJPxHO4uj"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "APqKGsPJui" pass: "IoJP"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 6000 ms episodes= 3
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 3 minDelay= 6000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 6079 ms
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "APqK" pass: "IoJP"
+"[XUI_ANAL] #63 T+101852ms gap=190ms type=api slots=0 eps=2 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=APqKGsPJui&"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=APqKGsPJui&password=IoJPxHO4uj" status: 200 body[:150]: "<html><head><title>XUI.one - Debug Mode</title><link href=\"https://fonts.googleapis.com/css?family=Montserrat:200,400,700\" rel=\"stylesheet\"><style>*{-"
+
+ ╔══════════════════════════════════════════════════════════╗
+║ [SERVER ANALYZER] "http://v2pro.online:8080"
+╠══════════════════════════════════════════════════════════╣
+║ Ukupno zahteva  : 26   (API: 26  M3U: 0  STREAM: 0 )
+║ Odgovori        : JSON_OK= 12  DEBUG_MODE= 14  STREAM_OK= 0  TIMEOUT= 0  HTTP_ERR= 0
+║ Debug Mode %    : "53.8" %
+║ Rate (zadnjih60s): 20 zahteva/min
+║ Prosečan gap    : "4069" ms
+║ Ovaj zahtev     : "API" status= 200 elapsed= 203 ms bytes= 1679 class= "DEBUG_MODE"
+║ Zadnja 3 zahteva:
+║   [ "API" ] status= 200 elapsed= 240 ms bytes= 1679 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 189 ms bytes= 1679 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 203 ms bytes= 1679 → "DEBUG_MODE"
+║ ⚠️ UPOZORENJE: Debug Mode ratio je "53.8" % → server je preopterećen!
+║    Preporučeni gap između zahteva: >= 8000ms
+║ ⚠️ UPOZORENJE:  20 zahteva u zadnjih 60s → previše brzo!
+╚══════════════════════════════════════════════════════════╝
+
+���������������������������������������������������
+[RESP] API | ?? DEBUG_MODE | 22:28:52.902
+  URL    : http://v2pro.online:8080/player_api.php?username=APqKGsPJui&password=IoJPxHO4uj
+  Base   : http://v2pro.online:8080
+  Status : 200 | elapsed=203ms | bytes=1679
+  Server : nginx
+  CT     : text/html; charset=UTF-8
+  Body   : <html><head><title>XUI.one - Debug Mode</title><link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet"><style>*{-webkit-box-sizing:border-box;box-sizing:border-box}body{padding:0;margin:0}#notfound{position:relative;height:100vh}#notfound .notfound{position:absol
+  ★ VERDICT: Server PREOPTEREĆEN (XUI.one Debug Mode)
+             NIJE geo-blok. Lista bi radila kad server odmori.
+             → Retry je opravdan.
+���������������������������������������������������
+
+[API] XUI Debug Mode → return 3 (stream fallback)
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 203 ms
 [PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Beljan_Nevenka&pas"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:07:42.643"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:28:52.903"
 [CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Beljan_Nevenka&pas"
 [PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Beljan_Nevenka&password=hNp4QKJDkd&typ"
 [PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Beljan_Nevenka&password=hNp4QKJ"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Beljan_Nevenka" pass: "hNp4"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 6000 ms episodes= 3
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 3 minDelay= 6000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 5965 ms
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Belj" pass: "hNp4"
+"[XUI_ANAL] #64 T+102056ms gap=204ms type=api slots=0 eps=2 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=Beljan_Neve"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=Beljan_Nevenka&password=hNp4QKJ" status: 200 body[:150]: "<html><head><title>XUI.one - Debug Mode</title><link href=\"https://fonts.googleapis.com/css?family=Montserrat:200,400,700\" rel=\"stylesheet\"><style>*{-"
+
+ ╔══════════════════════════════════════════════════════════╗
+║ [SERVER ANALYZER] "http://v2pro.online:8080"
+╠══════════════════════════════════════════════════════════╣
+║ Ukupno zahteva  : 27   (API: 27  M3U: 0  STREAM: 0 )
+║ Odgovori        : JSON_OK= 12  DEBUG_MODE= 15  STREAM_OK= 0  TIMEOUT= 0  HTTP_ERR= 0
+║ Debug Mode %    : "55.6" %
+║ Rate (zadnjih60s): 21 zahteva/min
+║ Prosečan gap    : "3920" ms
+║ Ovaj zahtev     : "API" status= 200 elapsed= 192 ms bytes= 1652 class= "DEBUG_MODE"
+║ Zadnja 3 zahteva:
+║   [ "API" ] status= 200 elapsed= 189 ms bytes= 1679 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 203 ms bytes= 1679 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 192 ms bytes= 1652 → "DEBUG_MODE"
+║ ⚠️ UPOZORENJE: Debug Mode ratio je "55.6" % → server je preopterećen!
+║    Preporučeni gap između zahteva: >= 8000ms
+║ ⚠️ UPOZORENJE:  21 zahteva u zadnjih 60s → previše brzo!
+╚══════════════════════════════════════════════════════════╝
+
+���������������������������������������������������
+[RESP] API | ?? DEBUG_MODE | 22:28:53.095
+  URL    : http://v2pro.online:8080/player_api.php?username=Beljan_Nevenka&password=hNp4QKJ
+  Base   : http://v2pro.online:8080
+  Status : 200 | elapsed=192ms | bytes=1652
+  Server : nginx
+  CT     : text/html; charset=UTF-8
+  Body   : <html><head><title>XUI.one - Debug Mode</title><link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet"><style>*{-webkit-box-sizing:border-box;box-sizing:border-box}body{padding:0;margin:0}#notfound{position:relative;height:100vh}#notfound .notfound{position:absol
+  ★ VERDICT: Server PREOPTEREĆEN (XUI.one Debug Mode)
+             NIJE geo-blok. Lista bi radila kad server odmori.
+             → Retry je opravdan.
+���������������������������������������������������
+
+[API] XUI Debug Mode → return 3 (stream fallback)
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 192 ms
 [PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Bruno.maric&passwo"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:07:48.608"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:28:53.095"
 [CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Bruno.maric&passwo"
 [PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Bruno.maric&password=p28MJ8npPL&type=m"
 [PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Bruno.maric&password=p28MJ8npPL"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Bruno.maric" pass: "p28M"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 6000 ms episodes= 3
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 3 minDelay= 6000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 6065 ms
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Brun" pass: "p28M"
+"[XUI_ANAL] #65 T+102249ms gap=193ms type=api slots=0 eps=2 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=Bruno.maric"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=Bruno.maric&password=p28MJ8npPL" status: 200 body[:150]: "<html><head><title>XUI.one - Debug Mode</title><link href=\"https://fonts.googleapis.com/css?family=Montserrat:200,400,700\" rel=\"stylesheet\"><style>*{-"
+
+ ╔══════════════════════════════════════════════════════════╗
+║ [SERVER ANALYZER] "http://v2pro.online:8080"
+╠══════════════════════════════════════════════════════════╣
+║ Ukupno zahteva  : 28   (API: 28  M3U: 0  STREAM: 0 )
+║ Odgovori        : JSON_OK= 12  DEBUG_MODE= 16  STREAM_OK= 0  TIMEOUT= 0  HTTP_ERR= 0
+║ Debug Mode %    : "57.1" %
+║ Rate (zadnjih60s): 22 zahteva/min
+║ Prosečan gap    : "3782" ms
+║ Ovaj zahtev     : "API" status= 200 elapsed= 193 ms bytes= 1679 class= "DEBUG_MODE"
+║ Zadnja 3 zahteva:
+║   [ "API" ] status= 200 elapsed= 203 ms bytes= 1679 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 192 ms bytes= 1652 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 193 ms bytes= 1679 → "DEBUG_MODE"
+║ ⚠️ UPOZORENJE: Debug Mode ratio je "57.1" % → server je preopterećen!
+║    Preporučeni gap između zahteva: >= 8000ms
+║ ⚠️ UPOZORENJE:  22 zahteva u zadnjih 60s → previše brzo!
+╚══════════════════════════════════════════════════════════╝
+
+���������������������������������������������������
+[RESP] API | ?? DEBUG_MODE | 22:28:53.289
+  URL    : http://v2pro.online:8080/player_api.php?username=Bruno.maric&password=p28MJ8npPL
+  Base   : http://v2pro.online:8080
+  Status : 200 | elapsed=193ms | bytes=1679
+  Server : nginx
+  CT     : text/html; charset=UTF-8
+  Body   : <html><head><title>XUI.one - Debug Mode</title><link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet"><style>*{-webkit-box-sizing:border-box;box-sizing:border-box}body{padding:0;margin:0}#notfound{position:relative;height:100vh}#notfound .notfound{position:absol
+  ★ VERDICT: Server PREOPTEREĆEN (XUI.one Debug Mode)
+             NIJE geo-blok. Lista bi radila kad server odmori.
+             → Retry je opravdan.
+���������������������������������������������������
+
+[API] XUI Debug Mode → return 3 (stream fallback)
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 194 ms
 [PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=COkvqr@0uyL&passwo"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:07:54.673"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:28:53.289"
 [CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=COkvqr@0uyL&passwo"
 [PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=COkvqr@0uyL&password=xlXh7aHQod&type=m"
 [PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=COkvqr@0uyL&password=xlXh7aHQod"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "COkvqr@0uyL" pass: "xlXh"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 6000 ms episodes= 3
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 3 minDelay= 6000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 5942 ms
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "COkv" pass: "xlXh"
+"[XUI_ANAL] #66 T+102443ms gap=194ms type=api slots=0 eps=2 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=COkvqr@0uyL"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=COkvqr@0uyL&password=xlXh7aHQod" status: 200 body[:150]: "<html><head><title>XUI.one - Debug Mode</title><link href=\"https://fonts.googleapis.com/css?family=Montserrat:200,400,700\" rel=\"stylesheet\"><style>*{-"
+
+ ╔══════════════════════════════════════════════════════════╗
+║ [SERVER ANALYZER] "http://v2pro.online:8080"
+╠══════════════════════════════════════════════════════════╣
+║ Ukupno zahteva  : 29   (API: 29  M3U: 0  STREAM: 0 )
+║ Odgovori        : JSON_OK= 12  DEBUG_MODE= 17  STREAM_OK= 0  TIMEOUT= 0  HTTP_ERR= 0
+║ Debug Mode %    : "58.6" %
+║ Rate (zadnjih60s): 23 zahteva/min
+║ Prosečan gap    : "3654" ms
+║ Ovaj zahtev     : "API" status= 200 elapsed= 198 ms bytes= 1679 class= "DEBUG_MODE"
+║ Zadnja 3 zahteva:
+║   [ "API" ] status= 200 elapsed= 192 ms bytes= 1652 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 193 ms bytes= 1679 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 198 ms bytes= 1679 → "DEBUG_MODE"
+║ ⚠️ UPOZORENJE: Debug Mode ratio je "58.6" % → server je preopterećen!
+║    Preporučeni gap između zahteva: >= 8000ms
+║ ⚠️ UPOZORENJE:  23 zahteva u zadnjih 60s → previše brzo!
+╚══════════════════════════════════════════════════════════╝
+
+���������������������������������������������������
+[RESP] API | ?? DEBUG_MODE | 22:28:53.488
+  URL    : http://v2pro.online:8080/player_api.php?username=COkvqr@0uyL&password=xlXh7aHQod
+  Base   : http://v2pro.online:8080
+  Status : 200 | elapsed=198ms | bytes=1679
+  Server : nginx
+  CT     : text/html; charset=UTF-8
+  Body   : <html><head><title>XUI.one - Debug Mode</title><link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet"><style>*{-webkit-box-sizing:border-box;box-sizing:border-box}body{padding:0;margin:0}#notfound{position:relative;height:100vh}#notfound .notfound{position:absol
+  ★ VERDICT: Server PREOPTEREĆEN (XUI.one Debug Mode)
+             NIJE geo-blok. Lista bi radila kad server odmori.
+             → Retry je opravdan.
+���������������������������������������������������
+
+[API] XUI Debug Mode → return 3 (stream fallback)
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 199 ms
 [PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=D80UomXam0&passwor"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:08:00.615"
+[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "22:28:53.488"
 [CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=D80UomXam0&passwor"
 [PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=D80UomXam0&password=Q9iYEceMtN&type=m3"
 [PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=D80UomXam0&password=Q9iYEceMtN"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "D80UomXam0" pass: "Q9iY"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 6000 ms episodes= 3
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 3 minDelay= 6000 inDM= false
-"[XUI_ANAL] #10 T+126788ms gap=64661ms type=api slots=0 eps=3 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=D80UomXam0&"
-╔══════════════════════════════════════════════════════════════╗
-║  🔴 XUI DEBUG MODE TRIGGER AUTOPSY                          ║
-╠══════════════════════════════════════════════════════════════╣
-"║  Server     : http://v2pro.online:8080"
-"║  Trigger req: #10 od 10 ukupno"
-"║  Vreme      : T+126788ms od starta skeniranja"
-"║  Tip req    : api"
-"║  Gap        : 64661ms od prethodnog zahteva"
-"║  ActiveSlots: 1 (max bio: 0)"
-"║  Episode#   : 3"
-╠══════════════════════════════════════════════════════════════╣
-║  KOMPLETAN REQUEST TIMELINE:
-"║     [  1] T+   175ms gap=   -1ms type=   api status=200 debug= no bytes=  507 slots=2"
-"║     [  2] T+   366ms gap=  191ms type=   m3u status=  0 debug= no bytes=    0 slots=2"
-"║     [  3] T+   420ms gap=   54ms type=   api status=200 debug= no bytes=66609 slots=2"
-"║     [  4] T+  1425ms gap= 1005ms type=stream status=  0 debug= no bytes=    0 slots=2"
-"║     [  5] T+  4654ms gap= 3229ms type=stream status=  0 debug= no bytes=    0 slots=1"
-"║     [  6] T+  7721ms gap= 3067ms type=stream status=  0 debug= no bytes=    0 slots=1"
-"║     [  7] T+ 10693ms gap= 2972ms type=stream status=  0 debug= no bytes=    0 slots=1"
-"║     [  8] T+ 31835ms gap=21142ms type=   api status=200 debug=YES bytes= 1679 slots=1"
-"║     [  9] T+ 62127ms gap=30292ms type=   api status=200 debug=YES bytes= 1679 slots=1"
-"║  👉 [ 10] T+126788ms gap=64661ms type=   api status=200 debug=YES bytes= 1679 slots=1"
-╠══════════════════════════════════════════════════════════════╣
-║  GAP STATISTIKE:
-"║  Min gap: 54ms | Max gap: 64661ms | Avg gap: 14068ms"
-"║  Requests/min (est.): 4"
-╠══════════════════════════════════════════════════════════════╣
-║  ANALIZA:
-"║  🔧 PREPORUČENI MIN GAP: 162ms"
-╠══════════════════════════════════════════════════════════════╣
-║  SEKVENCA ZAHTEVA PRE TRIGERISANJA:
-"║   [5] stream → status=0 debug=no gap=3229ms"
-"║   [6] stream → status=0 debug=no gap=3067ms"
-"║   [7] stream → status=0 debug=no gap=2972ms"
-"║   [8]    api → status=200 debug=YES gap=21142ms"
-"║   [9]    api → status=200 debug=YES gap=30292ms"
-"║   [10]    api → status=200 debug=YES gap=64661ms"
-╚══════════════════════════════════════════════════════════════╝
-"[XUI_ANAL_RESP] #10 status=200 debug=YES bytes=1679"
-[PLAYABLE API] "http://v2pro.online:8080/player_api.php?username=D80UomXam0&password=Q9iYEceMtN" status: 200 body[:150]: "<html><head><title>XUI.one - Debug Mode</title><link href=\"https://fonts.googleapis.com/css?family=Montserrat:200,400,700\" rel=\"stylesheet\"><style>*{-"
+[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "D80U" pass: "Q9iY"
+"[XUI_ANAL] #67 T+102642ms gap=199ms type=api slots=0 eps=2 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=D80UomXam0&"
+[API TEST] "http://v2pro.online:8080/player_api.php?username=D80UomXam0&password=Q9iYEceMtN" status: 403 body[:150]: ""
 
  ╔══════════════════════════════════════════════════════════╗
 ║ [SERVER ANALYZER] "http://v2pro.online:8080"
 ╠══════════════════════════════════════════════════════════╣
-║ Ukupno zahteva  : 10   (API: 5  M3U: 1  STREAM: 4 )
-║ Odgovori        : JSON_OK= 1  DEBUG_MODE= 8  STREAM_OK= 1  TIMEOUT= 0  HTTP_ERR= 0
-║ Debug Mode %    : "80.0" %
-║ Rate (zadnjih60s): 1 zahteva/min
-║ Prosečan gap    : "14067" ms
-║ Ovaj zahtev     : "API" status= 200 elapsed= 176 ms bytes= 1679 class= "DEBUG_MODE"
+║ Ukupno zahteva  : 30   (API: 30  M3U: 0  STREAM: 0 )
+║ Odgovori        : JSON_OK= 12  DEBUG_MODE= 17  STREAM_OK= 0  TIMEOUT= 0  HTTP_ERR= 1
+║ Debug Mode %    : "56.7" %
+║ Rate (zadnjih60s): 24 zahteva/min
+║ Prosečan gap    : "3535" ms
+║ Ovaj zahtev     : "API" status= 403 elapsed= 182 ms bytes= 0 class= "HTTP_ERR_403"
 ║ Zadnja 3 zahteva:
-║   [ "API" ] status= 200 elapsed= 173 ms bytes= 1679 → "DEBUG_MODE"
-║   [ "API" ] status= 200 elapsed= 168 ms bytes= 1679 → "DEBUG_MODE"
-║   [ "API" ] status= 200 elapsed= 176 ms bytes= 1679 → "DEBUG_MODE"
-║ ⚠️ UPOZORENJE: Debug Mode ratio je "80.0" % → server je preopterećen!
+║   [ "API" ] status= 200 elapsed= 193 ms bytes= 1679 → "DEBUG_MODE"
+║   [ "API" ] status= 200 elapsed= 198 ms bytes= 1679 → "DEBUG_MODE"
+║   [ "API" ] status= 403 elapsed= 182 ms bytes= 0 → "HTTP_ERR_403"
+║ ⚠️ UPOZORENJE: Debug Mode ratio je "56.7" % → server je preopterećen!
 ║    Preporučeni gap između zahteva: >= 8000ms
+║ ⚠️ UPOZORENJE:  24 zahteva u zadnjih 60s → previše brzo!
 ╚══════════════════════════════════════════════════════════╝
 
 ���������������������������������������������������
-[RESP] API | ?? DEBUG_MODE | 12:08:06.844
+[RESP] API | ?? GEO_BLOCK_403 | 22:28:53.671
   URL    : http://v2pro.online:8080/player_api.php?username=D80UomXam0&password=Q9iYEceMtN
   Base   : http://v2pro.online:8080
-  Status : 200 | elapsed=176ms | bytes=1679
+  Status : 403 | elapsed=182ms | bytes=0
   Server : nginx
   CT     : text/html; charset=UTF-8
-  Body   : <html><head><title>XUI.one - Debug Mode</title><link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet"><style>*{-webkit-box-sizing:border-box;box-sizing:border-box}body{padding:0;margin:0}#notfound{position:relative;height:100vh}#notfound .notfound{position:absol
-  ★ VERDICT: Server PREOPTEREĆEN (XUI.one Debug Mode)
-             NIJE geo-blok. Lista bi radila kad server odmori.
-             → Retry je opravdan.
+  Body   : 
+  ★ VERDICT: Server BLOKIRA ovu IP/geo-lokaciju (nginx 403)
+             Nije server overload — tvoja IP je odbijena.
+             → Lista NEĆE raditi bez VPN-a.
 ���������������������������������������������������
 
-[XUI DEBUG GLOBAL] Server "http://v2pro.online:8080" Debug Mode epizoda 4 , pauza 60 s
-[XUI DEBUG GLOBAL] Server "http://v2pro.online:8080" Debug Mode epizoda 4 , pauza 30s
-[API XUI DEBUG] DM na API → return 3 (preskoči retry, idi na stream fallback)
-[API DM SKIP] DM → skip svih retryja, idemo na stream fallback
-[DM SKIP WAIT] Čekam 3500 ms pre sledeće liste (anti-ban)
-[CP] DM aktivan → skip stream fallback, direktno u DM retry
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 10067 ms
-[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Danijel_Radosic&pa"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:08:10.682"
-[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Danijel_Radosic&pa"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Danijel_Radosic&password=GBIExyaUUl&ty"
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Danijel_Radosic&password=GBIExy"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Danijel_Radosic" pass: "GBIE"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 6000 ms episodes= 4
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 4 minDelay= 6000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 1539 ms
-[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Darko_tehnicar&pas"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:08:12.221"
-[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Darko_tehnicar&pas"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Darko_tehnicar&password=g5PUKdTdUY&typ"
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Darko_tehnicar&password=g5PUKdT"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Darko_tehnicar" pass: "g5PU"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 6000 ms episodes= 4
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 4 minDelay= 6000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 6363 ms
-[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Dejan_Bojanic&pass"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:08:18.584"
-[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Dejan_Bojanic&pass"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Dejan_Bojanic&password=yIZAyygWEY&type"
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Dejan_Bojanic&password=yIZAyygW"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Dejan_Bojanic" pass: "yIZA"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 6000 ms episodes= 4
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 4 minDelay= 6000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 6035 ms
-[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=DFdxtfujGF&passwor"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:08:24.619"
-[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=DFdxtfujGF&passwor"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=DFdxtfujGF&password=040b8MROPV&type=m3"
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=DFdxtfujGF&password=040b8MROPV"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "DFdxtfujGF" pass: "040b"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 6000 ms episodes= 4
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 4 minDelay= 6000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 5916 ms
-[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Dobrica&password=2"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:08:30.535"
-[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Dobrica&password=2"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Dobrica&password=23101960&type=m3u"
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Dobrica&password=23101960"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Dobrica" pass: "2310"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 6000 ms episodes= 4
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 4 minDelay= 6000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 6040 ms
-[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=eaD5qBGQnJbS&passw"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:08:36.575"
-[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=eaD5qBGQnJbS&passw"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=eaD5qBGQnJbS&password=Zr7xkuSTLvZn&typ"
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=eaD5qBGQnJbS&password=Zr7xkuSTL"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "eaD5qBGQnJbS" pass: "Zr7x"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 6000 ms episodes= 4
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 4 minDelay= 6000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 6014 ms
-[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=eQV4YPJn6F&passwor"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:08:42.589"
-[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=eQV4YPJn6F&passwor"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=eQV4YPJn6F&password=deT9fzdXAy&type=m3"
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=eQV4YPJn6F&password=deT9fzdXAy"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "eQV4YPJn6F" pass: "deT9"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 6000 ms episodes= 4
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 4 minDelay= 6000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 6040 ms
-[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=eYM3WeLK6d&passwor"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:08:48.629"
-[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=eYM3WeLK6d&passwor"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=eYM3WeLK6d&password=jFyPMPieCU&type=m3"
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=eYM3WeLK6d&password=jFyPMPieCU"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "eYM3WeLK6d" pass: "jFyP"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 6000 ms episodes= 4
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 4 minDelay= 6000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 5934 ms
-[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Filip_Nikic&passwo"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:08:54.563"
-[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Filip_Nikic&passwo"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Filip_Nikic&password=AMG4vdB6XW&type=m"
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Filip_Nikic&password=AMG4vdB6XW"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Filip_Nikic" pass: "AMG4"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 6000 ms episodes= 4
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 4 minDelay= 6000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 6087 ms
-[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=fKWS3avbhz&passwor"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:09:00.650"
-[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=fKWS3avbhz&passwor"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=fKWS3avbhz&password=ilgcpbqPbH&type=m3"
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=fKWS3avbhz&password=ilgcpbqPbH"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "fKWS3avbhz" pass: "ilgc"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 6000 ms episodes= 4
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 4 minDelay= 6000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 5908 ms
-[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=gCCvMf54a4&passwor"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:09:06.558"
-[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=gCCvMf54a4&passwor"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=gCCvMf54a4&password=VqQKKV8dlR&type=m3"
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=gCCvMf54a4&password=VqQKKV8dlR"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "gCCvMf54a4" pass: "VqQK"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 6000 ms episodes= 4
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 4 minDelay= 6000 inDM= false
-"[XUI_ANAL] #11 T+192754ms gap=65966ms type=api slots=0 eps=4 tid=6b8a url=http://v2pro.online:8080/player_api.php?username=gCCvMf54a4&"
-╔══════════════════════════════════════════════════════════════╗
-║  🔴 XUI DEBUG MODE TRIGGER AUTOPSY                          ║
-╠══════════════════════════════════════════════════════════════╣
-"║  Server     : http://v2pro.online:8080"
-"║  Trigger req: #11 od 11 ukupno"
-"║  Vreme      : T+192754ms od starta skeniranja"
-"║  Tip req    : api"
-"║  Gap        : 65966ms od prethodnog zahteva"
-"║  ActiveSlots: 1 (max bio: 0)"
-"║  Episode#   : 4"
-╠══════════════════════════════════════════════════════════════╣
-║  KOMPLETAN REQUEST TIMELINE:
-"║     [  1] T+   175ms gap=   -1ms type=   api status=200 debug= no bytes=  507 slots=2"
-"║     [  2] T+   366ms gap=  191ms type=   m3u status=  0 debug= no bytes=    0 slots=2"
-"║     [  3] T+   420ms gap=   54ms type=   api status=200 debug= no bytes=66609 slots=2"
-"║     [  4] T+  1425ms gap= 1005ms type=stream status=  0 debug= no bytes=    0 slots=2"
-"║     [  5] T+  4654ms gap= 3229ms type=stream status=  0 debug= no bytes=    0 slots=1"
-"║     [  6] T+  7721ms gap= 3067ms type=stream status=  0 debug= no bytes=    0 slots=1"
-"║     [  7] T+ 10693ms gap= 2972ms type=stream status=  0 debug= no bytes=    0 slots=1"
-"║     [  8] T+ 31835ms gap=21142ms type=   api status=200 debug=YES bytes= 1679 slots=1"
-"║     [  9] T+ 62127ms gap=30292ms type=   api status=200 debug=YES bytes= 1679 slots=1"
-"║     [ 10] T+126788ms gap=64661ms type=   api status=200 debug=YES bytes= 1679 slots=1"
-"║  👉 [ 11] T+192754ms gap=65966ms type=   api status=200 debug=YES bytes= 1679 slots=1"
-╠══════════════════════════════════════════════════════════════╣
-║  GAP STATISTIKE:
-"║  Min gap: 54ms | Max gap: 65966ms | Avg gap: 19257ms"
-"║  Requests/min (est.): 3"
-╠══════════════════════════════════════════════════════════════╣
-║  ANALIZA:
-"║  🔧 PREPORUČENI MIN GAP: 162ms"
-╠══════════════════════════════════════════════════════════════╣
-║  SEKVENCA ZAHTEVA PRE TRIGERISANJA:
-"║   [6] stream → status=0 debug=no gap=3067ms"
-"║   [7] stream → status=0 debug=no gap=2972ms"
-"║   [8]    api → status=200 debug=YES gap=21142ms"
-"║   [9]    api → status=200 debug=YES gap=30292ms"
-"║   [10]    api → status=200 debug=YES gap=64661ms"
-"║   [11]    api → status=200 debug=YES gap=65966ms"
-╚══════════════════════════════════════════════════════════════╝
-"[XUI_ANAL_RESP] #11 status=200 debug=YES bytes=1679"
-[PLAYABLE API] "http://v2pro.online:8080/player_api.php?username=gCCvMf54a4&password=VqQKKV8dlR" status: 200 body[:150]: "<html><head><title>XUI.one - Debug Mode</title><link href=\"https://fonts.googleapis.com/css?family=Montserrat:200,400,700\" rel=\"stylesheet\"><style>*{-"
-
- ╔══════════════════════════════════════════════════════════╗
-║ [SERVER ANALYZER] "http://v2pro.online:8080"
-╠══════════════════════════════════════════════════════════╣
-║ Ukupno zahteva  : 11   (API: 6  M3U: 1  STREAM: 4 )
-║ Odgovori        : JSON_OK= 1  DEBUG_MODE= 9  STREAM_OK= 1  TIMEOUT= 0  HTTP_ERR= 0
-║ Debug Mode %    : "81.8" %
-║ Rate (zadnjih60s): 1 zahteva/min
-║ Prosečan gap    : "19256" ms
-║ Ovaj zahtev     : "API" status= 200 elapsed= 168 ms bytes= 1679 class= "DEBUG_MODE"
-║ Zadnja 3 zahteva:
-║   [ "API" ] status= 200 elapsed= 168 ms bytes= 1679 → "DEBUG_MODE"
-║   [ "API" ] status= 200 elapsed= 176 ms bytes= 1679 → "DEBUG_MODE"
-║   [ "API" ] status= 200 elapsed= 168 ms bytes= 1679 → "DEBUG_MODE"
-║ ⚠️ UPOZORENJE: Debug Mode ratio je "81.8" % → server je preopterećen!
-║    Preporučeni gap između zahteva: >= 8000ms
-╚══════════════════════════════════════════════════════════╝
-
-���������������������������������������������������
-[RESP] API | ?? DEBUG_MODE | 12:09:12.800
-  URL    : http://v2pro.online:8080/player_api.php?username=gCCvMf54a4&password=VqQKKV8dlR
-  Base   : http://v2pro.online:8080
-  Status : 200 | elapsed=168ms | bytes=1679
-  Server : nginx
-  CT     : text/html; charset=UTF-8
-  Body   : <html><head><title>XUI.one - Debug Mode</title><link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet"><style>*{-webkit-box-sizing:border-box;box-sizing:border-box}body{padding:0;margin:0}#notfound{position:relative;height:100vh}#notfound .notfound{position:absol
-  ★ VERDICT: Server PREOPTEREĆEN (XUI.one Debug Mode)
-             NIJE geo-blok. Lista bi radila kad server odmori.
-             → Retry je opravdan.
-���������������������������������������������������
-
-[XUI DEBUG GLOBAL] Server "http://v2pro.online:8080" Debug Mode epizoda 5 , pauza 90 s
-[XUI DEBUG GLOBAL] Server "http://v2pro.online:8080" Debug Mode epizoda 5 , pauza 30s
-[API XUI DEBUG] DM na API → return 3 (preskoči retry, idi na stream fallback)
-[API DM SKIP] DM → skip svih retryja, idemo na stream fallback
-[DM SKIP WAIT] Čekam 3500 ms pre sledeće liste (anti-ban)
-[CP] DM aktivan → skip stream fallback, direktno u DM retry
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 10093 ms
-[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=gnkfgz@hkFk&passwo"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:09:16.651"
-[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=gnkfgz@hkFk&passwo"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=gnkfgz@hkFk&password=KQoaU5pKFp&type=m"
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=gnkfgz@hkFk&password=KQoaU5pKFp"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "gnkfgz@hkFk" pass: "KQoa"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 8000 ms episodes= 5
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 5 minDelay= 8000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 1533 ms
-[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=GVnMVkWnuV&passwor"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:09:18.184"
-[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=GVnMVkWnuV&passwor"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=GVnMVkWnuV&password=nF43xP6ZhW&type=m3"
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=GVnMVkWnuV&password=nF43xP6ZhW"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "GVnMVkWnuV" pass: "nF43"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 8000 ms episodes= 5
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 5 minDelay= 8000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 8689 ms
-[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=Hari_Kudic&passwor"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:09:26.873"
-[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=Hari_Kudic&passwor"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=Hari_Kudic&password=R3HttJGgHHUd&type="
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=Hari_Kudic&password=R3HttJGgHHU"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "Hari_Kudic" pass: "R3Ht"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 8000 ms episodes= 5
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 5 minDelay= 8000 inDM= true
-[CP] DM aktivan → skip bez API poziva, needsDmRetry: "http://v2pro.online:8080"
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 7879 ms
-[PLAYABLE_WORKER] >>> checkPlayable START: "http://v2pro.online:8080/get.php?username=HNDC85xG6l&passwor"
-[TIMING_SLOT] server= "http://v2pro.online:8080" active_slots= 1 time= "12:09:34.752"
-[CP] ===== checkPlayable ENTER ===== "http://v2pro.online:8080/get.php?username=HNDC85xG6l&passwor"
-[PLAYABLE DEBUG] link: "http://v2pro.online:8080/get.php?username=HNDC85xG6l&password=zuZYA9RcW1&type=m3"
-[PLAYABLE DEBUG] apiUrl: "http://v2pro.online:8080/player_api.php?username=HNDC85xG6l&password=zuZYA9RcW1"
-[PLAYABLE DEBUG] base: "http://v2pro.online:8080" user: "HNDC85xG6l" pass: "zuZY"
-[SEQ THROTTLE] base= "http://v2pro.online:8080" minDelay= 8000 ms episodes= 5
-[THROTTLE_DEBUG] Posle wait: base= "http://v2pro.online:8080" episodes= 5 minDelay= 8000 inDM= true
-[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 894 ms
+[API 403] NGINX BAN detektovan → STOP
+[PLAYABLE_WORKER] <<< checkPlayable END, ok= false trajanje= 183 ms
