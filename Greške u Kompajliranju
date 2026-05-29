@@ -1,629 +1,4 @@
-                 from C:/msys64/ucrt64/include/qt6/QtWidgets/QApplication:1,
-                 from E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1:
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:305:9: note: candidate 1: 'template<class _InputIterator> std::map<_Key, _Tp, _Compare, _Alloc>::map(_InputIterator, _InputIterator, const _Compare&, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  305 |         map(_InputIterator __first, _InputIterator __last,
-      |         ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:305:9: note: candidate expects 3 arguments, 1 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:288:9: note: candidate 2: 'template<class _InputIterator> std::map<_Key, _Tp, _Compare, _Alloc>::map(_InputIterator, _InputIterator) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  288 |         map(_InputIterator __first, _InputIterator __last)
-      |         ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:288:9: note: candidate expects 2 arguments, 1 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:271:9: note: candidate 3: 'template<class _InputIterator> std::map<_Key, _Tp, _Compare, _Alloc>::map(_InputIterator, _InputIterator, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  271 |         map(_InputIterator __first, _InputIterator __last,
-      |         ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:271:9: note: candidate expects 3 arguments, 1 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:265:7: note: candidate 4: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::initializer_list<std::pair<const _Key, _Val> >, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  265 |       map(initializer_list<value_type> __l, const allocator_type& __a)
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:265:7: note: candidate expects 2 arguments, 1 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:259:7: note: candidate 5: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::map<_Key, _Tp, _Compare, _Alloc>&&, std::__type_identity_t<_Alloc>&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; std::__type_identity_t<_Alloc> = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  259 |       map(map&& __m, const __type_identity_t<allocator_type>& __a)
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:259:7: note: candidate expects 2 arguments, 1 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:255:7: note: candidate 6: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const std::map<_Key, _Tp, _Compare, _Alloc>&, std::__type_identity_t<_Alloc>&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; std::__type_identity_t<_Alloc> = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  255 |       map(const map& __m, const __type_identity_t<allocator_type>& __a)
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:255:7: note: candidate expects 2 arguments, 1 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:251:7: note: candidate 7: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  251 |       map(const allocator_type& __a)
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:251:33: note: no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'const std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, cpr::CaseInsensitiveCompare>::allocator_type&' {aka 'const std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >&'}
-  251 |       map(const allocator_type& __a)
-      |           ~~~~~~~~~~~~~~~~~~~~~~^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:243:7: note: candidate 8: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::initializer_list<std::pair<const _Key, _Val> >, const _Compare&, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  243 |       map(initializer_list<value_type> __l,
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:243:40: note: no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'std::initializer_list<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >'
-  243 |       map(initializer_list<value_type> __l,
-      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:230:7: note: candidate 9: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::map<_Key, _Tp, _Compare, _Alloc>&&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  230 |       map(map&&) = default;
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:230:11: note: no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, cpr::CaseInsensitiveCompare>&&'
-  230 |       map(map&&) = default;
-      |           ^~~~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:222:7: note: candidate 10: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const std::map<_Key, _Tp, _Compare, _Alloc>&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  222 |       map(const map&) = default;
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:222:11: note: no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'const std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, cpr::CaseInsensitiveCompare>&'
-  222 |       map(const map&) = default;
-      |           ^~~~~~~~~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:209:7: note: candidate 11: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const _Compare&, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  209 |       map(const _Compare& __comp,
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:209:27: note: no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'const cpr::CaseInsensitiveCompare&'
-  209 |       map(const _Compare& __comp,
-      |           ~~~~~~~~~~~~~~~~^~~~~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:200:7: note: candidate 12: 'std::map<_Key, _Tp, _Compare, _Alloc>::map() [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  200 |       map() = default;
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:200:7: note: candidate expects 0 arguments, 1 provided
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2753:24: error: return-statement with a value, in function returning 'void' [-fpermissive]
- 2753 |                 return false;
-      |                        ^~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2773:74: error: 'base' was not declared in this scope
- 2773 |             QList<QString> all_streams = extractStreamsFromM3U(m3u_text, base);
-      |                                                                          ^~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2782:65: error: return-statement with a value, in function returning 'void' [-fpermissive]
- 2782 |     if (m_stopRequested.load(std::memory_order_acquire)) return false;
-      |                                                                 ^~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2791:69: error: return-statement with a value, in function returning 'void' [-fpermissive]
- 2791 |         if (m_stopRequested.load(std::memory_order_acquire)) return false;
-      |                                                                     ^~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2799:31: error: 'base' was not declared in this scope
- 2799 |             xuiAnalyzerBefore(base, "stream", sc.url);
-      |                               ^~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2808:65: error: no matching function for call to 'cpr::Timeout::Timeout(<brace-enclosed initializer list>)'
- 2808 |                 cpr::Timeout{m_stopRequested.load() ? 300 : 8000},
-      |                                                                 ^
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2808:65: note: there are 4 candidates
-In file included from C:/msys64/ucrt64/include/cpr/connect_timeout.h:4,
-                 from C:/msys64/ucrt64/include/cpr/session.h:20,
-                 from C:/msys64/ucrt64/include/cpr/multiperform.h:6,
-                 from C:/msys64/ucrt64/include/cpr/api.h:17,
-                 from C:/msys64/ucrt64/include/cpr/cpr.h:4,
-                 from E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:45:
-C:/msys64/ucrt64/include/cpr/timeout.h:14:5: note: candidate 1: 'template<class Rep, class Period> cpr::Timeout::Timeout(const std::chrono::duration<_Rep1, _Period1>&)'
-   14 |     Timeout(const std::chrono::duration<Rep, Period>& duration) : ms{std::chrono::duration_cast<std::chrono::milliseconds>(duration)} {}
-      |     ^~~~~~~
-C:/msys64/ucrt64/include/cpr/timeout.h:14:5: note: template argument deduction/substitution failed:
-C:/msys64/ucrt64/include/cpr/timeout.h:17:5: note: candidate 2: 'cpr::Timeout::Timeout(const int32_t&)'
-   17 |     Timeout(const std::int32_t& milliseconds) : Timeout{std::chrono::milliseconds(milliseconds)} {}
-      |     ^~~~~~~
-C:/msys64/ucrt64/include/cpr/timeout.h:17:5: note: conversion of argument 1 would be ill-formed:
-C:/msys64/ucrt64/include/cpr/timeout.h:9:7: note: candidate 3: 'constexpr cpr::Timeout::Timeout(const cpr::Timeout&)'
-    9 | class Timeout {
-      |       ^~~~~~~
-C:/msys64/ucrt64/include/cpr/timeout.h:9:7: note: conversion of argument 1 would be ill-formed:
-C:/msys64/ucrt64/include/cpr/timeout.h:9:7: note: candidate 4: 'constexpr cpr::Timeout::Timeout(cpr::Timeout&&)'
-C:/msys64/ucrt64/include/cpr/timeout.h:9:7: note: conversion of argument 1 would be ill-formed:
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2810:44: error: 'headers' was not declared in this scope
- 2810 |                 cpr::Header{{"User-Agent", headers["User-Agent"].toStdString()},
-      |                                            ^~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2811:76: error: no matching function for call to 'std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, cpr::CaseInsensitiveCompare>::map(<brace-enclosed initializer list>)'
- 2811 |                             {"Accept", "*/*"}, {"Connection", "keep-alive"}},
-      |                                                                            ^
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2811:76: note: there are 12 candidates
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:305:9: note: candidate 1: 'template<class _InputIterator> std::map<_Key, _Tp, _Compare, _Alloc>::map(_InputIterator, _InputIterator, const _Compare&, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  305 |         map(_InputIterator __first, _InputIterator __last,
-      |         ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:305:9: note: template argument deduction/substitution failed:
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2811:76: note:   couldn't deduce template parameter '_InputIterator'
- 2811 |                             {"Accept", "*/*"}, {"Connection", "keep-alive"}},
-      |                                                                            ^
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:288:9: note: candidate 2: 'template<class _InputIterator> std::map<_Key, _Tp, _Compare, _Alloc>::map(_InputIterator, _InputIterator) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  288 |         map(_InputIterator __first, _InputIterator __last)
-      |         ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:288:9: note: candidate expects 2 arguments, 3 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:271:9: note: candidate 3: 'template<class _InputIterator> std::map<_Key, _Tp, _Compare, _Alloc>::map(_InputIterator, _InputIterator, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  271 |         map(_InputIterator __first, _InputIterator __last,
-      |         ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:271:9: note: template argument deduction/substitution failed:
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2811:76: note:   couldn't deduce template parameter '_InputIterator'
- 2811 |                             {"Accept", "*/*"}, {"Connection", "keep-alive"}},
-      |                                                                            ^
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:265:7: note: candidate 4: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::initializer_list<std::pair<const _Key, _Val> >, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  265 |       map(initializer_list<value_type> __l, const allocator_type& __a)
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:265:7: note: candidate expects 2 arguments, 3 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:259:7: note: candidate 5: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::map<_Key, _Tp, _Compare, _Alloc>&&, std::__type_identity_t<_Alloc>&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; std::__type_identity_t<_Alloc> = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  259 |       map(map&& __m, const __type_identity_t<allocator_type>& __a)
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:259:7: note: candidate expects 2 arguments, 3 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:255:7: note: candidate 6: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const std::map<_Key, _Tp, _Compare, _Alloc>&, std::__type_identity_t<_Alloc>&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; std::__type_identity_t<_Alloc> = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  255 |       map(const map& __m, const __type_identity_t<allocator_type>& __a)
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:255:7: note: candidate expects 2 arguments, 3 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:251:7: note: candidate 7: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  251 |       map(const allocator_type& __a)
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:251:7: note: candidate expects 1 argument, 3 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:243:7: note: candidate 8: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::initializer_list<std::pair<const _Key, _Val> >, const _Compare&, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  243 |       map(initializer_list<value_type> __l,
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:243:40: note: no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'std::initializer_list<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >'
-  243 |       map(initializer_list<value_type> __l,
-      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:230:7: note: candidate 9: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::map<_Key, _Tp, _Compare, _Alloc>&&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  230 |       map(map&&) = default;
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:230:7: note: candidate expects 1 argument, 3 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:222:7: note: candidate 10: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const std::map<_Key, _Tp, _Compare, _Alloc>&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  222 |       map(const map&) = default;
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:222:7: note: candidate expects 1 argument, 3 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:209:7: note: candidate 11: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const _Compare&, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  209 |       map(const _Compare& __comp,
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:209:7: note: candidate expects 2 arguments, 3 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:200:7: note: candidate 12: 'std::map<_Key, _Tp, _Compare, _Alloc>::map() [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  200 |       map() = default;
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:200:7: note: candidate expects 0 arguments, 3 provided
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2826:69: error: 'ct' was not declared in this scope; did you mean 'Qt'?
- 2826 |             qDebug() << "  Content-Type:" << QString::fromStdString(ct);
-      |                                                                     ^~
-      |                                                                     Qt
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2843:77: error: no matching function for call to 'cpr::Timeout::Timeout(<brace-enclosed initializer list>)'
- 2843 |                             cpr::Timeout{m_stopRequested.load() ? 300 : 8000},
-      |                                                                             ^
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2843:77: note: there are 4 candidates
-C:/msys64/ucrt64/include/cpr/timeout.h:14:5: note: candidate 1: 'template<class Rep, class Period> cpr::Timeout::Timeout(const std::chrono::duration<_Rep1, _Period1>&)'
-   14 |     Timeout(const std::chrono::duration<Rep, Period>& duration) : ms{std::chrono::duration_cast<std::chrono::milliseconds>(duration)} {}
-      |     ^~~~~~~
-C:/msys64/ucrt64/include/cpr/timeout.h:14:5: note: template argument deduction/substitution failed:
-C:/msys64/ucrt64/include/cpr/timeout.h:17:5: note: candidate 2: 'cpr::Timeout::Timeout(const int32_t&)'
-   17 |     Timeout(const std::int32_t& milliseconds) : Timeout{std::chrono::milliseconds(milliseconds)} {}
-      |     ^~~~~~~
-C:/msys64/ucrt64/include/cpr/timeout.h:17:5: note: conversion of argument 1 would be ill-formed:
-C:/msys64/ucrt64/include/cpr/timeout.h:9:7: note: candidate 3: 'constexpr cpr::Timeout::Timeout(const cpr::Timeout&)'
-    9 | class Timeout {
-      |       ^~~~~~~
-C:/msys64/ucrt64/include/cpr/timeout.h:9:7: note: conversion of argument 1 would be ill-formed:
-C:/msys64/ucrt64/include/cpr/timeout.h:9:7: note: candidate 4: 'constexpr cpr::Timeout::Timeout(cpr::Timeout&&)'
-C:/msys64/ucrt64/include/cpr/timeout.h:9:7: note: conversion of argument 1 would be ill-formed:
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2846:88: error: no matching function for call to 'std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, cpr::CaseInsensitiveCompare>::map(<brace-enclosed initializer list>)'
- 2846 |                                         {"Accept", "*/*"}, {"Connection", "keep-alive"}},
-      |                                                                                        ^
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2846:88: note: there are 12 candidates
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:305:9: note: candidate 1: 'template<class _InputIterator> std::map<_Key, _Tp, _Compare, _Alloc>::map(_InputIterator, _InputIterator, const _Compare&, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  305 |         map(_InputIterator __first, _InputIterator __last,
-      |         ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:305:9: note: template argument deduction/substitution failed:
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2846:88: note:   couldn't deduce template parameter '_InputIterator'
- 2846 |                                         {"Accept", "*/*"}, {"Connection", "keep-alive"}},
-      |                                                                                        ^
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:288:9: note: candidate 2: 'template<class _InputIterator> std::map<_Key, _Tp, _Compare, _Alloc>::map(_InputIterator, _InputIterator) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  288 |         map(_InputIterator __first, _InputIterator __last)
-      |         ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:288:9: note: candidate expects 2 arguments, 3 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:271:9: note: candidate 3: 'template<class _InputIterator> std::map<_Key, _Tp, _Compare, _Alloc>::map(_InputIterator, _InputIterator, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  271 |         map(_InputIterator __first, _InputIterator __last,
-      |         ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:271:9: note: template argument deduction/substitution failed:
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2846:88: note:   couldn't deduce template parameter '_InputIterator'
- 2846 |                                         {"Accept", "*/*"}, {"Connection", "keep-alive"}},
-      |                                                                                        ^
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:265:7: note: candidate 4: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::initializer_list<std::pair<const _Key, _Val> >, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  265 |       map(initializer_list<value_type> __l, const allocator_type& __a)
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:265:7: note: candidate expects 2 arguments, 3 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:259:7: note: candidate 5: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::map<_Key, _Tp, _Compare, _Alloc>&&, std::__type_identity_t<_Alloc>&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; std::__type_identity_t<_Alloc> = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  259 |       map(map&& __m, const __type_identity_t<allocator_type>& __a)
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:259:7: note: candidate expects 2 arguments, 3 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:255:7: note: candidate 6: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const std::map<_Key, _Tp, _Compare, _Alloc>&, std::__type_identity_t<_Alloc>&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; std::__type_identity_t<_Alloc> = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  255 |       map(const map& __m, const __type_identity_t<allocator_type>& __a)
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:255:7: note: candidate expects 2 arguments, 3 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:251:7: note: candidate 7: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  251 |       map(const allocator_type& __a)
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:251:7: note: candidate expects 1 argument, 3 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:243:7: note: candidate 8: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::initializer_list<std::pair<const _Key, _Val> >, const _Compare&, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  243 |       map(initializer_list<value_type> __l,
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:243:40: note: no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'std::initializer_list<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >'
-  243 |       map(initializer_list<value_type> __l,
-      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:230:7: note: candidate 9: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::map<_Key, _Tp, _Compare, _Alloc>&&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  230 |       map(map&&) = default;
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:230:7: note: candidate expects 1 argument, 3 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:222:7: note: candidate 10: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const std::map<_Key, _Tp, _Compare, _Alloc>&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  222 |       map(const map&) = default;
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:222:7: note: candidate expects 1 argument, 3 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:209:7: note: candidate 11: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const _Compare&, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  209 |       map(const _Compare& __comp,
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:209:7: note: candidate expects 2 arguments, 3 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:200:7: note: candidate 12: 'std::map<_Key, _Tp, _Compare, _Alloc>::map() [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  200 |       map() = default;
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:200:7: note: candidate expects 0 arguments, 3 provided
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2858:33: error: 'isRealMediaBody' was not declared in this scope
- 2858 |                             if (isRealMediaBody(body2, ct2)) {
-      |                                 ^~~~~~~~~~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2861:40: error: 'fillResult' was not declared in this scope; did you mean 'FillRect'?
- 2861 |                                 return fillResult();
-      |                                        ^~~~~~~~~~
-      |                                        FillRect
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2889:28: error: return-statement with a value, in function returning 'void' [-fpermissive]
- 2889 |                     return false;  // INSTANT HARD-FAIL - INVALID KREDENCIJALI
-      |                            ^~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2897:18: error: 'isRealMediaBody' was not declared in this scope
- 2897 |             if (!isRealMediaBody(body, ct)) {
-      |                  ^~~~~~~~~~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2905:20: error: 'fillResult' was not declared in this scope; did you mean 'FillRect'?
- 2905 |             return fillResult();
-      |                    ^~~~~~~~~~
-      |                    FillRect
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2913:12: error: return-statement with a value, in function returning 'void' [-fpermissive]
- 2913 |     return false;
-      |            ^~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp: In lambda function:
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:5605:73: error: 'class Worker' has no member named 'runVpnRetry'
- 5605 |         connect(workerThread, &QThread::started, [=]() { currentWorker->runVpnRetry(validLinks); });
-      |                                                                         ^~~~~~~~~~~
-mingw32-make[2]: *** [CMakeFiles\OgiXworkMakeM3u.dir\build.make:101: CMakeFiles/OgiXworkMakeM3u.dir/main.cpp.obj] Error 1
-mingw32-make[1]: *** [CMakeFiles\Makefile2:89: CMakeFiles/OgiXworkMakeM3u.dir/all] Error 2
-mingw32-make: *** [Makefile:90: all] Error 2
-Greska u kompajliranju!
-
- *  The terminal process "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command & 'E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\build_script.bat'" terminated with exit code: 1. 
- *  Terminal will be reused by tasks, press any key to close it. 
-
- *  Executing task: & 'E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\build_script.bat' 
-
-Konfigurisanje projekta...
--- The CXX compiler identification is GNU 15.2.0
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: C:/msys64/ucrt64/bin/c++.exe - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
--- Found Threads: TRUE
--- Performing Test HAVE_STDATOMIC
--- Performing Test HAVE_STDATOMIC - Success
--- Found WrapAtomic: TRUE
--- Found WrapVulkanHeaders: C:/msys64/ucrt64/include
--- Checking for modules 'libbrotlidec;libbrotlicommon'
---   Found libbrotlidec, version 1.2.0
---   Found libbrotlicommon, version 1.2.0
--- Found Brotli (via pkg-config): C:/msys64/ucrt64/include (found version "1.2.0")
--- Checking for module 'libidn2'
---   Found libidn2, version 2.3.8
--- Found Libidn2 (via pkg-config): C:/msys64/ucrt64/include (found version "2.3.8")
--- Checking for module 'libpsl'
---   Found libpsl, version 0.21.5
--- Found Libpsl (via pkg-config): C:/msys64/ucrt64/include (found version "0.21.5")
--- Checking for module 'libssh2'
---   Found libssh2, version 1.11.1
--- Found Libssh2 (via pkg-config): C:/msys64/ucrt64/include (found version "1.11.1")
--- Checking for module 'libnghttp2'
---   Found libnghttp2, version 1.68.0
--- Found NGHTTP2 (via pkg-config): C:/msys64/ucrt64/include (found version "1.68.0")
--- Checking for module 'libnghttp3'
---   Found libnghttp3, version 1.15.0
--- Found NGHTTP3 (via pkg-config): C:/msys64/ucrt64/include (found version "1.15.0")
--- Checking for module 'libngtcp2'
---   Found libngtcp2, version 1.21.0
--- Found NGTCP2 (via pkg-config): C:/msys64/ucrt64/include (found version "")
--- Checking for module 'libzstd'
---   Found libzstd, version 1.5.7
--- Found Zstd (via pkg-config): C:/msys64/ucrt64/include (found version "1.5.7")
--- Found CURL: C:/msys64/ucrt64/lib/cmake/CURL/CURLConfig.cmake (found version "8.19.0")
--- Projekt OgiXworkMakeM3u uspešno konfigurisan.
--- Configuring done (6.1s)
--- Generating done (0.2s)
--- Build files have been written to: E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build
-Kompajliranje...
-[  0%] Built target OgiXworkMakeM3u_autogen_timestamp_deps
-[ 14%] Automatic MOC and UIC for target OgiXworkMakeM3u
-[ 14%] Built target OgiXworkMakeM3u_autogen
-[ 28%] Building CXX object CMakeFiles/OgiXworkMakeM3u.dir/OgiXworkMakeM3u_autogen/mocs_compilation.cpp.obj
-[ 42%] Building CXX object CMakeFiles/OgiXworkMakeM3u.dir/main.cpp.obj
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp: In constructor 'Worker::Worker(QObject*)':
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1745:58: error: class 'Worker' does not have any field named 'm_stopRequested'
- 1745 |     Worker(QObject *parent = nullptr) : QObject(parent), m_stopRequested(false), m_inRetryPhase(false), m_vpnTag("") {}
-      |                                                          ^~~~~~~~~~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1745:82: error: class 'Worker' does not have any field named 'm_inRetryPhase'
- 1745 |     Worker(QObject *parent = nullptr) : QObject(parent), m_stopRequested(false), m_inRetryPhase(false), m_vpnTag("") {}
-      |                                                                                  ^~~~~~~~~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1745:105: error: class 'Worker' does not have any field named 'm_vpnTag'
- 1745 |     Worker(QObject *parent = nullptr) : QObject(parent), m_stopRequested(false), m_inRetryPhase(false), m_vpnTag("") {}
-      |                                                                                                         ^~~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp: In member function 'void Worker::requestStop()':
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1746:26: error: 'm_stopRequested' was not declared in this scope
- 1746 |     void requestStop() { m_stopRequested.store(true, std::memory_order_release); }
-      |                          ^~~~~~~~~~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp: In member function 'bool Worker::isStopped() const':
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1747:39: error: 'm_stopRequested' was not declared in this scope
- 1747 |     bool isStopped()   const { return m_stopRequested.load(std::memory_order_acquire); }
-      |                                       ^~~~~~~~~~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp: In member function 'void Worker::setVpnTag(const QString&)':
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1748:42: error: 'm_vpnTag' was not declared in this scope
- 1748 |     void setVpnTag(const QString &tag) { m_vpnTag = tag; }
-      |                                          ^~~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp: In member function 'void Worker::runCheck(const QList<QString>&, bool, bool)':
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1767:17: error: 'm_stopRequested' was not declared in this scope
- 1767 |             if (m_stopRequested.load(std::memory_order_acquire)) break;
-      |                 ^~~~~~~~~~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1772:31: error: 'checkPhase1' was not declared in this scope
- 1772 |             CheckResult res = checkPhase1(link);
-      |                               ^~~~~~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1780:14: error: 'm_stopRequested' was not declared in this scope
- 1780 |         if (!m_stopRequested.load() && phase2 && !retryLinks.isEmpty()) {
-      |              ^~~~~~~~~~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1790:35: error: 'checkPhase2' was not declared in this scope
- 1790 |                 CheckResult res = checkPhase2(link);
-      |                                   ^~~~~~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1799:28: error: 'm_stopRequested' was not declared in this scope
- 1799 |         emit checkFinished(m_stopRequested.load());
-      |                            ^~~~~~~~~~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp: In member function 'void Worker::runPlayable(const QList<QString>&)':
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1819:44: error: 'm_cfBanMutex' was not declared in this scope
- 1819 |             std::lock_guard<std::mutex> lk(m_cfBanMutex);
-      |                                            ^~~~~~~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1820:13: error: 'm_cfBanCount' was not declared in this scope
- 1820 |             m_cfBanCount.clear();
-      |             ^~~~~~~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1821:13: error: 'm_cfBanReported' was not declared in this scope
- 1821 |             m_cfBanReported.clear();
-      |             ^~~~~~~~~~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1824:44: error: 'm_nginxBanMutex' was not declared in this scope
- 1824 |             std::lock_guard<std::mutex> lk(m_nginxBanMutex);
-      |                                            ^~~~~~~~~~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1825:13: error: 'm_nginxBanReported' was not declared in this scope
- 1825 |             m_nginxBanReported.clear();
-      |             ^~~~~~~~~~~~~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1867:9: error: 'm_poolDmDetected' was not declared in this scope
- 1867 |         m_poolDmDetected.store(false);
-      |         ^~~~~~~~~~~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1907:13: error: 'm_stopRequested' was not declared in this scope
- 1907 |         if (m_stopRequested.load(std::memory_order_acquire)) { emit checkFinished(true); return; }
-      |             ^~~~~~~~~~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1916:39: error: 'm_stopRequested' was not declared in this scope
- 1916 |         std::atomic<bool> &stopFlag = m_stopRequested;
-      |                                       ^~~~~~~~~~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp: In lambda function:
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1955:128: error: 'm_poolDmDetected' is not captured
- 1955 |                     { std::lock_guard<std::mutex> _lk(_rt->mx); _maxSlots = (isXuiSlowServer(baseCopy) || _rt->isAggressive || m_poolDmDetected.load()) ? 1 : 2; }
-      |                                                                                                                                ^~~~~~~~~~~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1924:145: note: the lambda has no capture-default
- 1924 |             pool.enqueue([this, linkCopy, baseCopy, total, processedCount, progressMutex, startTime, &stopFlag, debugRetryLinks, debugRetryMutex]() {
-      |                                                                                                                                                 ^
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1867:9: note: '<typeprefixerror>m_poolDmDetected' declared here
- 1867 |         m_poolDmDetected.store(false);
-      |         ^~~~~~~~~~~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2116:31: error: 'checkPlayable' was not declared in this scope; did you mean 'runPlayable'?
- 2116 |                     bool ok = checkPlayable(linkCopy, result);
-      |                               ^~~~~~~~~~~~~
-      |                               runPlayable
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2134:14: error: expected primary-expression before ')' token
- 2134 |             });
-      |              ^
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp: In member function 'void Worker::runPlayable(const QList<QString>&)':
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2137:9: error: expected ')' before 'pool'
- 2137 |         pool.waitForAllOrStop(stopFlag);
-      |         ^~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1924:25: note: to match this '('
- 1924 |             pool.enqueue([this, linkCopy, baseCopy, total, processedCount, progressMutex, startTime, &stopFlag, debugRetryLinks, debugRetryMutex]() {
-      |                         ^
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2159:51: error: a function-definition is not allowed here before '{' token
- 2159 |     void runVpnRetry(const QList<QString> &links) {
-      |                                                   ^
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2216:5: error: expected primary-expression before 'private'
- 2216 |     private:
-      |     ^~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2232:30: warning: empty parentheses were disambiguated as a function declaration [-Wvexing-parse]
- 2232 |     QString detectVpnLocation() {
-      |                              ^~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2232:30: note: remove parentheses to default-initialize a variable
- 2232 |     QString detectVpnLocation() {
-      |                              ^~
-      |                              --
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2232:30: note: or replace parentheses with braces to value-initialize a variable
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2232:33: error: a function-definition is not allowed here before '{' token
- 2232 |     QString detectVpnLocation() {
-      |                                 ^
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2254:50: error: a function-definition is not allowed here before '{' token
- 2254 |     CheckResult checkPhase1(const QString &link) {
-      |                                                  ^
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2280:50: error: a function-definition is not allowed here before '{' token
- 2280 |     CheckResult checkPhase2(const QString &link) {
-      |                                                  ^
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2302:88: error: a function-definition is not allowed here before '{' token
- 2302 |         static bool isRealMediaBody(const std::string &body, const std::string &ctRaw) {
-      |                                                                                        ^
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2341:81: error: a function-definition is not allowed here before '{' token
- 2341 |                 bool checkPlayable(const QString &link, CheckResult &outResult) {
-      |                                                                                 ^
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2713:65: error: return-statement with a value, in function returning 'void' [-fpermissive]
- 2713 |     if (m_stopRequested.load(std::memory_order_acquire)) return false;
-      |                                                                 ^~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2717:37: error: 'base' was not declared in this scope
- 2717 |         auto* rt = getReactThrottle(base);
-      |                                     ^~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2746:65: error: return-statement with a value, in function returning 'void' [-fpermissive]
- 2746 |     if (m_stopRequested.load(std::memory_order_acquire)) return false;
-      |                                                                 ^~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2751:67: error: 'username' was not declared in this scope; did you mean 'rename'?
- 2751 |     const QString _eu = QString::fromUtf8(QUrl::toPercentEncoding(username, "@._-"));
-      |                                                                   ^~~~~~~~
-      |                                                                   rename
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2752:67: error: 'password' was not declared in this scope
- 2752 |     const QString _ep = QString::fromUtf8(QUrl::toPercentEncoding(password, "@._-!"));
-      |                                                                   ^~~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2755:34: error: 'link' was not declared in this scope; did you mean 'links'?
- 2755 |     QString m3uUrl = buildM3uUrl(link);
-      |                                  ^~~~
-      |                                  links
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2764:31: error: 'base' was not declared in this scope
- 2764 |             xuiAnalyzerBefore(base, "m3u", m3uUrl);
-      |                               ^~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2774:44: error: 'headers' was not declared in this scope
- 2774 |                 cpr::Header{{"User-Agent", headers["User-Agent"].toStdString()}},
-      |                                            ^~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2774:80: error: no matching function for call to 'std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, cpr::CaseInsensitiveCompare>::map(<brace-enclosed initializer list>)'
- 2774 |                 cpr::Header{{"User-Agent", headers["User-Agent"].toStdString()}},
-      |                                                                                ^
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2774:80: note: there are 12 candidates
-In file included from C:/msys64/ucrt64/include/c++/15.2.0/map:65,
-                 from C:/msys64/ucrt64/include/qt6/QtCore/qmetatype.h:29,
-                 from C:/msys64/ucrt64/include/qt6/QtCore/qobject.h:18,
-                 from C:/msys64/ucrt64/include/qt6/QtCore/qabstracteventdispatcher.h:7,
-                 from C:/msys64/ucrt64/include/qt6/QtCore/qbasictimer.h:8,
-                 from C:/msys64/ucrt64/include/qt6/QtCore/qcoreevent.h:7,
-                 from C:/msys64/ucrt64/include/qt6/QtCore/qcoreapplication.h:10,
-                 from C:/msys64/ucrt64/include/qt6/QtWidgets/qapplication.h:9,
-                 from C:/msys64/ucrt64/include/qt6/QtWidgets/QApplication:1,
-                 from E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1:
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:305:9: note: candidate 1: 'template<class _InputIterator> std::map<_Key, _Tp, _Compare, _Alloc>::map(_InputIterator, _InputIterator, const _Compare&, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  305 |         map(_InputIterator __first, _InputIterator __last,
-      |         ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:305:9: note: candidate expects 3 arguments, 1 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:288:9: note: candidate 2: 'template<class _InputIterator> std::map<_Key, _Tp, _Compare, _Alloc>::map(_InputIterator, _InputIterator) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  288 |         map(_InputIterator __first, _InputIterator __last)
-      |         ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:288:9: note: candidate expects 2 arguments, 1 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:271:9: note: candidate 3: 'template<class _InputIterator> std::map<_Key, _Tp, _Compare, _Alloc>::map(_InputIterator, _InputIterator, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  271 |         map(_InputIterator __first, _InputIterator __last,
-      |         ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:271:9: note: candidate expects 3 arguments, 1 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:265:7: note: candidate 4: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::initializer_list<std::pair<const _Key, _Val> >, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  265 |       map(initializer_list<value_type> __l, const allocator_type& __a)
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:265:7: note: candidate expects 2 arguments, 1 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:259:7: note: candidate 5: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::map<_Key, _Tp, _Compare, _Alloc>&&, std::__type_identity_t<_Alloc>&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; std::__type_identity_t<_Alloc> = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  259 |       map(map&& __m, const __type_identity_t<allocator_type>& __a)
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:259:7: note: candidate expects 2 arguments, 1 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:255:7: note: candidate 6: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const std::map<_Key, _Tp, _Compare, _Alloc>&, std::__type_identity_t<_Alloc>&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; std::__type_identity_t<_Alloc> = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  255 |       map(const map& __m, const __type_identity_t<allocator_type>& __a)
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:255:7: note: candidate expects 2 arguments, 1 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:251:7: note: candidate 7: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  251 |       map(const allocator_type& __a)
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:251:33: note: no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'const std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, cpr::CaseInsensitiveCompare>::allocator_type&' {aka 'const std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >&'}
-  251 |       map(const allocator_type& __a)
-      |           ~~~~~~~~~~~~~~~~~~~~~~^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:243:7: note: candidate 8: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::initializer_list<std::pair<const _Key, _Val> >, const _Compare&, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  243 |       map(initializer_list<value_type> __l,
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:243:40: note: no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'std::initializer_list<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >'
-  243 |       map(initializer_list<value_type> __l,
-      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:230:7: note: candidate 9: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::map<_Key, _Tp, _Compare, _Alloc>&&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  230 |       map(map&&) = default;
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:230:11: note: no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, cpr::CaseInsensitiveCompare>&&'
-  230 |       map(map&&) = default;
-      |           ^~~~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:222:7: note: candidate 10: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const std::map<_Key, _Tp, _Compare, _Alloc>&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  222 |       map(const map&) = default;
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:222:11: note: no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'const std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, cpr::CaseInsensitiveCompare>&'
-  222 |       map(const map&) = default;
-      |           ^~~~~~~~~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:209:7: note: candidate 11: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const _Compare&, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  209 |       map(const _Compare& __comp,
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:209:27: note: no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'const cpr::CaseInsensitiveCompare&'
-  209 |       map(const _Compare& __comp,
-      |           ~~~~~~~~~~~~~~~~^~~~~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:200:7: note: candidate 12: 'std::map<_Key, _Tp, _Compare, _Alloc>::map() [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  200 |       map() = default;
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:200:7: note: candidate expects 0 arguments, 1 provided
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2791:24: error: return-statement with a value, in function returning 'void' [-fpermissive]
- 2791 |                 return false;
-      |                        ^~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2811:74: error: 'base' was not declared in this scope
- 2811 |             QList<QString> all_streams = extractStreamsFromM3U(m3u_text, base);
-      |                                                                          ^~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2820:65: error: return-statement with a value, in function returning 'void' [-fpermissive]
- 2820 |     if (m_stopRequested.load(std::memory_order_acquire)) return false;
-      |                                                                 ^~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2829:69: error: return-statement with a value, in function returning 'void' [-fpermissive]
- 2829 |         if (m_stopRequested.load(std::memory_order_acquire)) return false;
-      |                                                                     ^~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2837:31: error: 'base' was not declared in this scope
- 2837 |             xuiAnalyzerBefore(base, "stream", sc.url);
-      |                               ^~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2846:65: error: no matching function for call to 'cpr::Timeout::Timeout(<brace-enclosed initializer list>)'
- 2846 |                 cpr::Timeout{m_stopRequested.load() ? 300 : 8000},
-      |                                                                 ^
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2846:65: note: there are 4 candidates
-In file included from C:/msys64/ucrt64/include/cpr/connect_timeout.h:4,
-                 from C:/msys64/ucrt64/include/cpr/session.h:20,
-                 from C:/msys64/ucrt64/include/cpr/multiperform.h:6,
-                 from C:/msys64/ucrt64/include/cpr/api.h:17,
-                 from C:/msys64/ucrt64/include/cpr/cpr.h:4,
-                 from E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:45:
-C:/msys64/ucrt64/include/cpr/timeout.h:14:5: note: candidate 1: 'template<class Rep, class Period> cpr::Timeout::Timeout(const std::chrono::duration<_Rep1, _Period1>&)'
-   14 |     Timeout(const std::chrono::duration<Rep, Period>& duration) : ms{std::chrono::duration_cast<std::chrono::milliseconds>(duration)} {}
-      |     ^~~~~~~
-C:/msys64/ucrt64/include/cpr/timeout.h:14:5: note: template argument deduction/substitution failed:
-C:/msys64/ucrt64/include/cpr/timeout.h:17:5: note: candidate 2: 'cpr::Timeout::Timeout(const int32_t&)'
-   17 |     Timeout(const std::int32_t& milliseconds) : Timeout{std::chrono::milliseconds(milliseconds)} {}
-      |     ^~~~~~~
-C:/msys64/ucrt64/include/cpr/timeout.h:17:5: note: conversion of argument 1 would be ill-formed:
-C:/msys64/ucrt64/include/cpr/timeout.h:9:7: note: candidate 3: 'constexpr cpr::Timeout::Timeout(const cpr::Timeout&)'
-    9 | class Timeout {
-      |       ^~~~~~~
-C:/msys64/ucrt64/include/cpr/timeout.h:9:7: note: conversion of argument 1 would be ill-formed:
-C:/msys64/ucrt64/include/cpr/timeout.h:9:7: note: candidate 4: 'constexpr cpr::Timeout::Timeout(cpr::Timeout&&)'
-C:/msys64/ucrt64/include/cpr/timeout.h:9:7: note: conversion of argument 1 would be ill-formed:
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2848:44: error: 'headers' was not declared in this scope
- 2848 |                 cpr::Header{{"User-Agent", headers["User-Agent"].toStdString()},
-      |                                            ^~~~~~~
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2849:76: error: no matching function for call to 'std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, cpr::CaseInsensitiveCompare>::map(<brace-enclosed initializer list>)'
- 2849 |                             {"Accept", "*/*"}, {"Connection", "keep-alive"}},
-      |                                                                            ^
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2849:76: note: there are 12 candidates
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:305:9: note: candidate 1: 'template<class _InputIterator> std::map<_Key, _Tp, _Compare, _Alloc>::map(_InputIterator, _InputIterator, const _Compare&, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  305 |         map(_InputIterator __first, _InputIterator __last,
-      |         ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:305:9: note: template argument deduction/substitution failed:
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2849:76: note:   couldn't deduce template parameter '_InputIterator'
- 2849 |                             {"Accept", "*/*"}, {"Connection", "keep-alive"}},
-      |                                                                            ^
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:288:9: note: candidate 2: 'template<class _InputIterator> std::map<_Key, _Tp, _Compare, _Alloc>::map(_InputIterator, _InputIterator) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  288 |         map(_InputIterator __first, _InputIterator __last)
-      |         ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:288:9: note: candidate expects 2 arguments, 3 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:271:9: note: candidate 3: 'template<class _InputIterator> std::map<_Key, _Tp, _Compare, _Alloc>::map(_InputIterator, _InputIterator, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  271 |         map(_InputIterator __first, _InputIterator __last,
-      |         ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:271:9: note: template argument deduction/substitution failed:
-E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2849:76: note:   couldn't deduce template parameter '_InputIterator'
- 2849 |                             {"Accept", "*/*"}, {"Connection", "keep-alive"}},
-      |                                                                            ^
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:265:7: note: candidate 4: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::initializer_list<std::pair<const _Key, _Val> >, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  265 |       map(initializer_list<value_type> __l, const allocator_type& __a)
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:265:7: note: candidate expects 2 arguments, 3 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:259:7: note: candidate 5: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::map<_Key, _Tp, _Compare, _Alloc>&&, std::__type_identity_t<_Alloc>&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; std::__type_identity_t<_Alloc> = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  259 |       map(map&& __m, const __type_identity_t<allocator_type>& __a)
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:259:7: note: candidate expects 2 arguments, 3 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:255:7: note: candidate 6: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const std::map<_Key, _Tp, _Compare, _Alloc>&, std::__type_identity_t<_Alloc>&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; std::__type_identity_t<_Alloc> = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  255 |       map(const map& __m, const __type_identity_t<allocator_type>& __a)
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:255:7: note: candidate expects 2 arguments, 3 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:251:7: note: candidate 7: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  251 |       map(const allocator_type& __a)
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:251:7: note: candidate expects 1 argument, 3 provided
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:243:7: note: candidate 8: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::initializer_list<std::pair<const _Key, _Val> >, const _Compare&, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
-  243 |       map(initializer_list<value_type> __l,
-      |       ^~~
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:243:40: note: no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'std::initializer_list<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >'
+itializer_list<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >'
   243 |       map(initializer_list<value_type> __l,
       |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:230:7: note: candidate 9: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::map<_Key, _Tp, _Compare, _Alloc>&&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
@@ -748,6 +123,632 @@ E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.
 E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:5643:73: error: 'class Worker' has no member named 'runVpnRetry'
  5643 |         connect(workerThread, &QThread::started, [=]() { currentWorker->runVpnRetry(validLinks); });
       |                                                                         ^~~~~~~~~~~
+mingw32-make[2]: *** [CMakeFiles\OgiXworkMakeM3u.dir\build.make:101: CMakeFiles/OgiXworkMakeM3u.dir/main.cpp.obj] Error 1
+mingw32-make[1]: *** [CMakeFiles\Makefile2:89: CMakeFiles/OgiXworkMakeM3u.dir/all] Error 2
+mingw32-make: *** [Makefile:90: all] Error 2
+Greska u kompajliranju!
+
+ *  The terminal process "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command & 'E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\build_script.bat'" terminated with exit code: 1. 
+ *  Terminal will be reused by tasks, press any key to close it. 
+
+ *  Executing task: & 'E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\build_script.bat' 
+
+Konfigurisanje projekta...
+-- The CXX compiler identification is GNU 15.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/msys64/ucrt64/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found WrapVulkanHeaders: C:/msys64/ucrt64/include
+-- Checking for modules 'libbrotlidec;libbrotlicommon'
+--   Found libbrotlidec, version 1.2.0
+--   Found libbrotlicommon, version 1.2.0
+-- Found Brotli (via pkg-config): C:/msys64/ucrt64/include (found version "1.2.0")
+-- Checking for module 'libidn2'
+--   Found libidn2, version 2.3.8
+-- Found Libidn2 (via pkg-config): C:/msys64/ucrt64/include (found version "2.3.8")
+-- Checking for module 'libpsl'
+--   Found libpsl, version 0.21.5
+-- Found Libpsl (via pkg-config): C:/msys64/ucrt64/include (found version "0.21.5")
+-- Checking for module 'libssh2'
+--   Found libssh2, version 1.11.1
+-- Found Libssh2 (via pkg-config): C:/msys64/ucrt64/include (found version "1.11.1")
+-- Checking for module 'libnghttp2'
+--   Found libnghttp2, version 1.68.0
+-- Found NGHTTP2 (via pkg-config): C:/msys64/ucrt64/include (found version "1.68.0")
+-- Checking for module 'libnghttp3'
+--   Found libnghttp3, version 1.15.0
+-- Found NGHTTP3 (via pkg-config): C:/msys64/ucrt64/include (found version "1.15.0")
+-- Checking for module 'libngtcp2'
+--   Found libngtcp2, version 1.21.0
+-- Found NGTCP2 (via pkg-config): C:/msys64/ucrt64/include (found version "")
+-- Checking for module 'libzstd'
+--   Found libzstd, version 1.5.7
+-- Found Zstd (via pkg-config): C:/msys64/ucrt64/include (found version "1.5.7")
+-- Found CURL: C:/msys64/ucrt64/lib/cmake/CURL/CURLConfig.cmake (found version "8.19.0")
+-- Projekt OgiXworkMakeM3u uspešno konfigurisan.
+-- Configuring done (6.2s)
+-- Generating done (0.2s)
+-- Build files have been written to: E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build
+Kompajliranje...
+[  0%] Built target OgiXworkMakeM3u_autogen_timestamp_deps
+[ 14%] Automatic MOC and UIC for target OgiXworkMakeM3u
+[ 14%] Built target OgiXworkMakeM3u_autogen
+[ 28%] Building CXX object CMakeFiles/OgiXworkMakeM3u.dir/OgiXworkMakeM3u_autogen/mocs_compilation.cpp.obj
+[ 42%] Building CXX object CMakeFiles/OgiXworkMakeM3u.dir/main.cpp.obj
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:4930:1: error: cannot define member function 'Worker::OgiXApp::OgiXApp' within 'Worker'
+ 4930 | OgiXApp::OgiXApp(QWidget *parent) : QWidget(parent), currentCheckMode(CheckMode::Normal) {
+      | ^~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:4976:1: error: cannot define member function 'Worker::OgiXApp::OgiXApp' within 'Worker'
+ 4976 | OgiXApp::~OgiXApp() { cleanupWorker(); }
+      | ^~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:4978:10: error: cannot define member function 'Worker::OgiXApp::createSidePanel' within 'Worker'
+ 4978 | QWidget* OgiXApp::createSidePanel() {
+      |          ^~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:5017:6: error: cannot define member function 'Worker::OgiXApp::cleanupWorker' within 'Worker'
+ 5017 | void OgiXApp::cleanupWorker() {
+      |      ^~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:5032:6: error: cannot define member function 'Worker::OgiXApp::clearAllResultTabs' within 'Worker'
+ 5032 | void OgiXApp::clearAllResultTabs() {
+      |      ^~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:5043:10: error: cannot define member function 'Worker::OgiXApp::createGeneratorTab' within 'Worker'
+ 5043 | QWidget* OgiXApp::createGeneratorTab() {
+      |          ^~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:5070:10: error: cannot define member function 'Worker::OgiXApp::createCheckerTab' within 'Worker'
+ 5070 | QWidget* OgiXApp::createCheckerTab() {
+      |          ^~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:5093:10: error: cannot define member function 'Worker::OgiXApp::createMacTab' within 'Worker'
+ 5093 | QWidget* OgiXApp::createMacTab() {
+      |          ^~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:5435:6: error: cannot define member function 'Worker::OgiXApp::processGenerator' within 'Worker'
+ 5435 | void OgiXApp::processGenerator() {
+      |      ^~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:5474:16: error: cannot define member function 'Worker::OgiXApp::extractUrlsFromText' within 'Worker'
+ 5474 | QList<QString> OgiXApp::extractUrlsFromText(const QString &text) {
+      |                ^~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:5501:6: error: cannot define member function 'Worker::OgiXApp::isValidM3uUrl' within 'Worker'
+ 5501 | bool OgiXApp::isValidM3uUrl(const QString &url) {
+      |      ^~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:5507:6: error: cannot define member function 'Worker::OgiXApp::loadCheckFile' within 'Worker'
+ 5507 | void OgiXApp::loadCheckFile() {
+      |      ^~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:5518:6: error: cannot define member function 'Worker::OgiXApp::runCheck' within 'Worker'
+ 5518 | void OgiXApp::runCheck() {
+      |      ^~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:5546:6: error: cannot define member function 'Worker::OgiXApp::stopCheck' within 'Worker'
+ 5546 | void OgiXApp::stopCheck() {
+      |      ^~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:5558:10: error: cannot define member function 'Worker::OgiXApp::runPlayableCheck' within 'Worker'
+ 5558 |     void OgiXApp::runPlayableCheck() {
+      |          ^~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:5638:6: error: cannot define member function 'Worker::OgiXApp::runVpnRetry' within 'Worker'
+ 5638 | void OgiXApp::runVpnRetry() {
+      |      ^~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:5683:6: error: cannot define member function 'Worker::OgiXApp::saveResults' within 'Worker'
+ 5683 | void OgiXApp::saveResults() {
+      |      ^~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:5713:6: error: cannot define member function 'Worker::OgiXApp::updateVpnCountry' within 'Worker'
+ 5713 | void OgiXApp::updateVpnCountry(const QString &country) {
+      |      ^~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:5727:6: error: cannot define member function 'Worker::OgiXApp::updateProgress' within 'Worker'
+ 5727 | void OgiXApp::updateProgress(int current, int total, double speed) {
+      |      ^~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:5735:6: error: cannot define member function 'Worker::OgiXApp::updatePhase' within 'Worker'
+ 5735 | void OgiXApp::updatePhase(const QString &text) {
+      |      ^~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:5739:6: error: cannot define member function 'Worker::OgiXApp::applyColorCoding' within 'Worker'
+ 5739 | void OgiXApp::applyColorCoding(QTextEdit *edit, const CheckResult &result) {
+      |      ^~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:5747:6: error: cannot define member function 'Worker::OgiXApp::handleResult' within 'Worker'
+ 5747 | void OgiXApp::handleResult(const CheckResult &result) {
+      |      ^~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:5827:6: error: cannot define member function 'Worker::OgiXApp::finalizeCheck' within 'Worker'
+ 5827 | void OgiXApp::finalizeCheck(bool wasStopped) {
+      |      ^~~~~~~
+In file included from C:/msys64/ucrt64/include/qt6/QtCore/qtmochelpers.h:19,
+                 from E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:12,
+                 from E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:5890:
+C:/msys64/ucrt64/include/qt6/QtCore/qtmocconstants.h:24:1: error: expected unqualified-id before 'namespace'
+   24 | namespace QtMocConstants {
+      | ^~~~~~~~~
+In file included from C:/msys64/ucrt64/include/qt6/QtCore/qtmochelpers.h:21:
+C:/msys64/ucrt64/include/qt6/QtCore/q20algorithm.h:29:1: error: expected unqualified-id before 'namespace'
+   29 | namespace q20 {
+      | ^~~~~~~~~
+C:/msys64/ucrt64/include/qt6/QtCore/q20algorithm.h:140:1: error: expected unqualified-id before 'namespace'
+  140 | namespace q20::ranges {
+      | ^~~~~~~~~
+C:/msys64/ucrt64/include/qt6/QtCore/qtmochelpers.h:30:1: error: expected unqualified-id before 'namespace'
+   30 | namespace QtMocHelpers {
+      | ^~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:33:1: error: expected unqualified-id before 'namespace'
+   33 | namespace {
+      | ^~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:37:11: error: explicit specialization in non-namespace scope 'class Worker'
+   37 | template <> constexpr inline auto FastPasteTextEdit::qt_create_metaobjectdata<qt_meta_tag_ZN17FastPasteTextEditE_t>()
+      |           ^
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:37:79: error: 'qt_meta_tag_ZN17FastPasteTextEditE_t' was not declared in this scope
+   37 | template <> constexpr inline auto FastPasteTextEdit::qt_create_metaobjectdata<qt_meta_tag_ZN17FastPasteTextEditE_t>()
+      |                                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:37:35: error: cannot define member function 'FastPasteTextEdit::qt_create_metaobjectdata' within 'Worker'
+   37 | template <> constexpr inline auto FastPasteTextEdit::qt_create_metaobjectdata<qt_meta_tag_ZN17FastPasteTextEditE_t>()
+      |                                   ^~~~~~~~~~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:53:31: error: invalid use of qualified-name 'FastPasteTextEdit::staticMetaObject'
+   53 | Q_CONSTINIT const QMetaObject FastPasteTextEdit::staticMetaObject = { {
+      |                               ^~~~~~~~~~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:63:6: error: cannot define member function 'FastPasteTextEdit::qt_static_metacall' within 'Worker'
+   63 | void FastPasteTextEdit::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+      |      ^~~~~~~~~~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:72:20: error: cannot define member function 'FastPasteTextEdit::metaObject' within 'Worker'
+   72 | const QMetaObject *FastPasteTextEdit::metaObject() const
+      |                    ^~~~~~~~~~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:77:7: error: cannot define member function 'FastPasteTextEdit::qt_metacast' within 'Worker'
+   77 | void *FastPasteTextEdit::qt_metacast(const char *_clname)
+      |       ^~~~~~~~~~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:85:5: error: cannot define member function 'FastPasteTextEdit::qt_metacall' within 'Worker'
+   85 | int FastPasteTextEdit::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+      |     ^~~~~~~~~~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:90:1: error: expected unqualified-id before 'namespace'
+   90 | namespace {
+      | ^~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:94:11: error: explicit specialization in non-namespace scope 'class Worker'
+   94 | template <> constexpr inline auto CustomCheckBox::qt_create_metaobjectdata<qt_meta_tag_ZN14CustomCheckBoxE_t>()
+      |           ^
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:94:76: error: 'qt_meta_tag_ZN14CustomCheckBoxE_t' was not declared in this scope
+   94 | template <> constexpr inline auto CustomCheckBox::qt_create_metaobjectdata<qt_meta_tag_ZN14CustomCheckBoxE_t>()
+      |                                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:94:35: error: cannot define member function 'CustomCheckBox::qt_create_metaobjectdata' within 'Worker'
+   94 | template <> constexpr inline auto CustomCheckBox::qt_create_metaobjectdata<qt_meta_tag_ZN14CustomCheckBoxE_t>()
+      |                                   ^~~~~~~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:110:31: error: invalid use of qualified-name 'CustomCheckBox::staticMetaObject'
+  110 | Q_CONSTINIT const QMetaObject CustomCheckBox::staticMetaObject = { {
+      |                               ^~~~~~~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:120:6: error: cannot define member function 'CustomCheckBox::qt_static_metacall' within 'Worker'
+  120 | void CustomCheckBox::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+      |      ^~~~~~~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:129:20: error: cannot define member function 'CustomCheckBox::metaObject' within 'Worker'
+  129 | const QMetaObject *CustomCheckBox::metaObject() const
+      |                    ^~~~~~~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:134:7: error: cannot define member function 'CustomCheckBox::qt_metacast' within 'Worker'
+  134 | void *CustomCheckBox::qt_metacast(const char *_clname)
+      |       ^~~~~~~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:142:5: error: cannot define member function 'CustomCheckBox::qt_metacall' within 'Worker'
+  142 | int CustomCheckBox::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+      |     ^~~~~~~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:147:1: error: expected unqualified-id before 'namespace'
+  147 | namespace {
+      | ^~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:151:11: error: explicit specialization in non-namespace scope 'class Worker'
+  151 | template <> constexpr inline auto BadgeButton::qt_create_metaobjectdata<qt_meta_tag_ZN11BadgeButtonE_t>()
+      |           ^
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:151:73: error: 'qt_meta_tag_ZN11BadgeButtonE_t' was not declared in this scope
+  151 | template <> constexpr inline auto BadgeButton::qt_create_metaobjectdata<qt_meta_tag_ZN11BadgeButtonE_t>()
+      |                                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:151:35: error: cannot define member function 'BadgeButton::qt_create_metaobjectdata' within 'Worker'
+  151 | template <> constexpr inline auto BadgeButton::qt_create_metaobjectdata<qt_meta_tag_ZN11BadgeButtonE_t>()
+      |                                   ^~~~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:167:31: error: invalid use of qualified-name 'BadgeButton::staticMetaObject'
+  167 | Q_CONSTINIT const QMetaObject BadgeButton::staticMetaObject = { {
+      |                               ^~~~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:177:6: error: cannot define member function 'BadgeButton::qt_static_metacall' within 'Worker'
+  177 | void BadgeButton::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+      |      ^~~~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:186:20: error: cannot define member function 'BadgeButton::metaObject' within 'Worker'
+  186 | const QMetaObject *BadgeButton::metaObject() const
+      |                    ^~~~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:191:7: error: cannot define member function 'BadgeButton::qt_metacast' within 'Worker'
+  191 | void *BadgeButton::qt_metacast(const char *_clname)
+      |       ^~~~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:199:5: error: cannot define member function 'BadgeButton::qt_metacall' within 'Worker'
+  199 | int BadgeButton::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+      |     ^~~~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:204:1: error: expected unqualified-id before 'namespace'
+  204 | namespace {
+      | ^~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:208:11: error: explicit specialization in non-namespace scope 'class Worker'
+  208 | template <> constexpr inline auto MacWorker::qt_create_metaobjectdata<qt_meta_tag_ZN9MacWorkerE_t>()
+      |           ^
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:208:71: error: 'qt_meta_tag_ZN9MacWorkerE_t' was not declared in this scope
+  208 | template <> constexpr inline auto MacWorker::qt_create_metaobjectdata<qt_meta_tag_ZN9MacWorkerE_t>()
+      |                                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:208:35: error: cannot define member function 'Worker::MacWorker::qt_create_metaobjectdata' within 'Worker'
+  208 | template <> constexpr inline auto MacWorker::qt_create_metaobjectdata<qt_meta_tag_ZN9MacWorkerE_t>()
+      |                                   ^~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:265:31: error: invalid use of qualified-name 'Worker::MacWorker::staticMetaObject'
+  265 | Q_CONSTINIT const QMetaObject MacWorker::staticMetaObject = { {
+      |                               ^~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:275:6: error: cannot define member function 'Worker::MacWorker::qt_static_metacall' within 'Worker'
+  275 | void MacWorker::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+      |      ^~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:303:20: error: cannot define member function 'Worker::MacWorker::metaObject' within 'Worker'
+  303 | const QMetaObject *MacWorker::metaObject() const
+      |                    ^~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:308:7: error: cannot define member function 'Worker::MacWorker::qt_metacast' within 'Worker'
+  308 | void *MacWorker::qt_metacast(const char *_clname)
+      |       ^~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:316:5: error: cannot define member function 'Worker::MacWorker::qt_metacall' within 'Worker'
+  316 | int MacWorker::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+      |     ^~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:335:6: error: cannot define member function 'Worker::MacWorker::progressUpdated' within 'Worker'
+  335 | void MacWorker::progressUpdated(int _t1, int _t2, double _t3)
+      |      ^~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:341:6: error: cannot define member function 'Worker::MacWorker::resultFound' within 'Worker'
+  341 | void MacWorker::resultFound(const CheckResultMac & _t1)
+      |      ^~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:347:6: error: cannot define member function 'Worker::MacWorker::checkFinished' within 'Worker'
+  347 | void MacWorker::checkFinished(bool _t1)
+      |      ^~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:353:6: error: cannot define member function 'Worker::MacWorker::phaseChanged' within 'Worker'
+  353 | void MacWorker::phaseChanged(const QString & _t1)
+      |      ^~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:359:6: error: cannot define member function 'Worker::MacWorker::portalProbeReport' within 'Worker'
+  359 | void MacWorker::portalProbeReport(const QString & _t1)
+      |      ^~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:363:1: error: expected unqualified-id before 'namespace'
+  363 | namespace {
+      | ^~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:367:11: error: explicit specialization in non-namespace scope 'class Worker'
+  367 | template <> constexpr inline auto OgiXApp::qt_create_metaobjectdata<qt_meta_tag_ZN7OgiXAppE_t>()
+      |           ^
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:367:69: error: 'qt_meta_tag_ZN7OgiXAppE_t' was not declared in this scope
+  367 | template <> constexpr inline auto OgiXApp::qt_create_metaobjectdata<qt_meta_tag_ZN7OgiXAppE_t>()
+      |                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:367:35: error: cannot define member function 'Worker::OgiXApp::qt_create_metaobjectdata' within 'Worker'
+  367 | template <> constexpr inline auto OgiXApp::qt_create_metaobjectdata<qt_meta_tag_ZN7OgiXAppE_t>()
+      |                                   ^~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:449:31: error: invalid use of qualified-name 'Worker::OgiXApp::staticMetaObject'
+  449 | Q_CONSTINIT const QMetaObject OgiXApp::staticMetaObject = { {
+      |                               ^~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:459:6: error: cannot define member function 'Worker::OgiXApp::qt_static_metacall' within 'Worker'
+  459 | void OgiXApp::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+      |      ^~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:485:20: error: cannot define member function 'Worker::OgiXApp::metaObject' within 'Worker'
+  485 | const QMetaObject *OgiXApp::metaObject() const
+      |                    ^~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:490:7: error: cannot define member function 'Worker::OgiXApp::qt_metacast' within 'Worker'
+  490 | void *OgiXApp::qt_metacast(const char *_clname)
+      |       ^~~~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:498:5: error: cannot define member function 'Worker::OgiXApp::qt_metacall' within 'Worker'
+  498 | int OgiXApp::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+      |     ^~~~~~~
+In file included from C:/msys64/ucrt64/include/qt6/QtCore/qtdeprecationdefinitions.h:7,
+                 from C:/msys64/ucrt64/include/qt6/QtCore/qtconfigmacros.h:12,
+                 from C:/msys64/ucrt64/include/qt6/QtCore/qtcoreglobal.h:13,
+                 from C:/msys64/ucrt64/include/qt6/QtCore/qglobal.h:24,
+                 from C:/msys64/ucrt64/include/qt6/QtGui/qtguiglobal.h:7,
+                 from C:/msys64/ucrt64/include/qt6/QtWidgets/qtwidgetsglobal.h:8,
+                 from C:/msys64/ucrt64/include/qt6/QtWidgets/qapplication.h:8,
+                 from C:/msys64/ucrt64/include/qt6/QtWidgets/QApplication:1,
+                 from E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1:
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:515:1: error: expected '}' at end of input
+  515 | QT_WARNING_POP
+      | ^~~~~~~~~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1742:31: note: to match this '{'
+ 1742 | class Worker : public QObject {
+      |                               ^
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp: In member function 'void Worker::runCheck(const QList<QString>&, bool, bool)':
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1784:31: error: 'checkPhase1' was not declared in this scope
+ 1784 |             CheckResult res = checkPhase1(link);
+      |                               ^~~~~~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1802:35: error: 'checkPhase2' was not declared in this scope
+ 1802 |                 CheckResult res = checkPhase2(link);
+      |                                   ^~~~~~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp: In lambda function:
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2144:31: error: 'checkPlayable' was not declared in this scope; did you mean 'runPlayable'?
+ 2144 |                     bool ok = checkPlayable(linkCopy, result);
+      |                               ^~~~~~~~~~~~~
+      |                               runPlayable
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2162:14: error: expected primary-expression before ')' token
+ 2162 |             });
+      |              ^
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2165:9: error: 'pool' is not captured
+ 2165 |         pool.waitForAllOrStop(stopFlag);
+      |         ^~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1936:145: note: the lambda has no capture-default
+ 1936 |             pool.enqueue([this, linkCopy, baseCopy, total, processedCount, progressMutex, startTime, &stopFlag, debugRetryLinks, debugRetryMutex]() {
+      |                                                                                                                                                 ^
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1927:23: note: 'StdThreadPool pool' declared here
+ 1927 |         StdThreadPool pool(2);
+      |                       ^~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp: In member function 'void Worker::runPlayable(const QList<QString>&)':
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2187:5: error: expected ')' before 'void'
+ 2187 |     void runVpnRetry(const QList<QString> &links) {
+      |     ^~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:1936:25: note: to match this '('
+ 1936 |             pool.enqueue([this, linkCopy, baseCopy, total, processedCount, progressMutex, startTime, &stopFlag, debugRetryLinks, debugRetryMutex]() {
+      |                         ^
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2260:30: warning: empty parentheses were disambiguated as a function declaration [-Wvexing-parse]
+ 2260 |     QString detectVpnLocation() {
+      |                              ^~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2260:30: note: remove parentheses to default-initialize a variable
+ 2260 |     QString detectVpnLocation() {
+      |                              ^~
+      |                              --
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2260:30: note: or replace parentheses with braces to value-initialize a variable
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2260:33: error: a function-definition is not allowed here before '{' token
+ 2260 |     QString detectVpnLocation() {
+      |                                 ^
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2282:50: error: a function-definition is not allowed here before '{' token
+ 2282 |     CheckResult checkPhase1(const QString &link) {
+      |                                                  ^
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2308:50: error: a function-definition is not allowed here before '{' token
+ 2308 |     CheckResult checkPhase2(const QString &link) {
+      |                                                  ^
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2330:88: error: a function-definition is not allowed here before '{' token
+ 2330 |         static bool isRealMediaBody(const std::string &body, const std::string &ctRaw) {
+      |                                                                                        ^
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2369:81: error: a function-definition is not allowed here before '{' token
+ 2369 |                 bool checkPlayable(const QString &link, CheckResult &outResult) {
+      |                                                                                 ^
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2741:65: error: return-statement with a value, in function returning 'void' [-fpermissive]
+ 2741 |     if (m_stopRequested.load(std::memory_order_acquire)) return false;
+      |                                                                 ^~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2745:37: error: 'base' was not declared in this scope
+ 2745 |         auto* rt = getReactThrottle(base);
+      |                                     ^~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2774:65: error: return-statement with a value, in function returning 'void' [-fpermissive]
+ 2774 |     if (m_stopRequested.load(std::memory_order_acquire)) return false;
+      |                                                                 ^~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2779:67: error: 'username' was not declared in this scope; did you mean 'rename'?
+ 2779 |     const QString _eu = QString::fromUtf8(QUrl::toPercentEncoding(username, "@._-"));
+      |                                                                   ^~~~~~~~
+      |                                                                   rename
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2780:67: error: 'password' was not declared in this scope
+ 2780 |     const QString _ep = QString::fromUtf8(QUrl::toPercentEncoding(password, "@._-!"));
+      |                                                                   ^~~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2783:34: error: 'link' was not declared in this scope; did you mean 'links'?
+ 2783 |     QString m3uUrl = buildM3uUrl(link);
+      |                                  ^~~~
+      |                                  links
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2792:31: error: 'base' was not declared in this scope
+ 2792 |             xuiAnalyzerBefore(base, "m3u", m3uUrl);
+      |                               ^~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2802:44: error: 'headers' was not declared in this scope
+ 2802 |                 cpr::Header{{"User-Agent", headers["User-Agent"].toStdString()}},
+      |                                            ^~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2802:80: error: no matching function for call to 'std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, cpr::CaseInsensitiveCompare>::map(<brace-enclosed initializer list>)'
+ 2802 |                 cpr::Header{{"User-Agent", headers["User-Agent"].toStdString()}},
+      |                                                                                ^
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2802:80: note: there are 12 candidates
+In file included from C:/msys64/ucrt64/include/c++/15.2.0/map:65,
+                 from C:/msys64/ucrt64/include/qt6/QtCore/qmetatype.h:29,
+                 from C:/msys64/ucrt64/include/qt6/QtCore/qobject.h:18,
+                 from C:/msys64/ucrt64/include/qt6/QtCore/qabstracteventdispatcher.h:7,
+                 from C:/msys64/ucrt64/include/qt6/QtCore/qbasictimer.h:8,
+                 from C:/msys64/ucrt64/include/qt6/QtCore/qcoreevent.h:7,
+                 from C:/msys64/ucrt64/include/qt6/QtCore/qcoreapplication.h:10,
+                 from C:/msys64/ucrt64/include/qt6/QtWidgets/qapplication.h:9:
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:305:9: note: candidate 1: 'template<class _InputIterator> std::map<_Key, _Tp, _Compare, _Alloc>::map(_InputIterator, _InputIterator, const _Compare&, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  305 |         map(_InputIterator __first, _InputIterator __last,
+      |         ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:305:9: note: candidate expects 3 arguments, 1 provided
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:288:9: note: candidate 2: 'template<class _InputIterator> std::map<_Key, _Tp, _Compare, _Alloc>::map(_InputIterator, _InputIterator) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  288 |         map(_InputIterator __first, _InputIterator __last)
+      |         ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:288:9: note: candidate expects 2 arguments, 1 provided
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:271:9: note: candidate 3: 'template<class _InputIterator> std::map<_Key, _Tp, _Compare, _Alloc>::map(_InputIterator, _InputIterator, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  271 |         map(_InputIterator __first, _InputIterator __last,
+      |         ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:271:9: note: candidate expects 3 arguments, 1 provided
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:265:7: note: candidate 4: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::initializer_list<std::pair<const _Key, _Val> >, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  265 |       map(initializer_list<value_type> __l, const allocator_type& __a)
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:265:7: note: candidate expects 2 arguments, 1 provided
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:259:7: note: candidate 5: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::map<_Key, _Tp, _Compare, _Alloc>&&, std::__type_identity_t<_Alloc>&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; std::__type_identity_t<_Alloc> = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  259 |       map(map&& __m, const __type_identity_t<allocator_type>& __a)
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:259:7: note: candidate expects 2 arguments, 1 provided
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:255:7: note: candidate 6: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const std::map<_Key, _Tp, _Compare, _Alloc>&, std::__type_identity_t<_Alloc>&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; std::__type_identity_t<_Alloc> = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  255 |       map(const map& __m, const __type_identity_t<allocator_type>& __a)
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:255:7: note: candidate expects 2 arguments, 1 provided
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:251:7: note: candidate 7: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  251 |       map(const allocator_type& __a)
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:251:33: note: no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'const std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, cpr::CaseInsensitiveCompare>::allocator_type&' {aka 'const std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >&'}
+  251 |       map(const allocator_type& __a)
+      |           ~~~~~~~~~~~~~~~~~~~~~~^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:243:7: note: candidate 8: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::initializer_list<std::pair<const _Key, _Val> >, const _Compare&, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  243 |       map(initializer_list<value_type> __l,
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:243:40: note: no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'std::initializer_list<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >'
+  243 |       map(initializer_list<value_type> __l,
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:230:7: note: candidate 9: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::map<_Key, _Tp, _Compare, _Alloc>&&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  230 |       map(map&&) = default;
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:230:11: note: no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, cpr::CaseInsensitiveCompare>&&'
+  230 |       map(map&&) = default;
+      |           ^~~~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:222:7: note: candidate 10: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const std::map<_Key, _Tp, _Compare, _Alloc>&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  222 |       map(const map&) = default;
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:222:11: note: no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'const std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, cpr::CaseInsensitiveCompare>&'
+  222 |       map(const map&) = default;
+      |           ^~~~~~~~~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:209:7: note: candidate 11: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const _Compare&, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  209 |       map(const _Compare& __comp,
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:209:27: note: no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'const cpr::CaseInsensitiveCompare&'
+  209 |       map(const _Compare& __comp,
+      |           ~~~~~~~~~~~~~~~~^~~~~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:200:7: note: candidate 12: 'std::map<_Key, _Tp, _Compare, _Alloc>::map() [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  200 |       map() = default;
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:200:7: note: candidate expects 0 arguments, 1 provided
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2819:24: error: return-statement with a value, in function returning 'void' [-fpermissive]
+ 2819 |                 return false;
+      |                        ^~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2839:74: error: 'base' was not declared in this scope
+ 2839 |             QList<QString> all_streams = extractStreamsFromM3U(m3u_text, base);
+      |                                                                          ^~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2848:65: error: return-statement with a value, in function returning 'void' [-fpermissive]
+ 2848 |     if (m_stopRequested.load(std::memory_order_acquire)) return false;
+      |                                                                 ^~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2857:69: error: return-statement with a value, in function returning 'void' [-fpermissive]
+ 2857 |         if (m_stopRequested.load(std::memory_order_acquire)) return false;
+      |                                                                     ^~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2865:31: error: 'base' was not declared in this scope
+ 2865 |             xuiAnalyzerBefore(base, "stream", sc.url);
+      |                               ^~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2876:44: error: 'headers' was not declared in this scope
+ 2876 |                 cpr::Header{{"User-Agent", headers["User-Agent"].toStdString()},
+      |                                            ^~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2877:76: error: no matching function for call to 'std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, cpr::CaseInsensitiveCompare>::map(<brace-enclosed initializer list>)'
+ 2877 |                             {"Accept", "*/*"}, {"Connection", "keep-alive"}},
+      |                                                                            ^
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2877:76: note: there are 12 candidates
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:305:9: note: candidate 1: 'template<class _InputIterator> std::map<_Key, _Tp, _Compare, _Alloc>::map(_InputIterator, _InputIterator, const _Compare&, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  305 |         map(_InputIterator __first, _InputIterator __last,
+      |         ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:305:9: note: template argument deduction/substitution failed:
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2877:76: note:   couldn't deduce template parameter '_InputIterator'
+ 2877 |                             {"Accept", "*/*"}, {"Connection", "keep-alive"}},
+      |                                                                            ^
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:288:9: note: candidate 2: 'template<class _InputIterator> std::map<_Key, _Tp, _Compare, _Alloc>::map(_InputIterator, _InputIterator) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  288 |         map(_InputIterator __first, _InputIterator __last)
+      |         ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:288:9: note: candidate expects 2 arguments, 3 provided
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:271:9: note: candidate 3: 'template<class _InputIterator> std::map<_Key, _Tp, _Compare, _Alloc>::map(_InputIterator, _InputIterator, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  271 |         map(_InputIterator __first, _InputIterator __last,
+      |         ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:271:9: note: template argument deduction/substitution failed:
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2877:76: note:   couldn't deduce template parameter '_InputIterator'
+ 2877 |                             {"Accept", "*/*"}, {"Connection", "keep-alive"}},
+      |                                                                            ^
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:265:7: note: candidate 4: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::initializer_list<std::pair<const _Key, _Val> >, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  265 |       map(initializer_list<value_type> __l, const allocator_type& __a)
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:265:7: note: candidate expects 2 arguments, 3 provided
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:259:7: note: candidate 5: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::map<_Key, _Tp, _Compare, _Alloc>&&, std::__type_identity_t<_Alloc>&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; std::__type_identity_t<_Alloc> = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  259 |       map(map&& __m, const __type_identity_t<allocator_type>& __a)
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:259:7: note: candidate expects 2 arguments, 3 provided
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:255:7: note: candidate 6: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const std::map<_Key, _Tp, _Compare, _Alloc>&, std::__type_identity_t<_Alloc>&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; std::__type_identity_t<_Alloc> = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  255 |       map(const map& __m, const __type_identity_t<allocator_type>& __a)
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:255:7: note: candidate expects 2 arguments, 3 provided
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:251:7: note: candidate 7: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  251 |       map(const allocator_type& __a)
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:251:7: note: candidate expects 1 argument, 3 provided
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:243:7: note: candidate 8: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::initializer_list<std::pair<const _Key, _Val> >, const _Compare&, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  243 |       map(initializer_list<value_type> __l,
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:243:40: note: no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'std::initializer_list<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >'
+  243 |       map(initializer_list<value_type> __l,
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:230:7: note: candidate 9: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::map<_Key, _Tp, _Compare, _Alloc>&&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  230 |       map(map&&) = default;
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:230:7: note: candidate expects 1 argument, 3 provided
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:222:7: note: candidate 10: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const std::map<_Key, _Tp, _Compare, _Alloc>&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  222 |       map(const map&) = default;
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:222:7: note: candidate expects 1 argument, 3 provided
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:209:7: note: candidate 11: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const _Compare&, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  209 |       map(const _Compare& __comp,
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:209:7: note: candidate expects 2 arguments, 3 provided
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:200:7: note: candidate 12: 'std::map<_Key, _Tp, _Compare, _Alloc>::map() [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  200 |       map() = default;
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:200:7: note: candidate expects 0 arguments, 3 provided
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2892:69: error: 'ct' was not declared in this scope; did you mean 'Qt'?
+ 2892 |             qDebug() << "  Content-Type:" << QString::fromStdString(ct);
+      |                                                                     ^~
+      |                                                                     Qt
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2912:88: error: no matching function for call to 'std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, cpr::CaseInsensitiveCompare>::map(<brace-enclosed initializer list>)'
+ 2912 |                                         {"Accept", "*/*"}, {"Connection", "keep-alive"}},
+      |                                                                                        ^
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2912:88: note: there are 12 candidates
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:305:9: note: candidate 1: 'template<class _InputIterator> std::map<_Key, _Tp, _Compare, _Alloc>::map(_InputIterator, _InputIterator, const _Compare&, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  305 |         map(_InputIterator __first, _InputIterator __last,
+      |         ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:305:9: note: template argument deduction/substitution failed:
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2912:88: note:   couldn't deduce template parameter '_InputIterator'
+ 2912 |                                         {"Accept", "*/*"}, {"Connection", "keep-alive"}},
+      |                                                                                        ^
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:288:9: note: candidate 2: 'template<class _InputIterator> std::map<_Key, _Tp, _Compare, _Alloc>::map(_InputIterator, _InputIterator) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  288 |         map(_InputIterator __first, _InputIterator __last)
+      |         ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:288:9: note: candidate expects 2 arguments, 3 provided
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:271:9: note: candidate 3: 'template<class _InputIterator> std::map<_Key, _Tp, _Compare, _Alloc>::map(_InputIterator, _InputIterator, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  271 |         map(_InputIterator __first, _InputIterator __last,
+      |         ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:271:9: note: template argument deduction/substitution failed:
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2912:88: note:   couldn't deduce template parameter '_InputIterator'
+ 2912 |                                         {"Accept", "*/*"}, {"Connection", "keep-alive"}},
+      |                                                                                        ^
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:265:7: note: candidate 4: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::initializer_list<std::pair<const _Key, _Val> >, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  265 |       map(initializer_list<value_type> __l, const allocator_type& __a)
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:265:7: note: candidate expects 2 arguments, 3 provided
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:259:7: note: candidate 5: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::map<_Key, _Tp, _Compare, _Alloc>&&, std::__type_identity_t<_Alloc>&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; std::__type_identity_t<_Alloc> = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  259 |       map(map&& __m, const __type_identity_t<allocator_type>& __a)
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:259:7: note: candidate expects 2 arguments, 3 provided
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:255:7: note: candidate 6: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const std::map<_Key, _Tp, _Compare, _Alloc>&, std::__type_identity_t<_Alloc>&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; std::__type_identity_t<_Alloc> = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  255 |       map(const map& __m, const __type_identity_t<allocator_type>& __a)
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:255:7: note: candidate expects 2 arguments, 3 provided
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:251:7: note: candidate 7: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  251 |       map(const allocator_type& __a)
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:251:7: note: candidate expects 1 argument, 3 provided
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:243:7: note: candidate 8: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::initializer_list<std::pair<const _Key, _Val> >, const _Compare&, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  243 |       map(initializer_list<value_type> __l,
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:243:40: note: no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'std::initializer_list<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >'
+  243 |       map(initializer_list<value_type> __l,
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:230:7: note: candidate 9: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(std::map<_Key, _Tp, _Compare, _Alloc>&&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  230 |       map(map&&) = default;
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:230:7: note: candidate expects 1 argument, 3 provided
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:222:7: note: candidate 10: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const std::map<_Key, _Tp, _Compare, _Alloc>&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  222 |       map(const map&) = default;
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:222:7: note: candidate expects 1 argument, 3 provided
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:209:7: note: candidate 11: 'std::map<_Key, _Tp, _Compare, _Alloc>::map(const _Compare&, const allocator_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; allocator_type = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  209 |       map(const _Compare& __comp,
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:209:7: note: candidate expects 2 arguments, 3 provided
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:200:7: note: candidate 12: 'std::map<_Key, _Tp, _Compare, _Alloc>::map() [with _Key = std::__cxx11::basic_string<char>; _Tp = std::__cxx11::basic_string<char>; _Compare = cpr::CaseInsensitiveCompare; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]'
+  200 |       map() = default;
+      |       ^~~
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h:200:7: note: candidate expects 0 arguments, 3 provided
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2924:33: error: 'isRealMediaBody' was not declared in this scope
+ 2924 |                             if (isRealMediaBody(body2, ct2)) {
+      |                                 ^~~~~~~~~~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2927:40: error: 'fillResult' was not declared in this scope; did you mean 'FillRect'?
+ 2927 |                                 return fillResult();
+      |                                        ^~~~~~~~~~
+      |                                        FillRect
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2955:28: error: return-statement with a value, in function returning 'void' [-fpermissive]
+ 2955 |                     return false;  // INSTANT HARD-FAIL - INVALID KREDENCIJALI
+      |                            ^~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2963:18: error: 'isRealMediaBody' was not declared in this scope
+ 2963 |             if (!isRealMediaBody(body, ct)) {
+      |                  ^~~~~~~~~~~~~~~
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2971:20: error: 'fillResult' was not declared in this scope; did you mean 'FillRect'?
+ 2971 |             return fillResult();
+      |                    ^~~~~~~~~~
+      |                    FillRect
+E:\IPTV\UTTILITIES\NOnAME\OgiXwork\VSS OgiXworkMakeM3u\OgiXworkMakeM3u_CPP\main.cpp:2979:12: error: return-statement with a value, in function returning 'void' [-fpermissive]
+ 2979 |     return false;
+      |            ^~~~~
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc: At global scope:
+E:/IPTV/UTTILITIES/NOnAME/OgiXwork/VSS OgiXworkMakeM3u/OgiXworkMakeM3u_CPP/build/OgiXworkMakeM3u_autogen/include/main.moc:515:1: error: expected unqualified-id at end of input
+  515 | QT_WARNING_POP
+      | ^~~~~~~~~~~~~~
 mingw32-make[2]: *** [CMakeFiles\OgiXworkMakeM3u.dir\build.make:101: CMakeFiles/OgiXworkMakeM3u.dir/main.cpp.obj] Error 1
 mingw32-make[1]: *** [CMakeFiles\Makefile2:89: CMakeFiles/OgiXworkMakeM3u.dir/all] Error 2
 mingw32-make: *** [Makefile:90: all] Error 2
