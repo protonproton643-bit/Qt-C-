@@ -1742,11 +1742,23 @@ private:
 class Worker : public QObject {
     Q_OBJECT
 public:
-    Worker(QObject *parent = nullptr) : QObject(parent) {}
+        Worker(QObject *parent = nullptr) : QObject(parent) {}
     void requestStop() { m_stopRequested.store(true, std::memory_order_release); }
     bool isStopped()   const { return m_stopRequested.load(std::memory_order_acquire); }
     void setVpnTag(const QString &tag) { m_vpnTag = tag; }
 
+private:
+    std::atomic<bool> m_stopRequested{false};
+    bool m_inRetryPhase = false;
+    QString m_vpnTag;
+    std::mutex m_cfBanMutex;
+    QMap<QString, int> m_cfBanCount;
+    QSet<QString> m_cfBanReported;
+    std::mutex m_nginxBanMutex;
+    QSet<QString> m_nginxBanReported;
+    std::atomic<bool> m_poolDmDetected{false};
+
+public:
 signals:
     void progressUpdated(int current, int total, double speed);
     void resultFound(const CheckResult &result);
@@ -1941,6 +1953,22 @@ public slots:
                     int gapMs = nowMs - lastMs;
                     
                     if (gapMs < 3000) {  // Ako je manje od 3 sekunde od prošlog zahtjeva
+                        int pauseMs = 3000 - gapMs;
+                        qDebug() << "[ANTI-BAN] Gap samo" << gapMs << "ms → čekam" << pauseMs << "ms";
+                        std::this_thread::sleep_for(std::chrono::milliseconds(pauseMs));
+                    }
+                    
+                    g_lastRequestMs.store(nowMs);
+                }
+                
+                {// ✅ AGRESIVNA PAUZA - SPRJEČAVANJE 403 BAN-a
+                {
+                    static std::atomic<int> g_lastRequestMs{0};
+                    int nowMs = QDateTime::currentDateTime().toMSecsSinceEpoch() % 1000000;
+                    int lastMs = g_lastRequestMs.load();
+                    int gapMs = nowMs - lastMs;
+                    
+                    if (gapMs < 3000) {
                         int pauseMs = 3000 - gapMs;
                         qDebug() << "[ANTI-BAN] Gap samo" << gapMs << "ms → čekam" << pauseMs << "ms";
                         std::this_thread::sleep_for(std::chrono::milliseconds(pauseMs));
