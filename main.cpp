@@ -1742,7 +1742,7 @@ private:
 class Worker : public QObject {
     Q_OBJECT
 public:
-    Worker(QObject *parent = nullptr) : QObject(parent), m_stopRequested(false), m_inRetryPhase(false), m_vpnTag("") {}
+    Worker(QObject *parent = nullptr) : QObject(parent) {}
     void requestStop() { m_stopRequested.store(true, std::memory_order_release); }
     bool isStopped()   const { return m_stopRequested.load(std::memory_order_acquire); }
     void setVpnTag(const QString &tag) { m_vpnTag = tag; }
@@ -1933,16 +1933,177 @@ public slots:
                 if (stopFlag.load(std::memory_order_acquire)) { updateProgress(); return; }
 
                 {
-    auto* _rt = getReactThrottle(baseCopy);
-    int _maxSlots;
-    { std::lock_guard<std::mutex> _lk(_rt->mx); _maxSlots = (isXuiSlowServer(baseCopy) || _rt->isAggressive || m_poolDmDetected.load()) ? 1 : 2; }
-    acquireServerSlot(baseCopy, _maxSlots, stopFlag);
-}
+                    // ✅ AGRESIVNA PAUZA - SPRJEČAVANJE 403 BAN-a
+                {
+                    static std::atomic<int> g_lastRequestMs{0};
+                    int nowMs = QDateTime::currentDateTime().toMSecsSinceEpoch() % 1000000;
+                    int lastMs = g_lastRequestMs.load();
+                    int gapMs = nowMs - lastMs;
+                    
+                    if (gapMs < 3000) {  // Ako je manje od 3 sekunde od prošlog zahtjeva
+                        int pauseMs = 3000 - gapMs;
+                        qDebug() << "[ANTI-BAN] Gap samo" << gapMs << "ms → čekam" << pauseMs << "ms";
+                        std::this_thread::sleep_for(std::chrono::milliseconds(pauseMs));
+                    }
+                    
+                    g_lastRequestMs.store(nowMs);
+                }
+                
+                {
+                    auto* _rt = getReactThrottle(baseCopy);
+                    int _maxSlots;
+                    { std::lock_guard<std::mutex> _lk(_rt->mx); _maxSlots = (isXuiSlowServer(baseCopy) || _rt->isAggressive || m_poolDmDetected.load()) ? 1 : 2; }
+                    acquireServerSlot(baseCopy, _maxSlots, stopFlag);
+                }
 
                 if (stopFlag.load(std::memory_order_acquire)) {
                     releaseServerSlot(baseCopy);
                     updateProgress();
                     return;
+                }
+
+                                // ✅ DINAMIČKA PAUZA IZMEĐU LISTA - SPRJEČAVANJE BANA
+                {
+                    bool isDebugActive = isXuiDebugMode(baseCopy);
+                    int pauseMs = 0;
+                    
+                    if (isDebugActive) {
+                        pauseMs = 10000;  // 10 sekundi ako je Debug Mode
+                        qDebug() << "[INTER-CHECK THROTTLE] Debug Mode aktivan → pauza 10s";
+                    } else {
+                        pauseMs = 500;  // 500ms inače (minimalna pauza)
+                    }
+                    
+                    // Primijeni pauz
+                    for (int _w = 0; _w < pauseMs / 100 && !stopFlag.load(); _w++) {
+                        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+                    }
+                }
+
+                                // ✅ DINAMIČKA PAUZA IZMEĐU LISTA - SPRJEČAVANJE BANA
+                {
+                    bool isDebugActive = isXuiDebugMode(baseCopy);
+                    int pauseMs = 0;
+                    
+                    if (isDebugActive) {
+                        pauseMs = 10000;  // 10 sekundi ako je Debug Mode
+                        qDebug() << "[INTER-CHECK THROTTLE] Debug Mode aktivan → pauza 10s";
+                    } else {
+                        pauseMs = 500;  // 500ms inače (minimalna pauza)
+                    }
+                    
+                    // Primijeni pauz
+                    for (int _w = 0; _w < pauseMs / 100 && !stopFlag.load(); _w++) {
+                        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+                    }
+                }
+
+                                // ✅ DINAMIČKA PAUZA IZMEĐU LISTA - SPRJEČAVANJE BANA
+                {
+                    bool isDebugActive = isXuiDebugMode(baseCopy);
+                    int pauseMs = 0;
+                    
+                    if (isDebugActive) {
+                        pauseMs = 10000;  // 10 sekundi ako je Debug Mode
+                        qDebug() << "[INTER-CHECK THROTTLE] Debug Mode aktivan → pauza 10s";
+                    } else {
+                        pauseMs = 500;  // 500ms inače (minimalna pauza)
+                    }
+                    
+                    // Primijeni pauz
+                    for (int _w = 0; _w < pauseMs / 100 && !stopFlag.load(); _w++) {
+                        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+                    }
+                }
+
+                // ✅ DINAMIČKA PAUZA IZMEĐU LISTA - SPRJEČAVANJE BANA
+                {
+                    bool isDebugActive = isXuiDebugMode(baseCopy);
+                    int pauseMs = 0;
+                    
+                    if (isDebugActive) {
+                        pauseMs = 10000;  // 10 sekundi ako je Debug Mode
+                        qDebug() << "[INTER-CHECK THROTTLE] Debug Mode aktivan → pauza 10s";
+                    } else {
+                        pauseMs = 500;  // 500ms inače (minimalna pauza)
+                    }
+                    
+                    // Primijeni pauz
+                    for (int _w = 0; _w < pauseMs / 100 && !stopFlag.load(); _w++) {
+                        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+                    }
+                }
+
+                // ✅ DINAMIČKA PAUZA IZMEĐU LISTA - SPRJEČAVANJE BANA
+                {
+                    bool isDebugActive = isXuiDebugMode(baseCopy);
+                    int pauseMs = 0;
+                    
+                    if (isDebugActive) {
+                        pauseMs = 10000;  // 10 sekundi ako je Debug Mode
+                        qDebug() << "[INTER-CHECK THROTTLE] Debug Mode aktivan → pauza 10s";
+                    } else {
+                        pauseMs = 500;  // 500ms inače (minimalna pauza)
+                    }
+                    
+                    // Primijeni pauz
+                    for (int _w = 0; _w < pauseMs / 100 && !stopFlag.load(); _w++) {
+                        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+                    }
+                }
+
+                                // ✅ DINAMIČKA PAUZA IZMEĐU LISTA - SPRJEČAVANJE BANA
+                {
+                    bool isDebugActive = isXuiDebugMode(baseCopy);
+                    int pauseMs = 0;
+                    
+                    if (isDebugActive) {
+                        pauseMs = 10000;  // 10 sekundi ako je Debug Mode
+                        qDebug() << "[INTER-CHECK THROTTLE] Debug Mode aktivan → pauza 10s";
+                    } else {
+                        pauseMs = 500;  // 500ms inače (minimalna pauza)
+                    }
+                    
+                    // Primijeni pauz
+                    for (int _w = 0; _w < pauseMs / 100 && !stopFlag.load(); _w++) {
+                        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+                    }
+                }
+
+                                // ✅ DINAMIČKA PAUZA IZMEĐU LISTA - SPRJEČAVANJE BANA
+                {
+                    bool isDebugActive = isXuiDebugMode(baseCopy);
+                    int pauseMs = 0;
+                    
+                    if (isDebugActive) {
+                        pauseMs = 10000;  // 10 sekundi ako je Debug Mode
+                        qDebug() << "[INTER-CHECK THROTTLE] Debug Mode aktivan → pauza 10s";
+                    } else {
+                        pauseMs = 500;  // 500ms inače (minimalna pauza)
+                    }
+                    
+                    // Primijeni pauz
+                    for (int _w = 0; _w < pauseMs / 100 && !stopFlag.load(); _w++) {
+                        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+                    }
+                }
+
+                // ✅ DINAMIČKA PAUZA IZMEĐU LISTA - SPRJEČAVANJE BANA
+                {
+                    bool isDebugActive = isXuiDebugMode(baseCopy);
+                    int pauseMs = 0;
+                    
+                    if (isDebugActive) {
+                        pauseMs = 10000;  // 10 sekundi ako je Debug Mode
+                        qDebug() << "[INTER-CHECK THROTTLE] Debug Mode aktivan → pauza 10s";
+                    } else {
+                        pauseMs = 500;  // 500ms inače (minimalna pauza)
+                    }
+                    
+                    // Primijeni pauz
+                    for (int _w = 0; _w < pauseMs / 100 && !stopFlag.load(); _w++) {
+                        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+                    }
                 }
 
                 try {
@@ -2177,7 +2338,7 @@ public slots:
     if (ctIsMedia && body.size() >= 512) return true;
     return false;
 }
-        bool checkPlayable(const QString &link, CheckResult &outResult) {
+                bool checkPlayable(const QString &link, CheckResult &outResult) {
     qDebug() << "[CP] ===== checkPlayable ENTER =====" << link.left(60);
     outResult.isValid = false;
     outResult.vpnTag  = m_vpnTag;
@@ -2185,84 +2346,13 @@ public slots:
     QString apiUrl = buildApiUrl(link);
     qDebug() << "[PLAYABLE DEBUG] link:" << link.left(80);
     qDebug() << "[PLAYABLE DEBUG] apiUrl:" << apiUrl.left(80);
-    if (apiUrl.isEmpty()) {
-        qDebug() << "[PLAYABLE DEBUG] apiUrl prazan → return false";
-        return false;
-    }
+    if (apiUrl.isEmpty()) return false;
 
     QString base     = extractBaseUrlSafe(link);
     QString username = extractQueryParam(link, "username");
     QString password = extractQueryParam(link, "password");
     qDebug() << "[PLAYABLE DEBUG] base:" << base << "user:" << username.left(4) << "pass:" << password.left(4);
-    if (base.isEmpty() || username.isEmpty() || password.isEmpty()) {
-        qDebug() << "[PLAYABLE DEBUG] base/user/pass prazan → return false";
-        return false;
-    }
-
-    // ── TCP DEAD CHECK
-    if (isTcpDead(base)) {
-        qDebug() << "[CP] TCP dead (5+ timeoutovi) → skip:" << base;
-        return false;
-    }
-
-    // ── NGINX BAN CHECK
-    {
-        bool _isNginxBanned = false;
-        {
-            std::lock_guard<std::mutex> _lkNginxSkip(m_nginxBanMutex);
-            _isNginxBanned = m_nginxBanReported.contains(base);
-        }
-        if (_isNginxBanned) {
-            qDebug() << "[CP] Server nginx-banovan → skip:" << base;
-            return false;
-        }
-    }
-
-    // ── TCP PRE-PING
-    if (!m_stopRequested.load(std::memory_order_acquire)) {
-        auto _hp = parseHostPort(base);
-        bool serverOk = true;
-        bool haveCached = false;
-        {
-            std::lock_guard<std::mutex> lk(g_tcpPingCacheMutex);
-            if (g_tcpPingResultCache.contains(base)) {
-                haveCached = true;
-                serverOk = g_tcpPingResultCache[base];
-            }
-        }
-        if (!haveCached) {
-            bool tcpOk = tcpPing(_hp.first, _hp.second, 2500);
-            if (!tcpOk && !m_stopRequested.load(std::memory_order_acquire)) {
-                qDebug() << "[CP] TCP SYN fail → HTTP probe na:" << base;
-                try {
-                    cpr::Response httpProbe = cpr::Get(
-                        cpr::Url{(base + "/").toStdString()},
-                        cpr::Timeout{m_stopRequested.load() ? 200 : 4000},
-                        cpr::VerifySsl{false},
-                        cpr::Header{{"User-Agent", "Lavf53.32.100"},
-                                    {"Connection", "close"}}
-                    );
-                    if (httpProbe.status_code > 0) {
-                        tcpOk = true;
-                        qDebug() << "[CP] HTTP probe OK → server živ:" << base;
-                    }
-                } catch (...) {}
-            }
-            serverOk = tcpOk;
-            {
-                std::lock_guard<std::mutex> lk(g_tcpPingCacheMutex);
-                if (!g_tcpPingResultCache.contains(base))
-                    g_tcpPingResultCache[base] = serverOk;
-                else
-                    serverOk = g_tcpPingResultCache[base];
-            }
-            if (!serverOk) recordTcpTimeout(base);
-        }
-        if (!serverOk) {
-            qDebug() << "[CP] Server nedostupan → skip:" << base;
-            return false;
-        }
-    }
+    if (base.isEmpty() || username.isEmpty() || password.isEmpty()) return false;
 
     QMap<QString, QString> headers = getHeadersForHost(base);
 
@@ -2270,17 +2360,16 @@ public slots:
     QString active_cons = "nepoznato";
     QString exp_date    = "Unlimited";
     bool    api_auth_ok = false;
-    bool    hard_fail   = false;
 
     auto fillResult = [&]() -> bool {
         QString test_time = QDateTime::currentDateTime().toString("dd.MM.yyyy HH:mm");
-        QString _vpnDisplay = m_vpnTag;
+        QString vpnDisplay = m_vpnTag;
         if (!m_vpnTag.isEmpty()) {
-            QLocale::Territory _vt = QLocale::codeToTerritory(m_vpnTag);
-            if (_vt != QLocale::AnyTerritory)
-                _vpnDisplay = QLocale::territoryToString(_vt);
+            QLocale::Territory vt = QLocale::codeToTerritory(m_vpnTag);
+            if (vt != QLocale::AnyTerritory)
+                vpnDisplay = QLocale::territoryToString(vt);
         }
-        QString vpnSuffix = m_vpnTag.isEmpty() ? "" : "\n✅ Radi Na " + _vpnDisplay + " VPN!";
+        QString vpnSuffix = m_vpnTag.isEmpty() ? "" : "\n✅ Radi Na " + vpnDisplay + " VPN!";
         outResult.type    = (max_conn == 1) ? "single" : "multi";
         outResult.content = QString(
             "URL: %1\nVreme testiranja: %2  Vredi do: %3  "
@@ -2289,159 +2378,105 @@ public slots:
               QString("─").repeated(100));
         outResult.maxConn = max_conn;
         outResult.isValid = true;
-        setCachedState(base, ServerCache::State::Up);
         return true;
     };
 
     if (m_stopRequested.load(std::memory_order_acquire)) return false;
 
-    int cachedLatency    = getCachedLatency(base);
-    int adaptiveApiMs    = qBound(5000,  (int)(cachedLatency * 3.0), 10000);
-
-    // ═══ FAZA 1: API PROBE — IZNAĐI VALIDITY + EXTRACT METAPODACI ═══
-    // VAŽNO: Testiraj SAMO panel_api JER JE UVIJEK DOSTUPNA
-    // Ako nema podataka → odmah prelazimo na STREAM TEST (player_api = stream, nema potrebe)
-    
-    QString apiUrl_player = buildApiUrl(link);  // player_api.php
-    
-    bool api_has_userinfo = false;
-    int  api_status = 0;
-    
-    // ── SAMO JEDAN API POZIV — player_api.php ──
+    // ═══ API TEST ═══
     {
         QDateTime t0 = QDateTime::currentDateTime();
-        int effective_timeout = m_stopRequested.load() ? 300 : adaptiveApiMs;
+        int effective_timeout = m_stopRequested.load() ? 300 : 8000;
         try {
-            xuiAnalyzerBefore(base, "api", apiUrl_player);
-            if (!getXuiAnalysis(base)->events.isEmpty()) {
-                std::lock_guard<std::mutex> _pslk(g_serverSemMutex);
-                getXuiAnalysis(base)->events.last().activeSlots = g_serverActiveCalls.value(base, 0);
-            }
-            
             cpr::Response r = cpr::Get(
-                cpr::Url{apiUrl_player.toStdString()}, 
-                cpr::Timeout{effective_timeout},
+                cpr::Url{apiUrl.toStdString()}, 
+                cpr::Timeout(effective_timeout),
                 cpr::VerifySsl{false},
                 cpr::Header{{"User-Agent", headers["User-Agent"].toStdString()},
                             {"Host", headers["Host"].toStdString()}}
             );
             
             int latency = (int)t0.msecsTo(QDateTime::currentDateTime());
-            api_status = r.status_code;
+            int api_status = r.status_code;
             
-            qDebug() << "[API TEST]" << apiUrl_player.left(80)
+            qDebug() << "[API TEST]" << apiUrl.left(80)
                      << "status:" << api_status
                      << "body[:150]:" << QString::fromStdString(r.text).left(150);
             
-            // === DEBUG LOG ===
-            {
-                std::string bodyStart150 = r.text.substr(0, std::min(r.text.size(), (size_t)150));
-                debugRecordRequest(base, "API", r.status_code, latency,
-                                   r.text.size(), bodyStart150);
-                advancedLog("API", apiUrl_player.left(80), base,
-                            r.status_code, r.text, r.header,
-                            latency, (int)r.error.code);
-            }
-            // === END DEBUG ===
-            
-            // ── TIMEOUT ──
+            // TIMEOUT
             if (r.error.code == cpr::ErrorCode::OPERATION_TIMEDOUT || r.status_code == 0) {
-                qDebug() << "[API] TIMEOUT → return false";
-                recordTcpTimeout(base);
+                qDebug() << "[API TIMEOUT] Zahtjev nije odgovorio (timeout ili connection failed)";
+                qDebug() << "[API TIMEOUT] Error code:" << (int)r.error.code;
+                qDebug() << "[API TIMEOUT] URL:" << apiUrl.left(80);
                 return false;
             }
             
-            // Dobili smo HTTP odgovor → server živ
-            resetTcpTimeout(base);
-            
-            // ── 429 / 503 RATE-LIMIT ──
+            // 429 / 503 RATE-LIMIT
             if (r.status_code == 429 || r.status_code == 503) {
-                reactiveReport(base, r.status_code);
-                qDebug() << "[API] Rate-limit " << r.status_code << " → return false";
+                qDebug() << "[API] Rate-limit" << r.status_code << "→ return false";
                 return false;
             }
             
-            // ── 404 / 301-308 HARD-FAIL ──
+            // 404 / 301-308 HARD-FAIL
             if (r.status_code == 404 || r.status_code == 410 || r.status_code == 418 ||
                 r.status_code == 301 || r.status_code == 302 ||
                 r.status_code == 307 || r.status_code == 308) {
-                hard_fail = true;
-                qDebug() << "[API] HTTP " << r.status_code << " → hard_fail=true";
+                qDebug() << "[API] HTTP" << r.status_code << "→ hard_fail";
                 return false;
             }
             
-            // ── 403 NGINX BAN ──
+            // 403 NGINX BAN
             if (r.status_code == 403) {
-                std::string bodyLow = r.text;
-                std::transform(bodyLow.begin(), bodyLow.end(), bodyLow.begin(), ::tolower);
+                qDebug() << "[BAN DETECTED] HTTP 403 prazan body → NGINX RATE-LIMIT!";
+                qDebug() << "[BAN] Body size:" << r.text.size() << "bytes (trebalo bi biti 0)";
+                qDebug() << "[BAN] Server:" << QString::fromStdString(r.header.count("Server") ? r.header.at("Server") : "unknown");
                 
-                // Nginx ban → postavi flag + STOP skeniranje
-                {
-                    std::lock_guard<std::mutex> _lkn(m_nginxBanMutex);
-                    if (!m_nginxBanReported.contains(base)) {
-                        m_nginxBanReported.insert(base);
-                        QString _report = QString(
-                            "Server: %1\nStatus: ⚠️ HTTP 403 — TRENUTNO SI BANOVAN!\n"
-                            "Skeniranje je automatski zaustavljeno."
-                        ).arg(base);
-                        emit serverBanDetected(base, _report);
-                        m_stopRequested.store(true, std::memory_order_release);
-                    }
+                std::lock_guard<std::mutex> _lkn(m_nginxBanMutex);
+                if (!m_nginxBanReported.contains(base)) {
+                    m_nginxBanReported.insert(base);
+                    QString _report = QString(
+                        "🚨 HTTP 403 — NGINX RATE-LIMIT BAN DETEKTOVAN!\n"
+                        "Server: %1\n"
+                        "Razlog: Previše zahtjeva u kratkom vremenu\n"
+                        "Akcija: SKENIRANJE ZAUSTAVLJENO"
+                    ).arg(base);
+                    emit serverBanDetected(base, _report);
+                    m_stopRequested.store(true, std::memory_order_release);
                 }
-                qDebug() << "[API 403] NGINX BAN detektovan → STOP";
                 return false;
             }
             
-            // ── 200 OK ──
+            // 200 OK
             if (r.status_code == 200) {
-                setCachedState(base, ServerCache::State::Up, latency);
                 std::string ct = r.header.count("Content-Type") ? r.header.at("Content-Type") : "";
                 std::string ctLow = ct;
                 std::transform(ctLow.begin(), ctLow.end(), ctLow.begin(), ::tolower);
                 
-                // ── INVALID_CREDENTIALS CHECK — JEDINI RAZLOG ZA INSTANT HARD-FAIL ──
-                // Wireshark kaže: INVALID_CREDENTIALS dolazi sa HTTP 200, Content-Type: text/html
-                // Body: <title>XUI.one - Debug Mode</title>...<h2>INVALID_CREDENTIALS</h2>
+                qDebug() << "[API RESPONSE] Status:" << api_status 
+                         << "| Size:" << r.text.size() 
+                         << "| CT:" << QString::fromStdString(ct);
+                
+                // INVALID_CREDENTIALS CHECK
                 if (ctLow.find("text/html") != std::string::npos) {
                     std::string bodyStart = r.text.substr(0, qMin(r.text.size(), (size_t)120));
                     
-                    // ✅ CHECK 1: INVALID_CREDENTIALS — Instant hard-fail bez ikakve pause!
                     if (bodyStart.find("INVALID_CREDENTIALS") != std::string::npos) {
                         qDebug() << "[API] INVALID_CREDENTIALS detektovan → INSTANT HARD-FAIL!";
-                        hard_fail = true;
                         return false;
                     }
-                    
-                    // ✅ CHECK 2: XUI Debug Mode (privremeni overload) — Čekaj retry
-                    bool isXuiDebug = bodyStart.find("XUI.one") != std::string::npos ||
-                                      bodyStart.find("Debug Mode") != std::string::npos;
-                    if (isXuiDebug) {
-                        recordXuiDebug(base);
-                        qDebug() << "[API] XUI Debug Mode → return 3 (stream fallback)";
-                        return false;  // Skoči na stream test
-                    }
-                    
-                    // Ostali HTML → hard-fail
-                    hard_fail = true;
-                    return false;
                 }
                 
-                // ── JSON PARSE ──
+                // JSON PARSE
                 try {
                     auto d  = json::parse(r.text);
                     auto ui = d.value("user_info", json::object());
                     
-                    // Proveri status
                     std::string statusStr;
                     if (ui.contains("status") && !ui["status"].is_null()) {
                         statusStr = ui["status"].get<std::string>();
                         std::transform(statusStr.begin(), statusStr.end(), statusStr.begin(), ::tolower);
                     }
-                    if (statusStr != "active") {
-                        hard_fail = true;
-                        qDebug() << "[API] status != active → hard_fail";
-                        return false;
-                    }
+                    if (statusStr != "active") return false;
                     
                     // Ekstraktuj exp_date
                     if (ui.contains("exp_date") && !ui["exp_date"].is_null()) {
@@ -2456,11 +2491,7 @@ public slots:
                         }
                         if (expTs > 1000000000LL) {
                             qint64 now = QDateTime::currentSecsSinceEpoch();
-                            if (expTs < now) {
-                                hard_fail = true;
-                                qDebug() << "[API] exp_date prošao → hard_fail";
-                                return false;
-                            }
+                            if (expTs < now) return false;
                             exp_date = QDateTime::fromSecsSinceEpoch(expTs).toString("dd.MM.yyyy");
                         } else {
                             exp_date = "Unlimited";
@@ -2487,7 +2518,6 @@ public slots:
                         }
                     } catch (...) {}
                     
-                    api_has_userinfo = true;
                     api_auth_ok = true;
                     qDebug() << "[API] ✅ OK — exp=" << exp_date << "max_conn=" << max_conn;
                     
@@ -2502,6 +2532,183 @@ public slots:
             return false;
         }
     }
+    
+    if (m_stopRequested.load(std::memory_order_acquire)) return false;
+
+    // ═══ STREAM TEST - MAX 3 KANALA SA PAUZOM ═══
+    QString m3uUrl = buildM3uUrl(link);
+    std::string m3u_raw;
+    QList<SmartChannel> testChannels;
+
+    if (!m3uUrl.isEmpty() && !m_stopRequested.load(std::memory_order_acquire)) {
+        try {
+            cpr::Response r = cpr::Get(
+                cpr::Url{m3uUrl.toStdString()},
+                cpr::Timeout(12000),
+                cpr::VerifySsl{false},
+                cpr::Header{{"User-Agent", headers["User-Agent"].toStdString()}},
+                cpr::WriteCallback{[&](const std::string_view data, intptr_t) -> bool {
+                    m3u_raw.append(data.data(), data.size());
+                    if (m3u_raw.size() >= 500000) return false;
+                    return true;
+                }}
+            );
+            
+            qDebug() << "[M3U DOWNLOAD] URL:" << m3uUrl.left(80);
+            qDebug() << "[M3U DOWNLOAD] Status:" << r.status_code 
+                     << "| Size:" << m3u_raw.size() 
+                     << "bytes";
+            
+            if (r.status_code == 403) {
+                qDebug() << "[M3U] HTTP 403 → NGINX BAN detektovan pri M3U downloadanju!";
+                return false;
+            }
+            
+        } catch (...) {
+            qDebug() << "[M3U DOWNLOAD] Exception → continue";
+        }
+    }
+
+    // M3U PARSE
+    if (!m3u_raw.empty()) {
+        size_t s0 = 0;
+        if (m3u_raw.size() >= 3 &&
+            (unsigned char)m3u_raw[0] == 0xEF &&
+            (unsigned char)m3u_raw[1] == 0xBB &&
+            (unsigned char)m3u_raw[2] == 0xBF) s0 = 3;
+        while (s0 < m3u_raw.size() &&
+               (m3u_raw[s0]==' '||m3u_raw[s0]=='\r'||m3u_raw[s0]=='\n'||m3u_raw[s0]=='\t')) ++s0;
+
+        if (m3u_raw.size()-s0 >= 7 && m3u_raw.substr(s0,7) == "#EXTM3U") {
+            QString m3u_text = QString::fromStdString(m3u_raw.substr(s0));
+            QList<QString> all_streams = extractStreamsFromM3U(m3u_text, base);
+
+            if (!all_streams.isEmpty()) {
+                testChannels = smartSelectChannels(all_streams, base);
+                qDebug() << "[M3U PARSE] smartSelect chose" << testChannels.size() << "channels";
+            }
+        }
+    }
+
+    if (m_stopRequested.load(std::memory_order_acquire)) return false;
+
+    // STREAM TEST: MAX 3 KANALA SA PAUZOM
+    int maxChannelsToTest = qMin(testChannels.size(), 3);
+    int testedChannels = 0;
+
+    for (const SmartChannel &sc : testChannels) {
+        if (testedChannels >= maxChannelsToTest) break;
+        ++testedChannels;
+        if (m_stopRequested.load(std::memory_order_acquire)) return false;
+
+        // 3-SEKUNDNA PAUZA
+        qDebug() << "[STREAM TEST] Pauza 3s pre kanala" << testedChannels << "/" << maxChannelsToTest;
+        for (int _w = 0; _w < 30 && !m_stopRequested.load(); _w++)
+            std::this_thread::sleep_for(std::chrono::milliseconds(100));
+
+        try {
+            std::string body; 
+            cpr::Response r = cpr::Get(
+                cpr::Url{sc.url.toStdString()},
+                cpr::Timeout(8000),
+                cpr::VerifySsl{false},
+                cpr::Header{{"User-Agent", headers["User-Agent"].toStdString()},
+                            {"Accept", "*/*"}, 
+                            {"Connection", "keep-alive"}},
+                cpr::WriteCallback{[&](const std::string_view data, intptr_t) -> bool {
+                    body.append(data.data(), data.size());
+                    if (body.size() >= 8192) return false;
+                    return true;
+                }}
+            );
+
+            int status = r.status_code;
+
+            qDebug() << "[STREAM TEST RESULT]";
+            qDebug() << "  URL:" << sc.url.left(80);
+            qDebug() << "  Status:" << status << "| Bytes:" << body.size();
+            
+            std::string ct = r.header.count("Content-Type") ? r.header.at("Content-Type") : "";
+            std::transform(ct.begin(), ct.end(), ct.begin(), ::tolower);
+            qDebug() << "  Content-Type:" << QString::fromStdString(ct);
+            qDebug() << "  Body[:50]:" << QString::fromStdString(body.substr(0, 50));
+
+            if (status == 0) continue;
+            if (status == 404) continue;
+            if (status == 503) continue;
+            
+            // 302 REDIRECT
+            if (status == 302 || status == 301 || status == 307 || status == 308) {
+                std::string location = r.header.count("Location") ? r.header.at("Location") : "";
+                if (!location.empty() && location.find("http") == 0) {
+                    try {
+                        std::string body2;
+                        cpr::Response r2 = cpr::Get(
+                            cpr::Url{location},
+                            cpr::Timeout(8000),
+                            cpr::VerifySsl{false},
+                            cpr::Header{{"User-Agent", headers["User-Agent"].toStdString()},
+                                        {"Accept", "*/*"}, 
+                                        {"Connection", "keep-alive"}},
+                            cpr::WriteCallback{[&](const std::string_view d, intptr_t) -> bool {
+                                body2.append(d.data(), d.size());
+                                if (body2.size() >= 8192) return false;
+                                return true;
+                            }}
+                        );
+                        int s2 = r2.status_code;
+                        if (s2 == 200 || s2 == 206) {
+                            std::string ct2 = r2.header.count("Content-Type") ? r2.header.at("Content-Type") : "";
+                            std::transform(ct2.begin(), ct2.end(), ct2.begin(), ::tolower);
+                            if (isRealMediaBody(body2, ct2)) {
+                                qDebug() << "[STREAM 302] ✅ REDIRECT OK → PLAYABLE";
+                                return fillResult();
+                            }
+                        }
+                    } catch (...) {}
+                }
+                continue;
+            }
+
+            if (status != 200 && status != 206) continue;
+
+            // HTML GREŠKA CHECK
+            std::string bodyStart = body.substr(0, qMin(body.size(), (size_t)200));
+            std::transform(bodyStart.begin(), bodyStart.end(), bodyStart.begin(), ::tolower);
+            
+            if (bodyStart.find("<html") != std::string::npos ||
+                bodyStart.find("<!doctype") != std::string::npos ||
+                bodyStart.find("invalid") != std::string::npos) {
+                
+                qDebug() << "[STREAM ERROR] HTML greška detektovana!";
+                qDebug() << "[STREAM ERROR] Body[:100]:" << QString::fromStdString(body.substr(0, 100));
+                qDebug() << "[STREAM ERROR] Status:" << status << "| Size:" << body.size() << "bytes";
+                
+                if (body.find("INVALID_CREDENTIALS") != std::string::npos) {
+                    qDebug() << "[STREAM] INVALID_CREDENTIALS → hard fail ova lista";
+                    return false;
+                }
+                
+                qDebug() << "[STREAM] HTML greška → skip ovaj kanal, probaj sljedeći";
+                continue;
+            }
+
+            if (!isRealMediaBody(body, ct)) {
+                qDebug() << "[STREAM] Nije pravi media (size=" << body.size() << ") → next";
+                continue;
+            }
+
+            qDebug() << "[STREAM] ✅ PRAVI MEDIA DETEKTOVAN → PLAYABLE!";
+            return fillResult();
+
+        } catch (...) {
+            continue;
+        }
+    }
+
+    qDebug() << "[CP] Stream testovi neuspešni → return false";
+    return false;
+}
     
     if (m_stopRequested.load(std::memory_order_acquire)) return false;
 
@@ -2560,7 +2767,7 @@ public slots:
                 getXuiAnalysis(base)->events.last().activeSlots = g_serverActiveCalls.value(base, 0);
             }
             
-            cpr::Response r = cpr::Get(
+                        cpr::Response r = cpr::Get(
                 cpr::Url{m3uUrl.toStdString()},
                 cpr::Timeout{effective_m3u_timeout},
                 cpr::VerifySsl{false},
@@ -2574,9 +2781,15 @@ public slots:
             
             xuiAnalyzerAfter(base, r.status_code, false, (int)m3u_raw.size());
             
-            qDebug() << "[M3U DOWNLOAD]" << m3uUrl.left(80)
-                     << "status:" << r.status_code
-                     << "size:" << m3u_raw.size();
+            qDebug() << "[M3U DOWNLOAD] URL:" << m3uUrl.left(80);
+            qDebug() << "[M3U DOWNLOAD] Status:" << r.status_code 
+                     << "| Size:" << m3u_raw.size() 
+                     << "bytes | StoppedEarly:" << stopped_early;
+            
+            if (r.status_code == 403) {
+                qDebug() << "[M3U] HTTP 403 → NGINX BAN detektovan pri M3U downloadanju!";
+                return false;
+            }
             
         } catch (...) {
             qDebug() << "[M3U DOWNLOAD] Exception → continue";
@@ -2645,9 +2858,11 @@ public slots:
                 ? ((r.status_code != 0) ? r.status_code : 200)
                 : r.status_code;
 
-            qDebug() << "[STREAM TEST]" << sc.url.left(80)
-                     << "status=" << status
-                     << "bytes=" << body.size();
+                        qDebug() << "[STREAM TEST RESULT]";
+            qDebug() << "  URL:" << sc.url.left(80);
+            qDebug() << "  Status:" << status << "| Bytes:" << body.size();
+            qDebug() << "  Content-Type:" << QString::fromStdString(ct);
+            qDebug() << "  Body[:50]:" << QString::fromStdString(body.substr(0, 50));
 
             xuiAnalyzerAfter(base, status, false, (int)body.size());
 
@@ -2698,13 +2913,22 @@ public slots:
             std::string bodyStart = body.substr(0, std::min(body.size(), (size_t)200));
             std::transform(bodyStart.begin(), bodyStart.end(), bodyStart.begin(), ::tolower);
             
-            // HTML greška = server problema
+                        // HTML greška = server problema
             if (bodyStart.find("<html") != std::string::npos ||
                 bodyStart.find("<!doctype") != std::string::npos ||
-                bodyStart.find("debug mode") != std::string::npos ||
-                bodyStart.find("xui.one") != std::string::npos) {
-                qDebug() << "[STREAM] HTML error stranica detektovana → skip kanal";
-                continue;  // Preskočи ovaj kanal, probaj sljedeći
+                bodyStart.find("invalid") != std::string::npos) {
+                
+                qDebug() << "[STREAM ERROR] HTML greška detektovana!";
+                qDebug() << "[STREAM ERROR] Body[:100]:" << QString::fromStdString(body.substr(0, 100));
+                qDebug() << "[STREAM ERROR] Status:" << status << "| Size:" << body.size() << "bytes";
+                
+                if (body.find("INVALID_CREDENTIALS") != std::string::npos) {
+                    qDebug() << "[STREAM] INVALID_CREDENTIALS → hard fail ova lista";
+                    return false;  // INSTANT HARD-FAIL - INVALID KREDENCIJALI
+                }
+                
+                qDebug() << "[STREAM] HTML greška → skip ovaj kanal, probaj sljedeći";
+                continue;  // Preskočі ovaj kanal, probaj sljedeći
             }
             
             // Sada provjeravamo da li je pravi media
